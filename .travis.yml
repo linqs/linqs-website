@@ -1,4 +1,4 @@
 language: bash
 
 script:
-    - bash _scripts/validate-pubs.py
+    - ./_scripts/validate-pubs.py
