@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "A Graph-Based Approach to Vehicle Tracking in Traffic Camera Video Streams",
+    "authors": [
+        "Hamid Haidarian-Shahri",
+        "Galileo Mark Namata",
+        "Saket Navlakha",
+        "Amol Deshpande",
+        "Nick Roussopoulos"
+    ],
+    "venue": "International Workshop on Data Management for Sensor Networks",
+    "year": "2007",
+    "publisher": "ACM",
+    "address": "Vienna, Austria",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/haidarian-shahri-dmsn07.pdf"
+        }
+    ]
+}

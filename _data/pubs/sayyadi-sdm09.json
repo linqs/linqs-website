@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Future Rank: Ranking Scientific Articles by Predicting Their Future PageRank",
+    "authors": [
+        "Hassan Sayyadi",
+        "Lise Getoor"
+    ],
+    "venue": "SIAM International Conference on Data Mining",
+    "year": "2009",
+    "publisher": "SIAM",
+    "address": "Sparks, NV, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sayyadi-sdm09.pdf"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "A Dual-View Approach to Interactive Network Visualization",
+    "authors": [
+        "Galileo Mark Namata",
+        "Brian Staats",
+        "Lise Getoor",
+        "Ben Shneiderman"
+    ],
+    "venue": "International Conference on Information and Knowledge Management",
+    "year": "2007",
+    "publisher": "ACM",
+    "address": "Beijing, China",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/namata-cikm07.pdf"
+        }
+    ]
+}

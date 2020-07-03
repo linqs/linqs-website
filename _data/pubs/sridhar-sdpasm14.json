@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Collective Stance Classification of Posts in Online Debate Forums",
+    "authors": [
+        "Dhanya Sridhar",
+        "Lise Getoor",
+        "Marilyn Walker"
+    ],
+    "venue": "ACL Joint Workshop on Social Dynamics and Personal Attributes in Social Media",
+    "year": "2014",
+    "publisher": "ACL",
+    "address": "Baltimore, MD, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sridhar-sdpasm14.pdf"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Opinion Graphs for Polarity and Discourse Classification",
+    "authors": [
+        "Swapna Somasundaran",
+        "Galileo Mark Namata",
+        "Lise Getoor",
+        "Janyce Wiebe"
+    ],
+    "venue": "ACL Workshop on Graph-based Methods for Natural Language Processing",
+    "year": "2009",
+    "publisher": "ACL",
+    "address": "Singapore",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/somasundaran-textgraphs09.pdf"
+        }
+    ]
+}

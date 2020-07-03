@@ -1,0 +1,26 @@
+{
+    "type": "tutorial",
+    "title": "MLtrain: Collective Reasoning with Probabilistic Soft Logic",
+    "authors": [
+        "Eriq Augustine",
+        "Golnoosh Farnadi"
+    ],
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": "2018",
+    "publisher": "AUAI",
+    "address": "Monterey, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/augustine-uai18.pdf"
+        },
+        {
+            "label": "slides",
+            "href": "/assets/resources/augustine-uai18-slides.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://github.com/linqs/psl-examples/tree/uai18"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Learning Algorithms for Link Prediction Based on Chance Constraints",
+    "authors": [
+        "Janardhan Doppa",
+        "Jun Yu",
+        "Prasad Tadepalli",
+        "Lise Getoor"
+    ],
+    "venue": "European Conference on Machine Learning",
+    "year": "2010",
+    "publisher": "Springer-Verlag",
+    "address": "Barcelona, Spain",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/doppa-ecml10.pdf"
+        }
+    ]
+}

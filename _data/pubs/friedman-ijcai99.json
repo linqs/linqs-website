@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Learning Probabilistic Relational Models",
+    "authors": [
+        "Nir Friedman",
+        "Lise Getoor",
+        "Daphne Koller",
+        "Avi Pfeffer"
+    ],
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": "1999",
+    "publisher": "IJCAI",
+    "address": "Stockholm, Sweden",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/friedman-ijcai99.pdf"
+        }
+    ]
+}

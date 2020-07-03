@@ -1,0 +1,24 @@
+{
+    "type": "conference",
+    "title": "A Collective, Probabilistic Approach to Schema Mapping",
+    "authors": [
+        "Angelika Kimmig",
+        "Alex Memory",
+        "Ren\u00e9e J. Miller",
+        "Lise Getoor"
+    ],
+    "venue": "IEEE International Conference on Data Engineering",
+    "year": "2017",
+    "publisher": "IEEE",
+    "address": "San Diego, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/kimmig-icde17.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://github.com/alexmemory/kimmig-icde17/wiki"
+        }
+    ]
+}

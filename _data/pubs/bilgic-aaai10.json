@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Active Inference for Collective Classification",
+    "authors": [
+        "Mustafa Bilgic",
+        "Lise Getoor"
+    ],
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": "2010",
+    "publisher": "AAAI",
+    "pages": "1652--1655",
+    "address": "Atlanta, GA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bilgic-aaai10.pdf"
+        }
+    ]
+}

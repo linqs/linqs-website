@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Using the Structure of Web Sites for Automatic Segmentation of Tables",
+    "authors": [
+        "Kristina Lerman",
+        "Lise Getoor",
+        "Steven Minton",
+        "Craig Knoblock"
+    ],
+    "venue": "International Conference on Management of Data",
+    "year": "2004",
+    "publisher": "ACM",
+    "address": "Paris, France",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/lerman-sigmod04.pdf"
+        }
+    ]
+}

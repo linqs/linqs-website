@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Detecting Cyber-Bullying From Sparse Data and Inconsistent Labels",
+    "authors": [
+        "Sabina Tomkins",
+        "Lise Getoor",
+        "Yunfei Chen",
+        "Yi Zhang"
+    ],
+    "venue": "Learning from Limited Labeled Data Workshop",
+    "year": "2017",
+    "publisher": "LLD",
+    "address": "Long Beach, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/tomkins-lld17.pdf"
+        }
+    ]
+}

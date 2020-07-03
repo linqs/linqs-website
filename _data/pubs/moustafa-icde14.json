@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Subgraph Pattern Matching Over Uncertain Graphs with Identity Linkage Uncertainty",
+    "authors": [
+        "Walaa Eldin Moustafa",
+        "Angelika Kimmig",
+        "Amol Deshpande",
+        "Lise Getoor"
+    ],
+    "venue": "IEEE International Conference on Data Engineering",
+    "year": "2014",
+    "publisher": "IEEE",
+    "address": "Chicago, IL, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/moustafa-icde14.pdf"
+        }
+    ]
+}

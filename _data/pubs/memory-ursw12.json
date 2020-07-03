@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "Graph Summarization in Annotated Data Using Probabilistic Soft Logic",
+    "authors": [
+        "Alex Memory",
+        "Angelika Kimmig",
+        "Stephen Bach",
+        "Louiqa Raschid",
+        "Lise Getoor"
+    ],
+    "venue": "ICSW Workshop on Uncertainty Reasoning for the Semantic Web",
+    "year": "2012",
+    "publisher": "CEUR",
+    "address": "Boston, MA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/memory-ursw12.pdf"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Group Proximity Measure for Recommending Groups in Online Social Networks",
+    "authors": [
+        "Barna Saha",
+        "Lise Getoor"
+    ],
+    "venue": "KDD Workshop on Social Network Mining and Analysis",
+    "year": "2008",
+    "publisher": "SNA-KDD",
+    "address": "Las Vegas, NV, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/saha-snakdd08.pdf"
+        }
+    ]
+}

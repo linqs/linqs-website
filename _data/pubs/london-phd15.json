@@ -1,0 +1,17 @@
+{
+    "type": "phdthesis",
+    "title": "On the Stability of Structured Prediction",
+    "authors": [
+        "Ben London"
+    ],
+    "venue": "University of Maryland, College Park",
+    "year": "2015",
+    "publisher": "UMD",
+    "address": "College Park, MD, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/london-phd15.pdf"
+        }
+    ]
+}

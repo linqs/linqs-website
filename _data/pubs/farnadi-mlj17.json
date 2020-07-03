@@ -1,0 +1,23 @@
+{
+    "type": "article",
+    "title": "Soft Quantification in Statistical Relational Learning",
+    "authors": [
+        "Golnoosh Farnadi",
+        "Stephen Bach",
+        "Marie-Francine Moens",
+        "Lise Getoor",
+        "Martine De Cock"
+    ],
+    "venue": "Machine Learning",
+    "year": "2017",
+    "publisher": "Springer-Verlag",
+    "pages": "1971--1991",
+    "volume": "106",
+    "number": "12",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/farnadi-mlj17.pdf"
+        }
+    ]
+}

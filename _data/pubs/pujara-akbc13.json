@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Ontology-Aware Partitioning for Knowledge Graph Identification",
+    "authors": [
+        "Jay Pujara",
+        "Hui Miao",
+        "Lise Getoor",
+        "William Cohen"
+    ],
+    "venue": "CIKM Workshop on Automated Knowledge Base Construction",
+    "year": "2013",
+    "publisher": "AKBC",
+    "address": "San Francisco, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pujara-akbc13.pdf"
+        }
+    ]
+}

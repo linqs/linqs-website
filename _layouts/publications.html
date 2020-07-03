@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ "/assets/style/pubs.css" | relative_url }}">
+<script type="text/javascript" src="{{ "/assets/js/pubs.js" | relative_url }}"></script>
+
+<div class="pubs-list">
+</div>
+
+<script>
+    // Load all the pubs as JS.
+    window.linqs = window.linqs || {};
+    window.linqs.pubs = window.linqs.pubs || {};
+    window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
+    window.linqs.pubs.pubs = {{ site.data.pubs | jsonify }};
+    window.linqs.pubs.baseURL = "{{ '/' | absolute_url }}";
+</script>
+
+<script>
+    $(document).ready(function() {
+        window.linqs.pubs.display();
+    });
+
+    $(window).on('hashchange', function() {
+        window.linqs.pubs.display();
+    });
+</script>

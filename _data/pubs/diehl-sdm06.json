@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Name Reference Resolution in Organizational Email Archives",
+    "authors": [
+        "Christopher Diehl",
+        "Lise Getoor",
+        "Galileo Mark Namata"
+    ],
+    "venue": "SIAM International Conference on Data Mining",
+    "year": "2006",
+    "publisher": "SIAM",
+    "address": "Bethesda, MD, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/diehl-sdm06.pdf"
+        }
+    ]
+}

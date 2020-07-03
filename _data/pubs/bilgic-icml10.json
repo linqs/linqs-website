@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Active Learning for Networked Data",
+    "authors": [
+        "Mustafa Bilgic",
+        "Lilyana Mihalkova",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference on Machine Learning",
+    "year": "2010",
+    "publisher": "ICML",
+    "address": "Haifa, Israel",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bilgic-icml10.pdf"
+        }
+    ]
+}

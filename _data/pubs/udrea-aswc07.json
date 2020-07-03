@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "HOMER: Ontology Alignment Visualization and Analysis",
+    "authors": [
+        "Octavian Udrea",
+        "Lise Getoor",
+        "Ren\u00e9e J. Miller"
+    ],
+    "venue": "Asian Semantic Web Conference",
+    "year": "2007",
+    "publisher": "Springer-Verlag",
+    "address": "Busan, Korea",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/udrea-aswc07.pdf"
+        }
+    ]
+}

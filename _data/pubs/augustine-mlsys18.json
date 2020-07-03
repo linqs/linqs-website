@@ -1,0 +1,26 @@
+{
+    "type": "conference",
+    "title": "A Comparison of Bottom-Up Approaches to Grounding for Templated Markov Random Fields",
+    "authors": [
+        "Eriq Augustine",
+        "Lise Getoor"
+    ],
+    "venue": "Conference on Machine Learning and Systems",
+    "year": "2018",
+    "publisher": "MLSys",
+    "address": "Stanford, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/augustine-mlsys18.pdf"
+        },
+        {
+            "label": "poster",
+            "href": "/assets/resources/augustine-mlsys18-poster.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://github.com/eriq-augustine/grounding-experiments"
+        }
+    ]
+}

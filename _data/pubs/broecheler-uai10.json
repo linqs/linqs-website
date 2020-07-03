@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Probabilistic Similarity Logic",
+    "authors": [
+        "Matthias Broecheler",
+        "Lilyana Mihalkova",
+        "Lise Getoor"
+    ],
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "year": "2010",
+    "publisher": "AUAI",
+    "address": "Catalina Island, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/broecheler-uai10.pdf"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "Joint Models of Disagreement and Stance in Online Debate",
+    "authors": [
+        "Dhanya Sridhar",
+        "James Foulds",
+        "Marilyn Walker",
+        "Bert Huang",
+        "Lise Getoor"
+    ],
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": "2015",
+    "publisher": "ACL",
+    "address": "Beijing, China",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sridhar-acl15.pdf"
+        }
+    ]
+}

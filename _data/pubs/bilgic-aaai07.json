@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "VOILA: Efficient Feature-Value Acquisition for Classification",
+    "authors": [
+        "Mustafa Bilgic",
+        "Lise Getoor"
+    ],
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": "2007",
+    "publisher": "AAAI",
+    "address": "Vancouver, BC, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bilgic-aaai07.pdf"
+        }
+    ]
+}

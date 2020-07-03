@@ -1,0 +1,23 @@
+{
+    "type": "unpublished",
+    "title": "Multi-Relational Learning Using Weighted Tensor Decomposition with Modular Loss",
+    "authors": [
+        "Ben London",
+        "Theodoros Rekatsinas",
+        "Bert Huang",
+        "Lise Getoor"
+    ],
+    "venue": "arXiv",
+    "year": "2013",
+    "publisher": "arXiv",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/london-arxiv13b.pdf"
+        },
+        {
+            "label": "link",
+            "href": "http://arxiv.org/abs/1303.1733"
+        }
+    ]
+}

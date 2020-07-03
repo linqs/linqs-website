@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Topic Evolution Models for Long-running MOOCs",
+    "authors": [
+        "Arti Ramesh",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference on Web Information Systems Engineering",
+    "year": "2018",
+    "publisher": "Springer-Verlag",
+    "address": "Dubai, UAE",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/ramesh-wise18.pdf"
+        }    
+    ]
+}

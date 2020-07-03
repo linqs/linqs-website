@@ -1,0 +1,22 @@
+{
+    "type": "conference",
+    "title": "Probabilistic Visitor Stitching on Cross-Device Web Logs",
+    "authors": [
+        "Sungchul Kim",
+        "Nikhil Kini",
+        "Jay Pujara",
+        "Eunyee Koh",
+        "Lise Getoor"
+    ],
+    "venue": "The Web Conference",
+    "year": "2017",
+    "publisher": "ACM",
+    "pages": "1581--1589",
+    "address": "Perth, Australia",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/kim-www17.pdf"
+        }
+    ]
+}

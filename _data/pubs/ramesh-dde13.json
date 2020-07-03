@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "Modeling Learner Engagement in MOOCs Using Probabilistic Soft Logic",
+    "authors": [
+        "Arti Ramesh",
+        "Dan Goldwasser",
+        "Bert Huang",
+        "Hal Daume III",
+        "Lise Getoor"
+    ],
+    "venue": "NIPS Workshop on Data Driven Education",
+    "year": "2013",
+    "publisher": "DDE",
+    "address": "Lake Tahoe, NV, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/ramesh-dde13.pdf"
+        }
+    ]
+}

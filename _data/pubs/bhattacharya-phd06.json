@@ -1,0 +1,17 @@
+{
+    "type": "phdthesis",
+    "title": "Collective Entity Resolution in Relational Data",
+    "authors": [
+        "Indrajit Bhattacharya"
+    ],
+    "venue": "University of Maryland, College Park",
+    "year": "2006",
+    "publisher": "UMD",
+    "address": "College Park, MD, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bhattacharya-phd06.pdf"
+        }
+    ]
+}

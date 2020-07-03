@@ -1,0 +1,23 @@
+{
+    "type": "conference",
+    "title": "Contrastive Entity Linkage: Mining Variational Attributes From Large Catalogs for Entity Linkage",
+    "authors": [
+        "Varun Embar",
+        "Bunyamin Sisman",
+        "Hao Wei",
+        "Xin Luna Dong",
+        "Christos Faloutsos",
+        "Lise Getoor"
+    ],
+    "venue": "Automated Knowledge Base Construction",
+    "year": "2020",
+    "publisher": "AKBC",
+    "address": "Virtual",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/embar-akbc20.pdf"
+        }
+    ],
+    "abstract": "Presence of near identical, but distinct, entities called entity variations makes the task of data integration challenging. For example, in the domain of grocery products, variations share the same value for attributes such as brand, manufacturer and product line, but differ in other attributes, called variational attributes, such as package size and color. Identifying variations across data sources is an important task in itself and is crucial for identifying duplicates. However, this task is challenging as the variational attributes are often present as a part of unstructured text and are domain dependent. In this work, we propose our approach, Contrastive entity linkage, to identify both entity pairs that are the same and pairs that are variations of each other. We propose a novel unsupervised approach, VarSpot, to mine domain-dependent variational attributes present in unstructured text. The proposed approach reasons about both similarities and differences between entities and can easily scale to large sources containing millions of entities. We show the generality of our approach by performing experimental evaluation on three different domains. Our approach significantly outperforms state-of-the-art learning-based and rule-based entity linkage systems by up to 4% F1 score when identifying duplicates, and up to 41% when identifying entity variations."
+}

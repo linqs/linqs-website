@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Selectivity Estimation Using Probabilistic Models",
+    "authors": [
+        "Lise Getoor",
+        "Daphne Koller",
+        "Benjamin Taskar"
+    ],
+    "venue": "International Conference on Management of Data",
+    "year": "2001",
+    "publisher": "ACM",
+    "address": "Santa Barbara, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/getoor-sigmod01.pdf"
+        }
+    ]
+}

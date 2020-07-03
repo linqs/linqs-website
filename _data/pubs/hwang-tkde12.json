@@ -1,0 +1,22 @@
+{
+    "type": "article",
+    "title": "Organizing User Search Histories",
+    "authors": [
+        "Heasoo Hwang",
+        "Hady Lauw",
+        "Lise Getoor",
+        "Alexandros Ntoulas"
+    ],
+    "venue": "IEEE Transactions on Knowledge and Data Engineering",
+    "year": "2012",
+    "publisher": "IEEE",
+    "pages": "912--925",
+    "volume": "24",
+    "number": "5",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/hwang-tkde12.pdf"
+        }
+    ]
+}

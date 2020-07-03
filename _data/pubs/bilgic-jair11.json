@@ -1,0 +1,20 @@
+{
+    "type": "article",
+    "title": "Value of Information Lattice: Exploiting Probabilistic Independence for Effective Feature Subset Acquisition",
+    "authors": [
+        "Mustafa Bilgic",
+        "Lise Getoor"
+    ],
+    "venue": "Journal of Artificial Intelligence Research",
+    "year": "2011",
+    "publisher": "JAIR",
+    "pages": "69--95",
+    "volume": "41",
+    "number": "1",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bilgic-jair11.pdf"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Representing Tuple and Attribute Uncertainty in Probabilistic Databases",
+    "authors": [
+        "Prithviraj Sen",
+        "Amol Deshpande",
+        "Lise Getoor"
+    ],
+    "venue": "ICDM Workshop on Data Mining on Uncertain Data",
+    "year": "2007",
+    "publisher": "IEEE",
+    "address": "Omaha, NE, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sen-dmud07.pdf"
+        }
+    ]
+}

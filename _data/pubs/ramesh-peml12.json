@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "User Role Prediction in Online Discussion Forums Using Probabilistic Soft Logic",
+    "authors": [
+        "Arti Ramesh",
+        "Jaebong Yoo",
+        "Shitian Shen",
+        "Lise Getoor",
+        "Jihie Kim"
+    ],
+    "venue": "NIPS Workshop on Personalizing Education With Machine Learning",
+    "year": "2012",
+    "publisher": "PEML",
+    "address": "Lake Tahoe, NV, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/ramesh-peml12.pdf"
+        }
+    ]
+}

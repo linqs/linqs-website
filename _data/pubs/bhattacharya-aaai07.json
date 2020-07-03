@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Online Collective Entity Resolution",
+    "authors": [
+        "Indrajit Bhattacharya",
+        "Lise Getoor"
+    ],
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": "2007",
+    "publisher": "AAAI",
+    "address": "Vancouver, BC, Canada",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bhattacharya-aaai07.pdf"
+        }
+    ]
+}

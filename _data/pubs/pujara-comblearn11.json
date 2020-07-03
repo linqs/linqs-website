@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Reducing Label Cost by Combining Feature Labels and Crowdsourcing",
+    "authors": [
+        "Jay Pujara",
+        "Ben London",
+        "Lise Getoor"
+    ],
+    "venue": "ICML Workshop on Combining Learning Strategies to Reduce Label Cost",
+    "year": "2011",
+    "publisher": "CombLearn",
+    "address": "Bellevue, WA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pujara-comblearn11.pdf"
+        }
+    ]
+}

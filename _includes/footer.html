@@ -1,0 +1,25 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class='simple-footer'>
+      <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+      <span>
+        {%- include social.html -%}
+      </span>
+    </div>
+
+    <div class='simple-footer'>
+      <span>
+        &#x000A9; 2020 LINQS Resreach Group.
+        See <a href="https://github.com/{{ site.github_username }}/psl-website/blob/master/LICENSE.md">license</a>.
+      </span>
+
+      <div class='issues'>
+        Issues or corrections? <a href="https://github.com/{{ site.github_username }}/psl-website/issues">Click here</a>.
+      </div>
+    </div>
+  </div>
+
+</footer>

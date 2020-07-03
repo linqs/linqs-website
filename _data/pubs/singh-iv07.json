@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Visual Mining of Multi-Modal Social Networks at Different Abstraction Levels",
+    "authors": [
+        "Lisa Singh",
+        "Mitchell Beard",
+        "Lise Getoor",
+        "M. Brian Blake"
+    ],
+    "venue": "International Conference Information Visualization",
+    "year": "2007",
+    "publisher": "IEEE",
+    "address": "Z\u00fcrich, Switzerland",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/singh-iv07.pdf"
+        }
+    ]
+}

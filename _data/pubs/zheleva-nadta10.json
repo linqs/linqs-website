@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Higher-Order Graphical Models for Classification in Social and Affiliation Networks",
+    "authors": [
+        "Elena Zheleva",
+        "Lise Getoor",
+        "Sunita Sarawagi"
+    ],
+    "venue": "NIPS Workshop on Networks Across Disciplines: Theory and Applications",
+    "year": "2010",
+    "publisher": "NADTA",
+    "address": "Vancouver, BC, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/zheleva-nadta10.pdf"
+        }
+    ]
+}

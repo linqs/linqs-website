@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "PAC-Bayesian Collective Stability",
+    "authors": [
+        "Ben London",
+        "Bert Huang",
+        "Benjamin Taskar",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference on Artificial Intelligence and Statistics",
+    "year": "2014",
+    "publisher": "PMLR",
+    "address": "Reykjavik, Iceland",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/london-aistats14.pdf"
+        }
+    ]
+}

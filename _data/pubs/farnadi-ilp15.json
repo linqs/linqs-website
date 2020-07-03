@@ -1,0 +1,23 @@
+{
+    "type": "conference",
+    "title": "Statistical Relational Learning with Soft Quantifiers",
+    "authors": [
+        "Golnoosh Farnadi",
+        "Stephen Bach",
+        "Marjon Blondeel",
+        "Marie-Francine Moens",
+        "Lise Getoor",
+        "Martine De Cock"
+    ],
+    "venue": "International Conference on Inductive Logic Programming",
+    "year": "2015",
+    "publisher": "CEUR",
+    "address": "Kyoto, Japan",
+    "note": "Winner of the Best Student Paper award.",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/farnadi-ilp15.pdf"
+        }
+    ]
+}

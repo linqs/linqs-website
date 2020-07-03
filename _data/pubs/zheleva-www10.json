@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Statistical Models of Music-Listening Sessions in Social Media",
+    "authors": [
+        "Elena Zheleva",
+        "John Guiver",
+        "Eduarda Mendes Rodrigues",
+        "Natasa Milic-Frayling"
+    ],
+    "venue": "The Web Conference",
+    "year": "2010",
+    "publisher": "ACM",
+    "address": "Raleigh, NC, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/zheleva-www10.pdf"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "type": "article",
+    "title": "Structured Machine Learning: The Next Ten Years",
+    "authors": [
+        "Thomas Dietterich",
+        "Pedro Domingos",
+        "Lise Getoor",
+        "Stephen Muggleton",
+        "Prasad Tadepalli"
+    ],
+    "venue": "Machine Learning",
+    "year": "2008",
+    "publisher": "Springer-Verlag",
+    "pages": "3--23",
+    "volume": "73",
+    "number": "1",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/dietterich-mlj08.pdf"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Relationship Identification for Social Network Discovery",
+    "authors": [
+        "Christopher Diehl",
+        "Galileo Mark Namata",
+        "Lise Getoor"
+    ],
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": "2007",
+    "publisher": "AAAI",
+    "address": "Vancouver, BC, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/diehl-aaai07.pdf"
+        }
+    ]
+}

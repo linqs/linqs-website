@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Supervised and Unsupervised Methods in Employing Discourse Relations for Improving Opinion Polarity Classification",
+    "authors": [
+        "Swapna Somasundaran",
+        "Galileo Mark Namata",
+        "Janyce Wiebe",
+        "Lise Getoor"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": "2009",
+    "publisher": "ACM",
+    "address": "Singapore",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/somasundaran-emnlp09.pdf"
+        }
+    ]
+}

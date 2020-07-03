@@ -1,0 +1,20 @@
+{
+    "type": "article",
+    "title": "Cost-Sensitive Learning with Conditional Markov Networks",
+    "authors": [
+        "Prithviraj Sen",
+        "Lise Getoor"
+    ],
+    "venue": "Data Mining and Knowledge Discovery",
+    "year": "2008",
+    "publisher": "Springer-Verlag",
+    "pages": "136--163",
+    "volume": "17",
+    "number": "2",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sen-datamine08.pdf"
+        }
+    ]
+}

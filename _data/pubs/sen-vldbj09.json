@@ -1,0 +1,21 @@
+{
+    "type": "article",
+    "title": "PrDB: Managing and Exploiting Rich Correlations in Probabilistic Databases",
+    "authors": [
+        "Prithviraj Sen",
+        "Amol Deshpande",
+        "Lise Getoor"
+    ],
+    "venue": "The VLDB Journal",
+    "year": "2009",
+    "publisher": "VLDB",
+    "pages": "1065--1090",
+    "volume": "18",
+    "number": "5",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sen-vldbj09.pdf"
+        }
+    ]
+}

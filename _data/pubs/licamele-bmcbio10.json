@@ -1,0 +1,25 @@
+{
+    "type": "article",
+    "title": "Indirect Two-Sided Relative Ranking: A Robust Similarity Measure for Gene Expression Data",
+    "authors": [
+        "Louis Licamele",
+        "Lise Getoor"
+    ],
+    "venue": "BMC Bioinformatics",
+    "year": "2010",
+    "publisher": "Springer Nature",
+    "pages": "137",
+    "volume": "11",
+    "number": "1",
+    "keywords": [
+        "Gene Expression",
+        "Bioinformatics",
+        "Drug Therapeutics"
+    ],
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/licamele-bmcbio10.pdf"
+        }
+    ]
+}

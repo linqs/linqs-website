@@ -1,0 +1,20 @@
+{
+    "type": "article",
+    "title": "A Method for the Detection of Meaningful and Reproducible Group Signatures From Gene Expression Profiles.",
+    "authors": [
+        "Louis Licamele",
+        "Lise Getoor"
+    ],
+    "venue": "Journal of Bioinformatics and Computational Biology",
+    "year": "2011",
+    "publisher": "World Scientific",
+    "pages": "431--451",
+    "volume": "9",
+    "number": "3",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/licamele-jbcb11.pdf"
+        }
+    ]
+}

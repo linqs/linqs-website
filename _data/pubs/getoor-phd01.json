@@ -1,0 +1,17 @@
+{
+    "type": "phdthesis",
+    "title": "Learning Statistical Models From Relational Data",
+    "authors": [
+        "Lise Getoor"
+    ],
+    "venue": "Stanford",
+    "year": "2001",
+    "publisher": "Stanford",
+    "address": "Stanford, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/getoor-phd01.pdf"
+        }
+    ]
+}

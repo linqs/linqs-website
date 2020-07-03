@@ -1,0 +1,27 @@
+{
+    "type": "conference",
+    "title": "G-PARE: A Visual Analytic Tool for Comparative Analysis of Uncertain Graphs",
+    "authors": [
+        "Hossam Sharara",
+        "Awalin Sopan",
+        "Galileo Mark Namata",
+        "Lise Getoor",
+        "Lisa Singh"
+    ],
+    "venue": "IEEE Conference on Visual Analytics Science and Technology",
+    "year": "2011",
+    "publisher": "IEEE",
+    "address": "Providence, RI, USA",
+    "keywords": [
+        "Comparative Analysis",
+        "Model Comparison",
+        "Uncertain Graphs",
+        "Visualizing Uncertainty"
+    ],
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sharara-vast11.pdf"
+        }
+    ]
+}

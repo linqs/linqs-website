@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Online Inference for Knowledge Graph Construction.",
+    "authors": [
+        "Jay Pujara",
+        "Ben London",
+        "Lise Getoor",
+        "William Cohen"
+    ],
+    "venue": "International Workshop on Statistical Relational AI",
+    "year": "2015",
+    "publisher": "arXiv",
+    "address": "Amsterdam, The Netherlands",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pujara-starai15.pdf"
+        }
+    ]
+}

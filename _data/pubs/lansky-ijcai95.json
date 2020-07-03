@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Scope and Abstraction: Two Criteria for Localized Planning",
+    "authors": [
+        "Amy Lansky",
+        "Lise Getoor"
+    ],
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": "1995",
+    "publisher": "IJCAI",
+    "address": "Montr\u00e9al, QC, Canada",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/lansky-ijcai95.pdf"
+        }
+    ]
+}

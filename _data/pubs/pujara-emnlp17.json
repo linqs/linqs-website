@@ -1,0 +1,23 @@
+{
+    "type": "conference",
+    "title": "Sparsity and Noise: Where Knowledge Graph Embeddings Fall Short",
+    "authors": [
+        "Jay Pujara",
+        "Eriq Augustine",
+        "Lise Getoor"
+    ],
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": "2017",
+    "publisher": "ACL",
+    "address": "Austin, TX, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pujara-emnlp17.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://www.github.com/linqs/pujara-emnlp17"
+        }
+    ]
+}

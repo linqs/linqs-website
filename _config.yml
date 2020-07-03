@@ -1,0 +1,26 @@
+title: LINQS
+email: linqs.edu@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+   The LINQS lab develops tools to solve large, structured, and heterogeneous problems.
+
+# URL settings.
+# Use 'url' for custom domains on github pages, and 'baseurl' for notmal github pages hosting.
+url: ""
+baseurl: "/pubs-test"
+
+permalink: /blog/:year/:month/:day/:title:output_ext
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Accounts
+github_username: linqs
+twitter_username: LINQS_edu
+youtube_username: LINQSLab
+
+# Custom template settings.
+minima:
+  date_format: "%Y-%m-%d"
+
+emptyArray: []

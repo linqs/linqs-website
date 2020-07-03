@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Query-Time Entity Resolution",
+    "authors": [
+        "Indrajit Bhattacharya",
+        "Louis Licamele",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference on Knowledge Discovery and Data Mining",
+    "year": "2006",
+    "publisher": "ACM",
+    "address": "Philadelphia, PA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bhattacharya-kdd06.pdf"
+        }
+    ]
+}

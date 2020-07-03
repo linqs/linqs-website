@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "A Pipeline Approach to Graph Identification",
+    "authors": [
+        "Galileo Mark Namata",
+        "Lise Getoor"
+    ],
+    "venue": "International Workshop on Mining and Learning with Graphs",
+    "year": "2009",
+    "publisher": "MLG",
+    "address": "Leuven, Belgium",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/namata-mlg09.pdf"
+        }
+    ]
+}

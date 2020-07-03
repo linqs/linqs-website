@@ -1,0 +1,17 @@
+{
+    "type": "phdthesis",
+    "title": "Representing and Querying Uncertain Data",
+    "authors": [
+        "Prithviraj Sen"
+    ],
+    "venue": "University of Maryland, College Park",
+    "year": "2009",
+    "publisher": "UMD",
+    "address": "College Park, MD, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sen-phd09.pdf"
+        }
+    ]
+}

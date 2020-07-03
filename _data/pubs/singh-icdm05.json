@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Pruning Social Networks Using Structural Properties and Descriptive Attributes",
+    "authors": [
+        "Lisa Singh",
+        "Lise Getoor",
+        "Louis Licamele"
+    ],
+    "venue": "IEEE International Conference on Data Mining",
+    "year": "2005",
+    "publisher": "IEEE",
+    "pages": "773--776",
+    "address": "Houston, TX, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/singh-icdm05.pdf"
+        }
+    ]
+}

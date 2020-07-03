@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "Collective Classification of Stance and Disagreement in Online Debate Forums",
+    "authors": [
+        "Dhanya Sridhar",
+        "James Foulds",
+        "Bert Huang",
+        "Marilyn Walker",
+        "Lise Getoor"
+    ],
+    "venue": "Bay Area Machine Learning Symposium",
+    "year": "2014",
+    "publisher": "BayLearn",
+    "address": "Berkeley, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sridhar-baylearn14.pdf"
+        }
+    ]
+}

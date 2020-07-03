@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Large-Scale Knowledge Graph Identification Using PSL",
+    "authors": [
+        "Jay Pujara",
+        "Hui Miao",
+        "Lise Getoor",
+        "William Cohen"
+    ],
+    "venue": "ICML Workshop on Structured Learning: Inferring Graphs from Structured and Unstructured Inputs",
+    "year": "2013",
+    "publisher": "SLG",
+    "address": "Atlanta, GA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pujara-slg13.pdf"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "tutorial",
+    "title": "Entity Resolution: Theory, Practice & Open Challenges",
+    "authors": [
+        "Lise Getoor",
+        "Ashwin Machanavajjhala"
+    ],
+    "venue": "International Conference on Very Large Data Bases",
+    "year": "2012",
+    "publisher": "VLDB",
+    "address": "Istanbul, Turkey",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/getoor-vldb12.pdf"
+        },
+        {
+            "label": "slides",
+            "href": "/assets/resources/getoor-vldb12-slides.pdf"
+        }
+    ]
+}

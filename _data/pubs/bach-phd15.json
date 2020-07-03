@@ -1,0 +1,18 @@
+{
+    "type": "phdthesis",
+    "title": "Hinge-Loss Markov Random Fields and Probabilistic Soft Logic: A Scalable Approach to Structured Prediction",
+    "authors": [
+        "Stephen Bach"
+    ],
+    "venue": "University of Maryland, College Park",
+    "year": "2015",
+    "publisher": "UMD",
+    "address": "College Park, MD, USA",
+    "note": "Winner of the Larry S. Davis Doctoral Dissertation award.",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bach-phd15.pdf"
+        }
+    ]
+}

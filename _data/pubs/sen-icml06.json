@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Cost-Sensitive Learning with Conditional Markov Networks",
+    "authors": [
+        "Prithviraj Sen",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference on Machine Learning",
+    "year": "2006",
+    "publisher": "ICML",
+    "address": "Pittsburgh, PA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/sen-icml06.pdf"
+        }
+    ]
+}

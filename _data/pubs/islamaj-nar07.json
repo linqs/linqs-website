@@ -1,0 +1,22 @@
+{
+    "type": "article",
+    "title": "SplicePort - An Interactive Splice-Site Analysis Tool",
+    "authors": [
+        "Rezarta Islamaj",
+        "Lise Getoor",
+        "W. John Wilbur",
+        "Stephen Mount"
+    ],
+    "venue": "Nucleic Acids Research",
+    "year": "2007",
+    "publisher": "Oxford",
+    "pages": "285--291",
+    "volume": "35",
+    "number": "Web-Server-Issue",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/islamaj-nar07.pdf"
+        }
+    ]
+}

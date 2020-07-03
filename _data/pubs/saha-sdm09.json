@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "On Maximum Coverage in the Streaming Model & Application to Multi-Topic Blog-Watch",
+    "authors": [
+        "Barna Saha",
+        "Lise Getoor"
+    ],
+    "venue": "SIAM International Conference on Data Mining",
+    "year": "2009",
+    "publisher": "SIAM",
+    "address": "Sparks, NV, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/saha-sdm09.pdf"
+        }
+    ]
+}

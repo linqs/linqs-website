@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Probabilistic Models of Text and Link Structure for Hypertext Classification",
+    "authors": [
+        "Lise Getoor",
+        "Eran Segal",
+        "Benjamin Taskar",
+        "Daphne Koller"
+    ],
+    "venue": "IJCAI Workshop on Text Learning: Beyond Supervision",
+    "year": "2001",
+    "publisher": "TLBS",
+    "address": "Seattle, WA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/getoor-tlbs01.pdf"
+        }
+    ]
+}

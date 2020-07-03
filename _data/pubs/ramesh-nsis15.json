@@ -1,0 +1,25 @@
+{
+    "type": "conference",
+    "title": "Understanding Influence in Online Professional Networks",
+    "authors": [
+        "Arti Ramesh",
+        "Mario Rodriguez",
+        "Lise Getoor"
+    ],
+    "venue": "NIPS Workshop on Networks in Social and Information Sciences",
+    "year": "2015",
+    "publisher": "NSIS",
+    "address": "Montr\u00e9al, QC, Canada",
+    "keywords": [
+        "HL-MRFs",
+        "Influence",
+        "Professional Networks",
+        "Social Networks"
+    ],
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/ramesh-nsis15.pdf"
+        }
+    ]
+}

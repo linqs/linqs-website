@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "User Preferences for Hybrid Explanations",
+    "authors": [
+        "Pigi Kouki",
+        "James Schaffer",
+        "Jay Pujara",
+        "John O'Donovan",
+        "Lise Getoor"
+    ],
+    "venue": "ACM Conference on Recommender Systems",
+    "year": "2017",
+    "publisher": "ACM",
+    "address": "Como, Italy",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/kouki-recsys17.pdf"
+        }
+    ]
+}

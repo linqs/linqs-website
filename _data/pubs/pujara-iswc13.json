@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "Knowledge Graph Identification",
+    "authors": [
+        "Jay Pujara",
+        "Hui Miao",
+        "Lise Getoor",
+        "William Cohen"
+    ],
+    "venue": "International Semantic Web Conference",
+    "year": "2013",
+    "publisher": "ACM",
+    "address": "Zurich, Switzerland",
+    "note": "Winner of the Best Student Paper award.",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pujara-iswc13.pdf"
+        }
+    ]
+}

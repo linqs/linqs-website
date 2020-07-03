@@ -1,0 +1,21 @@
+{
+    "type": "article",
+    "title": "Lifted Graphical Models: A Survey",
+    "authors": [
+        "Angelika Kimmig",
+        "Lilyana Mihalkova",
+        "Lise Getoor"
+    ],
+    "venue": "Machine Learning",
+    "year": "2015",
+    "publisher": "Springer-Verlag",
+    "pages": "1--45",
+    "volume": "99",
+    "number": "1",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/kimmig-mlj15.pdf"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Building Dynamic Knowledge Graphs",
+    "authors": [
+        "Jay Pujara",
+        "Lise Getoor"
+    ],
+    "venue": "NIPS Workshop on Automated Knowledge Base Construction",
+    "year": "2014",
+    "publisher": "AKBC",
+    "address": "Montr\u00e9al, QC, Canada",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pujara-akbc14.pdf"
+        }
+    ]
+}

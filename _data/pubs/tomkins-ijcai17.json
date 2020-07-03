@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Disambiguating Energy Disaggregation: A Collective Probabilistic Approach",
+    "authors": [
+        "Sabina Tomkins",
+        "Jay Pujara",
+        "Lise Getoor"
+    ],
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": "2017",
+    "publisher": "IJCAI",
+    "address": "Melbourne, Australia",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/tomkins-ijcai17.pdf"
+        }
+    ]
+}

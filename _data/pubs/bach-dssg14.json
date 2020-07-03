@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Probabilistic Soft Logic for Social Good",
+    "authors": [
+        "Stephen Bach",
+        "Bert Huang",
+        "Lise Getoor"
+    ],
+    "venue": "KDD Workshop on Data Science for Social Good",
+    "year": "2014",
+    "publisher": "DSSG",
+    "address": "New York, NY, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bach-dssg14.pdf"
+        }
+    ]
+}

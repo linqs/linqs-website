@@ -1,0 +1,22 @@
+{
+    "type": "conference",
+    "title": "Predictable Dual-View Hashing",
+    "authors": [
+        "Mohammad Rastegari",
+        "Jonghyun Choi",
+        "Shobeir Fakhraei",
+        "Hal Daume III",
+        "Larry Davis"
+    ],
+    "venue": "International Conference on Machine Learning",
+    "year": "2013",
+    "publisher": "PMLR",
+    "pages": "1328--1336",
+    "address": "Atlanta, GA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/rastegari-icml13.pdf"
+        }
+    ]
+}

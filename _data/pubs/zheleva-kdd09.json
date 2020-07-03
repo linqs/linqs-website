@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Co-Evolution of Social and Affiliation Networks",
+    "authors": [
+        "Elena Zheleva",
+        "Hossam Sharara",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference on Knowledge Discovery and Data Mining",
+    "year": "2009",
+    "publisher": "ACM",
+    "address": "Paris, France",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/zheleva-kdd09.pdf"
+        }
+    ]
+}

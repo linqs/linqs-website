@@ -1,0 +1,27 @@
+{
+    "type": "conference",
+    "title": "Learning Latent Engagement Patterns of Students in Online Courses",
+    "authors": [
+        "Arti Ramesh",
+        "Dan Goldwasser",
+        "Bert Huang",
+        "Hal Daume III",
+        "Lise Getoor"
+    ],
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": "2014",
+    "publisher": "AAAI",
+    "address": "Qu\u00e9bec City, QC, Canada",
+    "keywords": [
+        "MOOC",
+        "Learner Engagement",
+        "Probabilistic Modeling",
+        "Structured Prediction"
+    ],
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/ramesh-aaai14.pdf"
+        }
+    ]
+}

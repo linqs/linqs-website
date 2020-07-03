@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Index Interactions in Physical Design Tuning: Modeling, Analysis, and Applications",
+    "authors": [
+        "Karl Schnaitter",
+        "Neoklis Polyzotis",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference on Very Large Data Bases",
+    "year": "2009",
+    "publisher": "VLDB",
+    "address": "Lyon, France",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/schnaitter-vldb09.pdf"
+        }
+    ]
+}

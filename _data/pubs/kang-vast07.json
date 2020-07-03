@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "C-GROUP: A Visual Analytic Tool for Pairwise Analysis of Dynamic Group Membership",
+    "authors": [
+        "Hyunmo Kang",
+        "Lise Getoor",
+        "Lisa Singh"
+    ],
+    "venue": "IEEE Conference on Visual Analytics Science and Technology",
+    "year": "2007",
+    "publisher": "IEEE",
+    "address": "Sacramento, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/kang-vast07.pdf"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "GeoDDupe: A Novel Interface for Interactive Entity Resolution in Geospatial Data",
+    "authors": [
+        "Hyunmo Kang",
+        "Vivek Sehgal",
+        "Lise Getoor"
+    ],
+    "venue": "International Conference Information Visualization",
+    "year": "2007",
+    "publisher": "IEEE",
+    "address": "Z\u00fcrich, Switzerland",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/kang-iv07.pdf"
+        }
+    ]
+}

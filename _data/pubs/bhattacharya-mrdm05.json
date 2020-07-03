@@ -1,0 +1,18 @@
+{
+    "type": "conference",
+    "title": "Relational Clustering for Multi-Type Entity Resolution",
+    "authors": [
+        "Indrajit Bhattacharya",
+        "Lise Getoor"
+    ],
+    "venue": "International Workshop on Multi-Relational Data Mining",
+    "year": "2005",
+    "publisher": "ACM",
+    "address": "Chicago, IL, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bhattacharya-mrdm05.pdf"
+        }
+    ]
+}

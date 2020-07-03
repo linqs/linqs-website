@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "Relational Clustering for Entity Resolution Queries",
+    "authors": [
+        "Indrajit Bhattacharya",
+        "Louis Licamele",
+        "Lise Getoor"
+    ],
+    "venue": "International Workshop on Statistical Relational Learning",
+    "year": "2006",
+    "publisher": "SRL",
+    "address": "Pittsburgh, PA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bhattacharya-srl06.pdf"
+        }
+    ]
+}

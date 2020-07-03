@@ -1,0 +1,21 @@
+{
+    "type": "conference",
+    "title": "Extending PSL with Fuzzy Quantifiers",
+    "authors": [
+        "Golnoosh Farnadi",
+        "Stephen Bach",
+        "Marie-Francine Moens",
+        "Lise Getoor",
+        "Martine De Cock"
+    ],
+    "venue": "International Workshop on Statistical Relational AI",
+    "year": "2014",
+    "publisher": "AAAI",
+    "address": "Qu\u00e9bec City, QC, Canada",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/farnadi-starai14.pdf"
+        }
+    ]
+}

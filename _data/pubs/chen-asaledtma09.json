@@ -1,0 +1,20 @@
+{
+    "type": "conference",
+    "title": "Efficient Resource-Constrained Retrospective Analysis of Long Video Sequences",
+    "authors": [
+        "Daozheng Chen",
+        "Mustafa Bilgic",
+        "Lise Getoor",
+        "David Jacobs"
+    ],
+    "venue": "NIPS Workshop on Adaptive Sensing, Active Learning and Experimental Design: Theory, Methods and Applications",
+    "year": "2009",
+    "publisher": "ASALEDTMA",
+    "address": "Vancouver, BC, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/chen-asaledtma09.pdf"
+        }
+    ]
+}

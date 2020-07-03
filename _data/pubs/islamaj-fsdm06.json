@@ -1,0 +1,19 @@
+{
+    "type": "conference",
+    "title": "A Feature Generation Algorithm for Sequences with Application to Splice Site Prediction",
+    "authors": [
+        "Rezarta Islamaj",
+        "Lise Getoor",
+        "W. John Wilbur"
+    ],
+    "venue": "Workshop on Feature Selection for Data Mining",
+    "year": "2006",
+    "publisher": "SIAM",
+    "address": "Bethesda, MD, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/islamaj-fsdm06.pdf"
+        }
+    ]
+}
