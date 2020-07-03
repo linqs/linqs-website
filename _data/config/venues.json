@@ -57,6 +57,10 @@
         "id": "tois",
         "shortname": "TOIS"
     },
+    "ACM Transactions on Interactive Intelligent Systems": {
+        "id": "tiis",
+        "shortname": "TIIS"
+    },
     "ACM Transactions on Knowledge Discovery from Data": {
         "id": "tkdd",
         "shortname": "TKDD"
