@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/linqs/linqs-website.svg?branch=master)](https://travis-ci.com/linqs/linqs-website)
+
 # Publications
 
 This repository is the canonical reference for publications of the [LINQS machine learning lab](https://linqs.soe.ucsc.edu/) headed by Dr. Lise Getoor.
