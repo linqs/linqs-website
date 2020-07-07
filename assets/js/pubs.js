@@ -103,6 +103,12 @@ window.linqs.pubs.index = function() {
             pub.type = 'inproceedings';
         } else if (pub.type == 'tutorial') {
             pub.type = 'misc';
+
+            // Put a note in the bibtex for tutorials.
+            if (!pub.note) {
+                pub.note = '';
+            }
+            pub.note = (pub.note.trim() + ' Tutorial').trim();
         }
 
         // Cleanup the year.
