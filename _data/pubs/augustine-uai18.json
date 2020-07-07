@@ -11,10 +11,6 @@
     "address": "Monterey, CA, USA",
     "links": [
         {
-            "label": "paper",
-            "href": "/assets/resources/augustine-uai18.pdf"
-        },
-        {
             "label": "slides",
             "href": "/assets/resources/augustine-uai18-slides.pdf"
         },
