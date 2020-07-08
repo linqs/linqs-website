@@ -11,5 +11,10 @@
     "pages": "3--12",
     "volume": "7",
     "number": "2",
-    "links": []
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/getoor-kddexp05.pdf"
+        }
+    ]
 }
