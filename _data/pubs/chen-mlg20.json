@@ -1,0 +1,16 @@
+{
+    "type": "conference",
+    "title": "Decoupled Smoothing in Probabilistic Soft Logic",
+    "authors": [
+        "Yatong Chen",
+        "Byran Tor",
+        "Eriq Augustine",
+        "Lise Getoor"
+    ],
+    "venue": "International Workshop on Mining and Learning with Graphs",
+    "year": "2020",
+    "publisher": "MLG",
+    "address": "Virtual",
+    "links": [],
+    "abstract": "Node classification in networks is a common graph mining task. In this paper, we examine how separating identity(a node’s attribute) and preference(the kind of identities to which a node prefers to link) is useful for node classification in social networks. Building uponrecent work by Chin et al., where the separation of identity and preference is accomplished through a technique called “decoupled smoothing”, we show how models that characterize both identity and preference are able to capture the underlying structure in anetwork, which leads to performance improvement in node classification tasks. Specifically, we use probabilistic soft logic (PSL),a flexible and declarative statistical reasoning framework, to model identity and preference. We compare our method with the original decoupled smoothing method and othernode classification methods implemented in PSL, and show that our approach outperforms the state-of-the-art decoupled smoothing method as well as the other node classification methods across all evaluation metrics ona real-world Facebook Dataset."
+}
