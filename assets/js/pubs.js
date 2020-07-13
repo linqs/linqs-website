@@ -13,6 +13,7 @@ window.linqs.pubs.ICON_MAP = {
     'slides': 'slideshow-line',
     'code': 'code-line',
     'link': 'link',
+    'video': 'video',
 };
 
 window.linqs.pubs.BIBTEX_SORTED_KEYS = [
