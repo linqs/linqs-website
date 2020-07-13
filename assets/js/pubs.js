@@ -178,7 +178,7 @@ window.linqs.pubs.index = function() {
 window.linqs.pubs.resolveIcon = function(icon, label) {
     if (!icon && label in window.linqs.pubs.ICON_MAP) {
         icon = window.linqs.pubs.ICON_MAP[label];
-    } else {
+    } else if (!icon) {
         icon = window.linqs.pubs.ICON_DEFAULT;
     }
 
