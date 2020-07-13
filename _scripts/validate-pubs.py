@@ -23,7 +23,7 @@ ALLOWED_ICONS = {
     'close-circle-line', 'close-fill', 'close-line', 'code-line',
     'double-quotes-r', 'file-line', 'file-text-line', 'git-repository-line',
     'image-line', 'link', 'mail-line', 'profile-line',
-    'slideshow-line', 'video-line',
+    'slideshow-line', 'video-line', 'video',
 }
 
 REQUIRED_KEYS = [
