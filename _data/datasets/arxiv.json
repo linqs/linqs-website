@@ -1,0 +1,17 @@
+{
+    "key": "arxiv",
+    "title": "ArXiv",
+    "description": "<p>The arXiv dataset describes high energy physics publications. It was originally used in KDD Cup 2003 . It contains 29555 papers with 58515 references to 9200 authors. The attribute information available for this dataset is also just the author name, with the same variations in form as described above.</p>",
+    "downloadLink": "https://linqs-data.soe.ucsc.edu/public/datasets/arxiv/arxiv.tar.gz",
+    "md5": "4c720cfeaebdbc384943a8fbdadf792e",
+    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
+    "citation": "@inproceedings{nr,title={Collective entity resolution in relational data},author={Bhattacharya, Indrajit and Getoor, Lise},booktitle={TKDD},year={2007}}",
+    "size": 1189,
+    "references":
+        [
+            {
+                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2007/bhattacharya:tkdd07/bhattacharya-tkdd.pdf",
+                "text": "Indrajit Bhattacharya, and Lise Getoor. \"Collective entity resolution in relational data.\" TKDD. 2007."
+            }
+        ]
+}

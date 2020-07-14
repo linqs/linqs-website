@@ -1,0 +1,17 @@
+{
+    "key": "pubmed-diabetes",
+    "title": "PubMed Diabetes",
+    "description": "<p>The Pubmed Diabetes dataset consists of 19717 scientific publications from PubMed database pertaining to diabetes classified into one of three classes. The citation network consists of 44338 links. Each publication in the dataset is described by a TF/IDF weighted word vector from a dictionary which consists of 500 unique words. The README file in the dataset provides more details.</p>",
+    "downloadLink": "https://linqs-data.soe.ucsc.edu/public/datasets/pubmed-diabetes/pubmed-diabetes.tar.gz",
+    "md5": "caa97c29fda75f3145e350f600963365",
+    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
+    "citation": "@inproceedings{nr,title={Query-driven Active Surveying for Collective Classification},author={Namata, Galileo et al.},booktitle={MLG},year={2012}}",
+    "size": 14407,
+    "references":
+        [
+            {
+                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2012/namata:mlg12-wkshp/namata-mlg12.pdf",
+                "text": "Galileo Namata, et. al. \"Query-driven Active Surveying for Collective Classification.\" MLG. 2012."
+            }
+        ]
+}

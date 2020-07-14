@@ -1,0 +1,17 @@
+{
+    "key": "webkb",
+    "title": "WebKB",
+    "description": "<p>The WebKB dataset consists of 877 scientific publications classified into one of five classes. The citation network consists of 1608 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 1703 unique words. The README file in the dataset provides more details.</p>",
+    "downloadLink": "https://linqs-data.soe.ucsc.edu/public/datasets/webkb/webkb.tar.gz",
+    "md5": "6f5fb9e4334c031dbd91d178a47abcff",
+    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
+    "citation": "@inproceedings{qinqICML2003, title={Link-based Text Classification}, author={Lu, Qing and Getoor, Lise}, booktitle={Proceedings of the Twentieth International Conference on Machine Learning}, year={2003}, publisher={ICML},}",
+    "size": 156,
+    "references":
+        [
+            {
+                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2003/lu:icml03/lu-icml03.pdf",
+                "text": "Qing, Lu and Lise Getoor. \"Link-based Text Classification.\" ICML. 2003."
+            }
+        ]
+}

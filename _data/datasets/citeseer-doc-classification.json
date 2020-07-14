@@ -1,0 +1,21 @@
+{
+    "key": "citeseer-doc-classification",
+    "title": "CiteSeer for Document Classification",
+    "description": "<p>The CiteSeer dataset consists of 3312 scientific publications classified into one of six classes. The citation network consists of 4732 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 3703 unique words. The README file in the dataset provides more details.</p>",
+    "downloadLink": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-doc-classification/citeseer-doc-classification.tar.gz",
+    "md5": "c16c09fac412b868abc6658a73a07684",
+    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
+    "citation": "@inproceedings{nr,title={The Network Data Repository with Interactive Graph Analytics and Visualization},author={Ryan A. Rossi and Nesreen K. Ahmed},booktitle={AAAI},url={http://networkrepository.com},year={2015}}",
+    "size": 376,
+    "references":
+        [
+            {
+                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2003/lu:icml03/",
+                "text": "Qing Lu, and Lise Getoor. \"Link-based classification.\" ICML, 2003."
+            },
+            {
+                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2008/sen:aimag08/",
+                "text": "Prithviraj Sen, et al. \"Collective classification in network data.\" AI Magazine, 2008."
+            }
+        ]
+}

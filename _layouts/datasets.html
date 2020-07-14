@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ "/assets/style/datasets.css" | relative_url }}">
+<script type="text/javascript" src="{{ "/assets/js/datasets.js" | relative_url }}"></script>
+
+<div class="datasets-list">
+</div>
+
+<script>
+    // Load all the datasets as JS.
+    window.linqs = window.linqs || {};
+    window.linqs.datasets = window.linqs.datasets || {};
+    window.linqs.datasets.datasets = {{ site.data.datasets | jsonify }};
+    window.linqs.datasets.baseURL = "{{ '/' | absolute_url }}";
+</script>
+
+<script>
+    $(document).ready(function() {
+        window.linqs.datasets.display();
+    });
+
+    $(window).on('hashchange', function() {
+        window.linqs.datasets.display();
+    });
+</script>
