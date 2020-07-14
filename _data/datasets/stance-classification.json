@@ -10,12 +10,12 @@
     "references":
         [
             {
-                "link": "http://www.aclweb.org/anthology/W14-27#page=121",
-                "text": "Dhanya Sridhar, Lise Getoor, Marilyn Walker. \"Collective stance classification of posts in online debate forums.\" In ACL Workshop on Social Dynamics and Personal Attributes in Social Media. 2014."
+                "link": "https://linqs.github.io/linqs-website/assets/resources/sridhar-acl15.pdf",
+                "text": "Dhanya Sridhar, James Foulds, Marilyn Walker, Bert Huang, and Lise Getoor. \"Joint Models of Disagreement and Stance in Online Debate.\" Annual Meeting of the Association for Computational Linguistics (ACL). 2015."
             },
             {
-                "link": "http://www.aclweb.org/website/old_anthology/P/P15/P15-1012.pdf",
-                "text": "Dhanya Sridhar, James Foulds, Bert Huang, Marilyn Walker, Lise Getoor. \"Joint Models of Disagreement and Stance in Online Debates.\" In ACL. 2015."
+                "link": "https://linqs.github.io/linqs-website/assets/resources/sridhar-baylearn14.pdf",
+                "text": "Dhanya Sridhar, James Foulds, Bert Huang, Marilyn Walker, and Lise Getoor. \"Collective Classification of Stance and Disagreement in Online Debate Forums\". Bay Area Machine Learning Symposium (BayLearn). 2014."
             }
         ]
 }

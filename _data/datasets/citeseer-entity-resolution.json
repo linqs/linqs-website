@@ -10,8 +10,8 @@
     "references":
         [
             {
-                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2007/bhattacharya:tkdd07/bhattacharya-tkdd.pdf",
-                "text": "Indrajit Bhattacharya, and Lise Getoor. \"Collective entity resolution in relational data.\" TKDD. 2007."
+                "link": "https://linqs.github.io/linqs-website/assets/resources/bhattacharya-tkdd07.pdf",
+                "text": "Indrajit Bhattacharya and Lise Getoor. \"Collective Entity Resolution in Relational Data.\" ACM Transactions on Knowledge Discovery from Data (TKDD). 2007."
             }
         ]
 }

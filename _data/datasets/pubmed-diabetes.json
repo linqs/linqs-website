@@ -10,8 +10,8 @@
     "references":
         [
             {
-                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2012/namata:mlg12-wkshp/namata-mlg12.pdf",
-                "text": "Galileo Namata, et. al. \"Query-driven Active Surveying for Collective Classification.\" MLG. 2012."
+                "link": "https://linqs.github.io/linqs-website/assets/resources/namata-mlg12.pdf",
+                "text": "Galileo Mark Namata, Ben London, Lise Getoor, and Bert Huang. \"Query-Driven Active Surveying for Collective Classification.\" International Workshop on Mining and Learning with Graphs (MLG). 2012."
             }
         ]
 }

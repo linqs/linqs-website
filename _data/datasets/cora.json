@@ -10,12 +10,12 @@
     "references":
         [
             {
-                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2003/lu:icml03/",
-                "text": "Qing Lu, and Lise Getoor. \"Link-based classification.\" ICML, 2003."
+                "link": "https://linqs.github.io/linqs-website/assets/resources/lu-icml03.pdf",
+                "text": "Qing, Lu and Lise Getoor. \"Link-based Text Classification.\" ICML. 2003."
             },
             {
-                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2008/sen:aimag08/",
-                "text": "Prithviraj Sen, et al. \"Collective classification in network data.\" AI Magazine, 2008."
+                "link": "https://linqs.github.io/linqs-website/assets/resources/sen-aim08.pdf",
+                "text": "Prithviraj Sen, Galileo Mark Namata, Mustafa Bilgic, Lise Getoor, Brian Gallagher, and Tina Eliassi-Rad. \"Collective Classification in Network Data.\" AI Magazine. 2008."
             }
         ]
 }

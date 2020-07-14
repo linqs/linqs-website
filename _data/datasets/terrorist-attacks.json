@@ -10,8 +10,8 @@
     "references":
         [
             {
-                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2006/zhao:sna06/zhaosna06.pdf",
-                "text": "Bin Zhao, et. al. \"Entity and Relationship Labeling in Affiliation Networks.\" ICML. 2006."
+                "link": "https://linqs.github.io/linqs-website/assets/resources/zhao-sna06.pdf",
+                "text": "Bin Zhao, et. al. \"Event Classification and Relationship Labeling in Affiliation Networks.\" ICML. 2006."
             }
         ]
 }
