@@ -87,18 +87,29 @@ window.linqs.datasets.index = function(pub, id) {
 }
 
 window.linqs.datasets.bibtex = function(pub, id) {
-    window.linqs.datasets.index(pub, id)
-    return window.linqs.pubs.bibtex(pub)
+    window.linqs.datasets.index(pub, id);
+    return window.linqs.pubs.bibtex(pub);
 };
+
+window.linqs.datasets.size = function (size) {
+    let sizes = ["B", "K", "M", "G", "T"];
+
+    let i = 0;
+    while (i < sizes.length && size >= 1000) {
+        size = size / 1000.0;
+        i++;
+    }
+
+    return size.toFixed(1).toString().replace('.0', '') + sizes[i];
+}
 
 window.linqs.datasets.makeFullDataset = function(dataset) {
     let title = dataset['title'];
 
-    let citation = dataset['citation'];
     let citationKey = dataset['citation-key'];
 
-    let pub = window.linqs.datapubs.pubs[citationKey]
-    citation = window.linqs.datasets.bibtex(pub, citationKey)
+    let pub = window.linqs.datapubs.pubs[citationKey];
+    let citation = window.linqs.datasets.bibtex(pub, citationKey);
 
     let description = dataset['description'];
 
@@ -122,7 +133,7 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
         let text = download["text"];
         let link = download['download-link'];
         let md5 = download['md5'];
-        let size = download['size']
+        let size = window.linqs.datasets.size(download['size']);
 
         let downloadTemplate = `
             <div class='download-full'>
@@ -187,7 +198,7 @@ window.linqs.datasets.makeStubDatasets = function() {
         downloadInfo.forEach(function(download, i) {
             let text = download["text"];
             let link = download['download-link'];
-            let size = download['size']
+            let size = window.linqs.datasets.size(download['size']);
 
             let downloadTemplate = `
                 <div class='download-short'>
