@@ -1,12 +1,17 @@
 {
-    "key": "citeseer-entity-resolution",
     "title": "CiteSeer for Entity Resolution",
+    "short-description": "<p>The CiteSeer dataset contains machine learning publications with author references. It is commonly used for entity resolution.</p>",
     "description": "<p>The CiteSeer dataset contains 1504 machine learning documents with 2892 author references to 165 author entities. For this dataset, the only attribute information available is author name. The full last name is always given, and in some cases the author’s full first name and middle name are given and other times only the initials are given.</p>",
-    "downloadLink": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-entity-resolution/citeseer-entity-resolution.tar.gz",
-    "md5": "93148fe10eeb408721c86cf0228ef42f",
-    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
-    "citation": "@inproceedings{nr,title={The Network Data Repository with Interactive Graph Analytics and Visualization},author={Ryan A. Rossi and Nesreen K. Ahmed},booktitle={AAAI},url={http://networkrepository.com},year={2015}}",
-    "size": 92,
+    "download-info":
+        [
+            {
+                "text": "download",
+                "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-entity-resolution/citeseer-entity-resolution.tar.gz",
+                "md5": "93148fe10eeb408721c86cf0228ef42f",
+                "size": 92,
+            }
+        ],
+    "citation-key": "rossi-AAAI15",
     "references":
         [
             {

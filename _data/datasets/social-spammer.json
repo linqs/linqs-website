@@ -1,12 +1,17 @@
 {
-    "key": "social-spammers",
     "title": "Social Spammers",
+    "short-description": "<p>The Social Spammers dataset consists of millions of users and links between users, with each user classified as a spammer or not. It is commonly used for collective classification.</p>",
     "description": "<p>This anonymized dataset was collected from the Tagged.com social network website. It contains 5.6 million users and 858 million links between them. Each user has 4 features and is manually labeled as \"spammer\" or \"not spammer\". Each link represents an action between two users and includes a timestamp and a type. The network contains 7 anonymized types of links. The original task on the dataset is to identify (i.e., classify) the spammer users based on their relational and non-relational features.</p>",
-    "downloadLink": "https://linqs-data.soe.ucsc.edu/public/datasets/social-spammer/social-spammer.tar.gz",
-    "md5": "8afa6d1c8b0e6c7cdb11331098c0b5c7",
-    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
-    "citation": "@inproceedings{fakhraei2015collective, author = {Fakhraei, Shobeir and Foulds, James and Shashanka, Madhusudana and Getoor, Lise}, title = {Collective Spammer Detection in Evolving Multi-Relational Social Networks},booktitle = {Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},series = {KDD '15},year = {2015},isbn = {978-1-4503-3664-2},location = {Sydney, NSW, Australia},pages = {1769--1778},doi = {10.1145/2783258.2788606},publisher = {ACM},}",
-    "size": 3998585,
+    "download-info":
+        [
+            {
+                "text": "download",
+                "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/social-spammer/social-spammer.tar.gz",
+                "md5": "8afa6d1c8b0e6c7cdb11331098c0b5c7",
+                "size": 3998585,
+            }
+        ],
+    "citation-key": "fakhraei-kdd15",
     "references":
         [
             {

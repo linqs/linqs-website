@@ -1,12 +1,17 @@
 {
-    "key": "drug-target-interaction",
     "title": "Drug-Target Interaction",
+    "short-description": "<p>The Drug-Target Interaction dataset contains information about drugs and targets and similarity information. It can be used to predict interactions between drugs and targets collectively.</p>",
     "description": "<p>This dataset contains interactions between drugs and targets collected from DrugBank, KEGG Drug, DCDB, and Matador. It was originally collected by <a href=\"https://www.liebertpub.com/doi/abs/10.1089/cmb.2010.0213\">Perlman et al</a>. It contains 315 drugs, 250 targets, 1,306 drug-target interactions, 5 types of drug-drug similarities, and 3 types of target-target similarities. Drug-drug similarities include Chemical-based, Ligand-based, Expression-based, Side-effect-based, and Annotation-based similarities. Target-target similarities include Sequence-based, Protein-protein interaction network-based, and Gene Ontology-based similarities. The original task on the dataset is to predict new interactions between drugs and targets based on different types of similarities in the network.</p>",
-    "downloadLink": "https://linqs-data.soe.ucsc.edu/public/datasets/drug-target-interaction/drug-target-interaction.tar.gz",
-    "md5": "b9ba7709bb49768f67645b31feccc0ed",
-    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
-    "citation": "@article{fakharei2014network, title={Network-Based Drug-Target Interaction Prediction with Probabilistic Soft Logic}, author={Fakhraei, Shobeir and Huang, Bert and Raschid, Louiqa and Getoor, Lise}, journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics}, year={2014},}",
-    "size": 1477025,
+    "download-info":
+        [
+            {
+                "text": "download",
+                "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/drug-target-interaction/drug-target-interaction.tar.gz",
+                "md5": "b9ba7709bb49768f67645b31feccc0ed",
+                "size": 1477025,
+            }
+        ],
+    "citation-key": "fakhraei-tcbb14",
     "references":
         [
             {

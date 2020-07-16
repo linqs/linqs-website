@@ -1,12 +1,17 @@
 {
-    "key": "stance-classification",
     "title": "Stance Classification",
+    "short-description": "<p>The Stance Classification dataset consists of threads of posts by users on debate topics. A common objective is classification of the user's stance toward the topic.</p>",
     "description": "<p>This dataset contains threads containing short user posts on debate topics across multiple online forums. The well-studied forums are 4Forums.com (on average 340 users per topic and 19 posts per user) and CreateDebate.org (310 users per topic and 4 posts per user). The key task is classifying the users’ stances towards discussion topics and classifying the polarity of replies between users. 4Forums.com has crowd-sourced annotations with high inter-annotator agreement for stances of users in each topic and dis/agreement between users that reply to one another. CreateDebate.org supports self-labeling for stance and dis/agreement, but for each post authored by a user.</p>",
-    "downloadLink": "https://nlds.soe.ucsc.edu/iac2",
-    "md5": "n/a",
-    "img": "https://linqs.soe.ucsc.edu/sites/default/files/linqs_logo_1.png",
-    "citation": "@inproceedings{abbott2016LREC, title={Internet Argument Corpus 2.0: An SQL schema for Dialogic Social Media and the Corpora to go with it}, author={Abbot,Rob and Ecker,Brian and Anand,Pranav and Walker, Marilyn}, booktitle={In Language Resources and Evaluation Conference (LREC)}, year={2016},publisher={European Language Resources Association},}",
-    "size": 5164591,
+    "download-info":
+        [
+            {
+                "text": "download",
+                "download-link": "https://nlds.soe.ucsc.edu/iac2",
+                "md5": "n/a",
+                "size": 5164591,
+            }
+        ],
+    "citation-key": "abbot-lrec16",
     "references":
         [
             {

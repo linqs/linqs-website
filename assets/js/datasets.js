@@ -1,36 +1,105 @@
 'use strict';
 
 window.linqs = window.linqs || {};
+window.linqs.pubs = window.linqs.pubs || {};
 window.linqs.datasets = window.linqs.datasets || {};
-window.linqs.datasets.datasets = window.linqs.datasets.datasets || {};
+window.linqs.datapubs = window.linqs.datapubs || {};
 
-window.linqs.datasets.renderPage = function() {
+// Modified from pubs.js
+window.linqs.datasets.index = function(pub, id) {
+    let authors = {};
 
-    console.log(3)
+    pub['_id'] = id;
 
+    // Cleanup the venue.
 
-    let datasetID = location.hash.trim().replace(/^#/, '');
-
-    if (datasetID === '')
-        window.linqs.datasets.makeStubDatasets();
-    else {
-        if (window.linqs.datasets.datasets.hasOwnProperty(datasetID)) {
-            window.linqs.datasets.makeFullDataset(window.linqs.datasets.datasets[datasetID]);
-        }
-        else {
-            window.linqs.datasets.makeStubDatasets();
-        }
+    if (!pub.venue) {
+        pub.venue = 'Unknown Venue';
     }
+
+    // Check if this is a known venue.
+    if (pub.venue in window.linqs.pubs.venues) {
+        let knownVenue = window.linqs.pubs.venues[pub.venue];
+
+        // Set a special id, and add the shortname to the display name.
+        pub['_venue'] = knownVenue.id;
+
+        if (knownVenue.shortname) {
+            pub['_venue_shortname'] = knownVenue.shortname;
+            pub.venue += ` (${knownVenue.shortname})`;
+        } else {
+            pub['_venue_shortname'] = pub.venue;
+        }
+    } else {
+        // Just use the clean venue as the venue id.
+        pub['_venue'] = window.linqs.pubs.cleanId(pub.venue);
+        pub['_venue_shortname'] = pub.venue;
+    }
+
+    // Cleanup the type
+
+    // Translate types from our general types, to bibtex.
+    if (pub.type == 'conference') {
+        pub.type = 'inproceedings';
+    } else if (pub.type == 'tutorial') {
+        pub.type = 'misc';
+
+        // Put a note in the bibtex for tutorials.
+        if (!pub.note) {
+            pub.note = '';
+        }
+        pub.note = (pub.note.trim() + ' Tutorial').trim();
+    }
+
+    // Cleanup the year.
+
+    if (!pub.year) {
+        pub.year = 0;
+    }
+    pub.year = parseInt(pub.year, 10);
+
+    // Cleanup and index the authors.
+
+    pub['_authorIDs'] = [];
+    pub.authors.forEach(function(authorName) {
+        authorName = window.linqs.pubs.cleanText(authorName);
+
+        let nameParts = authorName.split(' ');
+        let authorId = window.linqs.pubs.cleanId(authorName);
+
+        pub['_authorIDs'].push(authorId);
+
+        if (authorId in authors) {
+            return;
+        }
+
+        authors[authorId] = {
+            'displayName': authorName,
+            'firstName': nameParts[0],
+            'lastName': nameParts[nameParts.length - 1],
+            'sortName': `${nameParts[nameParts.length - 1]}-${nameParts[0]}-${authorId}`.toLowerCase(),
+        }
+    });
+
+    pub['_sortAuthor'] = authors[pub['_authorIDs'][0]]['sortName']
+
+    window.linqs.pubs.authors = authors;
 }
 
+window.linqs.datasets.bibtex = function(pub, id) {
+    window.linqs.datasets.index(pub, id)
+    return window.linqs.pubs.bibtex(pub)
+};
+
 window.linqs.datasets.makeFullDataset = function(dataset) {
-    let image = dataset['img'];
     let title = dataset['title'];
-    let size = dataset['size'];
-    let download = dataset['downloadLink'];
-    let hash = dataset['md5'];
 
     let citation = dataset['citation'];
+    let citationKey = dataset['citation-key'];
+
+    let pub = window.linqs.datapubs.pubs[citationKey]
+    citation = window.linqs.datasets.bibtex(pub, citationKey)
+
     let description = dataset['description'];
 
     let references = dataset['references'];
@@ -46,93 +115,125 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
         referencesHTML += referenceTemplate;
     });
 
+    let downloadInfo = dataset['download-info'];
+    let downloadInfoHTML = '';
+
+    downloadInfo.forEach(function(download, i) {
+        let text = download["text"];
+        let link = download['download-link'];
+        let md5 = download['md5'];
+        let size = download['size']
+
+        let downloadTemplate = `
+            <div class='download-full'>
+                <div class='download-link'>
+                    <p><a href='${link}'>${text}</a></p>
+                </div>
+                <div class='md5'
+                    <p>${md5}</p>
+                </div>
+                <div class='size'
+                    <p>${size}</p>
+                </div>
+            </div>
+        `;
+
+        downloadInfoHTML += downloadTemplate;
+
+    });
 
     let templateString = `
         <div class='dataset-full'>
             <div class='top'>
                 <div class='title'>
-                    <h2>${title}</h2>
+                    <h1>${title}</h1>
                 </div>
-                <div class='image'>
-                    <img src='${image}'/>
-                </div>
-                <div class='stats'>
-                    <div class='size'>
-                        <label>Size</label>
-                        <span>${size}</span>
-                    </div>
-                    <div class='download'>
-                        <p><a href=${download}>Download</a></p>
-                    </div>
-                    <div class='hash'>
-                        <label>md5</label>
-                        <code>${hash}</code>
-                    </div>
+                <div class='downloads-full'
+                    ${downloadInfoHTML}
                 </div>
             </div>
             <div class='citation'>
-                <pre>
-                    ${citation}
-                </pre>
+                <pre>${citation}</pre>
             </div>
             <div class='description'>
                 ${description}
             </div>
             <div class='references'>
+                <div class='related'>
+                    <h2>Related Papers</h2>
+                </div>
                 ${referencesHTML}
             </div>
         </div>
     `;
 
-    document.querySelector('.datasets-list').innerHTML = templateString;
-}
+    document.querySelector('.datasets').innerHTML = templateString;
+};
 
 window.linqs.datasets.makeStubDatasets = function() {
     let stubs = '';
 
-    Object.keys(window.linqs.datasets.datasets).forEach(function(key) {
+    Object.keys(window.linqs.datasets.datasets).sort().forEach(function(key) {
 
         let dataset = window.linqs.datasets.datasets[key];
 
-        let image = dataset['img'];
         let title = dataset['title'];
-        let size = dataset['size'];
-        let download = dataset['downloadLink'];
-        let hash = dataset['md5'];
+        let shortDescription = dataset['short-description'];
         let link = '#' + key;
+
+        let downloadInfo = dataset['download-info'];
+        let downloadInfoHTML = '';
+
+        downloadInfo.forEach(function(download, i) {
+            let text = download["text"];
+            let link = download['download-link'];
+            let size = download['size']
+
+            let downloadTemplate = `
+                <div class='download-short'>
+                    <div class='download-link'>
+                        <p><a href='${link}'>${text}</a></p>
+                    </div>
+                    <div class='size'
+                        <p>${size}</p>
+                    </div>
+                </div>
+            `;
+
+            downloadInfoHTML += downloadTemplate;
+
+        });
 
         stubs += `
             <div class='dataset-stub'>
-                <div class='top'>
-                    <div class='title'>
-                        <h2><a href='${link}'>${title}</a></h2>
-                    </div>
-                    <div class='image'>
-                        <img src='${image}'/>
-                    </div>
-                    <div class='stats'>
-                        <div class='size'>
-                            <label>Size</label>
-                            <span>${size}</span>
-                        </div>
-                        <div class='download'>
-                            <p><a href=${download}>Download</a></p>
-                        </div>
-                        <div class='hash'>
-                            <label>md5</label>
-                            <code>${hash}</code>
-                        </div>
-                    </div>
+                <div class='title'>
+                    <h1><a href='${link}'>${title}</a></h1>
+                </div>
+                <div class='short-description'>
+                    ${shortDescription}
+                </div>
+                <div class='downloads-short'
+                    ${downloadInfoHTML}
                 </div>
             </div>
         `;
     });
 
-    document.querySelector('.datasets-list').innerHTML = stubs;
-}
+    document.querySelector('.datasets').innerHTML = stubs;
+};
 
 window.linqs.datasets.display = function() {
-    console.log(1)
-    window.linqs.datasets.renderPage()
-    console.log(2)
+
+    let datasetID = location.hash.trim().replace(/^#/, '');
+
+    if (datasetID === '')
+        window.linqs.datasets.makeStubDatasets();
+    else {
+        if (window.linqs.datasets.datasets.hasOwnProperty(datasetID)) {
+            window.linqs.datasets.makeFullDataset(window.linqs.datasets.datasets[datasetID]);
+        }
+        else {
+            window.linqs.datasets.makeStubDatasets();
+        }
+    }
 };

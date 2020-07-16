@@ -4,14 +4,22 @@ layout: default
 
 <link rel="stylesheet" href="{{ "/assets/style/datasets.css" | relative_url }}">
 <script type="text/javascript" src="{{ "/assets/js/datasets.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/pubs.js" | relative_url }}"></script>
 
-<div class="datasets-list">
-</div>
+<body>
+    <p>This data is made available by the LINQS Lab. Please make the appropriate citation.</p>
+    <div class="datasets">
+    </div>
+</body>
 
 <script>
-    // Load all the datasets as JS.
     window.linqs = window.linqs || {};
+    window.linqs.pubs = window.linqs.pubs || {};
+    window.linqs.datapubs = window.linqs.datapubs || {};
     window.linqs.datasets = window.linqs.datasets || {};
+
+    window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
+    window.linqs.datapubs.pubs = {{ site.data.datapubs | jsonify }};
     window.linqs.datasets.datasets = {{ site.data.datasets | jsonify }};
     window.linqs.datasets.baseURL = "{{ '/' | absolute_url }}";
 </script>
