@@ -5,7 +5,7 @@
     "download-info":
         [
             {
-                "text": "download",
+                "text": "Download",
                 "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/webkb/webkb.tar.gz",
                 "md5": "6f5fb9e4334c031dbd91d178a47abcff",
                 "size": 131652,

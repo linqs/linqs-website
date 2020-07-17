@@ -5,7 +5,7 @@
     "download-info":
         [
             {
-                "text": "download",
+                "text": "Download",
                 "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/terrorists/terrorists.tar.gz",
                 "md5": "d7001dc40c52688a06b5bbf11f808599",
                 "size": 226967,

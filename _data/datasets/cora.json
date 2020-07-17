@@ -5,7 +5,7 @@
     "download-info":
         [
             {
-                "text": "download",
+                "text": "Download",
                 "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/cora/cora.tar.gz",
                 "md5": "b8b86a8e844eef1ef0ee1ff244f8f6d9",
                 "size": 168206,

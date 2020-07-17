@@ -5,7 +5,7 @@
     "download-info":
         [
             {
-                "text": "download",
+                "text": "External Download",
                 "download-link": "https://nlds.soe.ucsc.edu/iac2",
                 "md5": "n/a",
                 "size": 2673590200,

@@ -100,7 +100,7 @@ window.linqs.datasets.size = function (size) {
         i++;
     }
 
-    return size.toFixed(1).toString().replace('.0', '') + sizes[i];
+    return '(' + size.toFixed(1).toString().replace('.0', '') + sizes[i] + ')';
 }
 
 window.linqs.datasets.makeFullDataset = function(dataset) {
@@ -112,6 +112,30 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
     let citation = window.linqs.datasets.bibtex(pub, citationKey);
 
     let description = dataset['description'];
+
+    let downloadInfo = dataset['download-info'];
+    let downloadInfoHTML = '';
+
+    downloadInfo.forEach(function(download, i) {
+        let text = download["text"];
+        let link = download['download-link'];
+        let md5 = download['md5'];
+        let size = window.linqs.datasets.size(download['size']);
+
+        let downloadTemplate = `
+            <div class='download-full'>
+                <div class='download-link'>
+                    <a href='${link}'>${text} ${size}</a>
+                </div>
+                <div class='hash'>
+                    <p>${md5}</p>
+                </div>
+            </div>
+        `;
+
+        downloadInfoHTML += downloadTemplate;
+
+    });
 
     let references = dataset['references'];
     let referencesHTML = '';
@@ -126,33 +150,6 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
         referencesHTML += referenceTemplate;
     });
 
-    let downloadInfo = dataset['download-info'];
-    let downloadInfoHTML = '';
-
-    downloadInfo.forEach(function(download, i) {
-        let text = download["text"];
-        let link = download['download-link'];
-        let md5 = download['md5'];
-        let size = window.linqs.datasets.size(download['size']);
-
-        let downloadTemplate = `
-            <div class='download-full'>
-                <div class='download-link'>
-                    <p><a href='${link}'>${text}</a></p>
-                </div>
-                <div class='md5'
-                    <p>${md5}</p>
-                </div>
-                <div class='size'
-                    <p>${size}</p>
-                </div>
-            </div>
-        `;
-
-        downloadInfoHTML += downloadTemplate;
-
-    });
-
     let templateString = `
         <div class='dataset-full'>
             <div class='top'>
@@ -163,11 +160,12 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
                     ${downloadInfoHTML}
                 </div>
             </div>
-            <div class='citation'>
-                <pre>${citation}</pre>
-            </div>
             <div class='description'>
                 ${description}
+            </div>
+            <div class='citation'>
+                <p>If you use this dataset, please use this citation.</p>
+                <pre>${citation}</pre>
             </div>
             <div class='references'>
                 <div class='related'>
@@ -182,14 +180,14 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
 };
 
 window.linqs.datasets.makeStubDatasets = function() {
-    let stubs = '';
+    let stubs = '<p>These datasets are made available and are often used by the LINQS Lab in our publications. We use them to test new, interesting methods to solve collective prediction problems, and we hope you will find them useful too!</p>';
 
     Object.keys(window.linqs.datasets.datasets).sort().forEach(function(key) {
 
         let dataset = window.linqs.datasets.datasets[key];
 
         let title = dataset['title'];
-        let shortDescription = dataset['short-description'];
+        let shortDescription = dataset['description'];
         let link = '#' + key;
 
         let downloadInfo = dataset['download-info'];
@@ -200,13 +198,16 @@ window.linqs.datasets.makeStubDatasets = function() {
             let link = download['download-link'];
             let size = window.linqs.datasets.size(download['size']);
 
+            let md5 = download['md5'];
+            console.log(md5)
+
             let downloadTemplate = `
                 <div class='download-short'>
                     <div class='download-link'>
-                        <p><a href='${link}'>${text}</a></p>
+                        <a href='${link}'>${text} ${size}</a>
                     </div>
-                    <div class='size'
-                        <p>${size}</p>
+                    <div class='hash'>
+                        <p>${md5}</p>
                     </div>
                 </div>
             `;

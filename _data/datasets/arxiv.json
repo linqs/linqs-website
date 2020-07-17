@@ -5,7 +5,7 @@
     "download-info":
         [
             {
-                "text": "download",
+                "text": "Download",
                 "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/arxiv/arxiv.tar.gz",
                 "md5": "4c720cfeaebdbc384943a8fbdadf792e",
                 "size": 1194668,

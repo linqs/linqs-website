@@ -5,7 +5,7 @@
     "download-info":
         [
             {
-                "text": "download",
+                "text": "Download",
                 "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/terrorist-attacks/terrorist-attacks.tar.gz",
                 "md5": "047fdd1a2dd5f480b623223dcb17ae6e",
                 "size": 55276,
