@@ -154,7 +154,7 @@ def validateEntry(filename, data, venues, seenResources):
 
     for requiredKey in REQUIRED_KEYS:
         if (requiredKey not in data):
-            errors.append("Could not find requried key ('%s') in %s." % (requiredKey, filename))
+            errors.append("Could not find required key ('%s') in %s." % (requiredKey, filename))
 
     if ('type' in data and data['type'] not in ALLOWED_TYPES):
         errors.append("Unknown 'type' ('%s') in %s." % (data['type'], filename))
