@@ -14,6 +14,7 @@ THIS_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 ROOT_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
 RESOURCES_DIR = os.path.abspath(os.path.join(ROOT_DIR, 'assets', 'resources'))
 PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'pubs'))
+DATAPUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datapubs'))
 VENUES_PATH = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'config', 'venues.json'))
 
 ALLOWED_TYPES = {'article', 'book', 'conference', 'inbook', 'phdthesis', 'techreport', 'tutorial', 'unpublished'}
@@ -198,8 +199,18 @@ def checkPubs():
 
     venues = loadVenues()
 
-    for dirent in sorted(os.listdir(PUBS_DIR)):
-        path = os.path.join(PUBS_DIR, dirent)
+    pubs = os.listdir(PUBS_DIR)
+    pubs += os.listdir(DATAPUBS_DIR)
+
+    #for dirent in sorted(os.listdir(PUBS_DIR)):
+    for dirent in sorted(pubs):
+        pubs_path = os.path.join(PUBS_DIR, dirent)
+        datapubs_path = os.path.join(DATAPUBS_DIR, dirent)
+
+        if (os.path.isfile(pubs_path)):
+            path = pubs_path
+        else:
+            path = datapubs_path
 
         if (not os.path.isfile(path) or not path.endswith('.json')):
             errors.append("All items in the pubs directory (%s) should be .json files, found '%s'." % (PUBS_DIR, dirent))
