@@ -13,6 +13,10 @@
     "address": "Virtual",
     "links": [
         {
+            "label": "paper",
+            "href": "/assets/resources/miller-mlg20.pdf"
+        },
+        {
             "label": "video",
             "href": "https://www.youtube.com/watch?v=u1VWK70BlbY"
         }
