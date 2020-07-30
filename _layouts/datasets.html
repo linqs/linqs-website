@@ -4,7 +4,7 @@ layout: default
 
 <link rel="stylesheet" href="{{ "/assets/style/datasets.css" | relative_url }}">
 <script type="text/javascript" src="{{ "/assets/js/datasets.js" | relative_url }}"></script>
-<script type="text/javascript" src="{{ "/assets/js/pubs.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/utils.js" | relative_url }}"></script>
 
 <body>
 	<div class="datasets">
@@ -13,10 +13,9 @@ layout: default
 
 <script>
 	window.linqs = window.linqs || {};
-	window.linqs.pubs = window.linqs.pubs || {};
 	window.linqs.datasets = window.linqs.datasets || {};
+	window.linqs.utils = window.linqs.utils || {};
 
-	window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
 	window.linqs.datasets.pubs = {{ site.data.datasets.pubs | jsonify }};
 	window.linqs.datasets.metadata = {{ site.data.datasets.metadata | jsonify }};
 	window.linqs.datasets.baseURL = "{{ '/' | absolute_url }}";

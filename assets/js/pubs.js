@@ -2,6 +2,7 @@
 
 window.linqs = window.linqs || {};
 window.linqs.pubs = window.linqs.pubs || {};
+window.linqs.utils = window.linqs.utils || {};
 
 window.linqs.pubs.SORT_KEYS = ['!year', 'title', '_sortAuthor', 'venue'];
 window.linqs.pubs.ICON_REL_PATH = '/assets/style/vendor/remixicon.symbol.svg';
@@ -15,24 +16,6 @@ window.linqs.pubs.ICON_MAP = {
 	'link': 'link',
 	'video': 'video',
 };
-
-window.linqs.pubs.BIBTEX_SORTED_KEYS = [
-	// Core.
-	'title', 'author', 'booktitle', 'journal', 'year', 'publisher',
-
-	// Type-dependent.
-	'pages', 'volume', 'number', 'edition', 'editor', 'address',
-
-	// Extra.
-	'chapter', 'organization', 'doi', 'note',
-
-	// Variable size.
-	'keywords', 'abstract',
-];
-
-window.linqs.pubs.BIBTEX_OPTIONAL_KEYS = [
-	'publisher', 'pages', 'volume', 'number', 'edition', 'editor', 'address', 'chapter', 'organization', 'doi', 'note'
-];
 
 window.linqs.pubs.indexed = false;
 window.linqs.pubs.authors = {};
@@ -373,10 +356,13 @@ window.linqs.pubs.renderPaper = function(pub) {
 		`;
 	}
 
+	let authors = window.linqs.pubs.listAuthors(pub, true);
+	let bibtex = window.linqs.utils.bibtex(pub, authors, pub['_id'])
+
 	entry += `
 				<tr>
 					<td>Bibtex</td>
-					<td><pre><code class='bibtex'>${window.linqs.pubs.bibtex(pub)}</code></pre></td>
+					<td><pre><code class='bibtex'>${bibtex}</code></pre></td>
 				</tr>
 	`;
 
@@ -418,45 +404,6 @@ window.linqs.pubs.openBibtexTab = function(key) {
 		</html>
 	`);
 	newTab.document.close();
-};
-
-window.linqs.pubs.bibtex = function(pub) {
-	let fields = [
-		['author', window.linqs.pubs.listAuthors(pub, true)],
-		['title', pub.title],
-		['year', pub.year],
-	];
-
-	if (['inproceedings', 'conference', 'inbook', 'misc'].includes(pub.type)) {
-		fields.push(['booktitle', pub.venue]);
-	} else if (pub.type == 'journal') {
-		fields.push(['journal', pub.venue]);
-	}
-
-	window.linqs.pubs.BIBTEX_OPTIONAL_KEYS.forEach(function(key) {
-		if (pub[key]) {
-			fields.push([key, pub[key]]);
-		}
-	});
-
-	fields.sort(function(a, b) {
-		let aIndex = window.linqs.pubs.BIBTEX_SORTED_KEYS.indexOf(a[0]);
-		let bIndex = window.linqs.pubs.BIBTEX_SORTED_KEYS.indexOf(b[0]);
-
-		if (aIndex == -1 || bIndex == -1) {
-			return 0;
-		}
-
-		return aIndex - bIndex;
-	});
-
-	let text = `@${pub.type}{${pub._id.replace('-', ':')},`
-	fields.forEach(function(field) {
-		text += `\n	${field[0]} = {${field[1]}},`
-	});
-	text += '\n}'
-
-	return text;
 };
 
 // Look at the hash and figure out what entries we should be showing.

@@ -4,6 +4,8 @@ layout: default
 
 <link rel="stylesheet" href="{{ "/assets/style/pubs.css" | relative_url }}">
 <script type="text/javascript" src="{{ "/assets/js/pubs.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/utils.js" | relative_url }}"></script>
+
 
 <div class="pubs-list">
 </div>
@@ -12,6 +14,8 @@ layout: default
 	// Load all the pubs as JS.
 	window.linqs = window.linqs || {};
 	window.linqs.pubs = window.linqs.pubs || {};
+	window.linqs.utils = window.linqs.utils || {};
+
 	window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
 	window.linqs.pubs.pubs = {{ site.data.pubs | jsonify }};
 	window.linqs.pubs.baseURL = "{{ '/' | absolute_url }}";

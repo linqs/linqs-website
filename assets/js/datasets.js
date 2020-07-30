@@ -1,103 +1,26 @@
 'use strict';
 
 window.linqs = window.linqs || {};
-window.linqs.pubs = window.linqs.pubs || {};
+window.linqs.utils = window.linqs.utils || {};
 window.linqs.datasets = window.linqs.datasets || {};
 window.linqs.datasets.metadata = window.linqs.datasets.metadata || {};
 window.linqs.datasets.pubs = window.linqs.datasets.pubs || {};
 
-
-window.linqs.datasets.index = function(pub, id) {
-	let authors = {};
-
-	pub['_id'] = id;
-
-	// Cleanup the venue.
-
-	if (!pub.venue) {
-		pub.venue = 'Unknown Venue';
-	}
-
-	// Check if this is a known venue.
-	if (pub.venue in window.linqs.pubs.venues) {
-		let knownVenue = window.linqs.pubs.venues[pub.venue];
-
-		// Set a special id, and add the shortname to the display name.
-		pub['_venue'] = knownVenue.id;
-
-		if (knownVenue.shortname) {
-			pub['_venue_shortname'] = knownVenue.shortname;
-			pub.venue += ` (${knownVenue.shortname})`;
-		} else {
-			pub['_venue_shortname'] = pub.venue;
-		}
-	} else {
-		// Just use the clean venue as the venue id.
-		pub['_venue'] = window.linqs.pubs.cleanId(pub.venue);
-		pub['_venue_shortname'] = pub.venue;
-	}
-
-	// Cleanup the type
-
-	// Translate types from our general types, to bibtex.
-	if (pub.type == 'conference') {
-		pub.type = 'inproceedings';
-	} else if (pub.type == 'tutorial') {
-		pub.type = 'misc';
-
-		// Put a note in the bibtex for tutorials.
-		if (!pub.note) {
-			pub.note = '';
-		}
-		pub.note = (pub.note.trim() + ' Tutorial').trim();
-	}
-
-	// Cleanup the year.
-
-	if (!pub.year) {
-		pub.year = 0;
-	}
-	pub.year = parseInt(pub.year, 10);
-
-	// Cleanup and index the authors.
-
-	pub['_authorIDs'] = [];
-	pub.authors.forEach(function(authorName) {
-		authorName = window.linqs.pubs.cleanText(authorName);
-
-		let nameParts = authorName.split(' ');
-		let authorId = window.linqs.pubs.cleanId(authorName);
-
-		pub['_authorIDs'].push(authorId);
-
-		if (authorId in authors) {
-			return;
-		}
-
-		authors[authorId] = {
-			'displayName': authorName,
-			'firstName': nameParts[0],
-			'lastName': nameParts[nameParts.length - 1],
-			'sortName': `${nameParts[nameParts.length - 1]}-${nameParts[0]}-${authorId}`.toLowerCase(),
-		}
-	});
-
-	pub['_sortAuthor'] = authors[pub['_authorIDs'][0]]['sortName']
-
-	window.linqs.pubs.authors = authors;
-}
-
 window.linqs.datasets.makeLink = function(path) {
 	if (path.startsWith('/')) {
-		return window.linqs.pubs.baseURL.replace(/\/$/, '') + path;
+		return window.linqs.datasets.baseURL.replace(/\/$/, '') + path;
 	}
 
 	return path;
 };
 
+window.linqs.datasets.listAuthors = function(pub) {
+	return "Kyle";
+};
+
 window.linqs.datasets.bibtex = function(pub, id) {
-	window.linqs.datasets.index(pub, id);
-	return window.linqs.pubs.bibtex(pub);
+	let authors = window.linqs.datasets.listAuthors(pub);
+	return window.linqs.utils.bibtex(pub, authors, id);
 };
 
 window.linqs.datasets.size = function(size) {
@@ -109,7 +32,6 @@ window.linqs.datasets.size = function(size) {
 		i++;
 	}
 
-	// new RegExp(".*0")
 	return size.toFixed(2).toString().replace(/0+$/, '') + " " +sizes[i];
 }
 
@@ -154,7 +76,7 @@ window.linqs.datasets.makeReferences = function(references) {
 	let referencesHTML = '';
 
 	references.forEach(function(reference, i) {
-		let refLink = reference['href'];
+		let refLink = window.linqs.datasets.makeLink(reference['href']);
 		let refText = reference['text'];
 		let referenceTemplate = `
 			<p><a href='${refLink}'>${refText}</a></p>
