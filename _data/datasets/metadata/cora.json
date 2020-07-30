@@ -12,11 +12,11 @@
 	"citation": "sen-aim08",
 	"references": [
 		{
-			"href": "https://linqs.github.io/linqs-website/assets/resources/lu-icml03.pdf",
+			"href": "/assets/resources/lu-icml03.pdf",
 			"text": "Qing, Lu and Lise Getoor. \"Link-based Text Classification.\" ICML. 2003."
 		},
 		{
-			"href": "https://linqs.github.io/linqs-website/assets/resources/sen-aim08.pdf",
+			"href": "/assets/resources/sen-aim08.pdf",
 			"text": "Prithviraj Sen, Galileo Mark Namata, Mustafa Bilgic, Lise Getoor, Brian Gallagher, and Tina Eliassi-Rad. \"Collective Classification in Network Data.\" AI Magazine. 2008."
 		}
 	]

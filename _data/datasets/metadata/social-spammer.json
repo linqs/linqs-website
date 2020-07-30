@@ -14,7 +14,7 @@
 	"references":
 		[
 			{
-				"href": "https://linqs.github.io/linqs-website/assets/resources/fakhraei-kdd15.pdf",
+				"href": "/assets/resources/fakhraei-kdd15.pdf",
 				"text": "Shobeir Fakhraei, James Foulds, Madhusudana Shashanka, and Lise Getoor. Collective Spammer Detection in Evolving Multi-Relational Social Networks. International Conference on Knowledge Discovery and Data Mining (KDD). 2015."
 			}
 		]

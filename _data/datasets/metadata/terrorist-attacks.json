@@ -14,7 +14,7 @@
 	"references":
 		[
 			{
-				"href": "https://linqs.github.io/linqs-website/assets/resources/zhao-sna06.pdf",
+				"href": "/assets/resources/zhao-sna06.pdf",
 				"text": "Bin Zhao, et. al. \"Event Classification and Relationship Labeling in Affiliation Networks.\" ICML. 2006."
 			}
 		]

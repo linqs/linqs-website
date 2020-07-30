@@ -14,7 +14,7 @@
 	"references":
 	[
 		{
-			"href": "https://linqs.github.io/linqs-website/assets/resources/bhattacharya-tkdd07.pdf",
+			"href": "/assets/resources/bhattacharya-tkdd07.pdf",
 			"text": "Indrajit Bhattacharya and Lise Getoor. \"Collective Entity Resolution in Relational Data.\" ACM Transactions on Knowledge Discovery from Data (TKDD). 2007."
 		}
 	]

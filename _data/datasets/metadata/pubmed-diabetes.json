@@ -14,7 +14,7 @@
 	"references":
 		[
 			{
-				"href": "https://linqs.github.io/linqs-website/assets/resources/namata-mlg12.pdf",
+				"href": "/assets/resources/namata-mlg12.pdf",
 				"text": "Galileo Mark Namata, Ben London, Lise Getoor, and Bert Huang. \"Query-Driven Active Surveying for Collective Classification.\" International Workshop on Mining and Learning with Graphs (MLG). 2012."
 			}
 		]

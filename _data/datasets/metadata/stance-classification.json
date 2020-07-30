@@ -5,18 +5,19 @@
 		[
 			{
 				"text": "Request Access",
-				"download-link": "https://nlds.soe.ucsc.edu/iac2"
+				"download-link": "https://nlds.soe.ucsc.edu/iac2",
+				"size": 1
 			}
 		],
 	"citation": "abbot-lrec16",
 	"references":
 		[
 			{
-				"href": "https://linqs.github.io/linqs-website/assets/resources/sridhar-acl15.pdf",
+				"href": "/assets/resources/sridhar-acl15.pdf",
 				"text": "Dhanya Sridhar, James Foulds, Marilyn Walker, Bert Huang, and Lise Getoor. \"Joint Models of Disagreement and Stance in Online Debate.\" Annual Meeting of the Association for Computational Linguistics (ACL). 2015."
 			},
 			{
-				"href": "https://linqs.github.io/linqs-website/assets/resources/sridhar-baylearn14.pdf",
+				"href": "/assets/resources/sridhar-baylearn14.pdf",
 				"text": "Dhanya Sridhar, James Foulds, Bert Huang, Marilyn Walker, and Lise Getoor. \"Collective Classification of Stance and Disagreement in Online Debate Forums\". Bay Area Machine Learning Symposium (BayLearn). 2014."
 			}
 		]

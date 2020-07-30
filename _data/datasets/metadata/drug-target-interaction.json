@@ -12,12 +12,8 @@
 	"citation": "fakhraei-tcbb14",
 	"references": [
 		{
-			"href": "https://linqs.github.io/linqs-website/assets/resources/sridhar-bio16.pdf",
+			"href": "/assets/resources/sridhar-bio16.pdf",
 			"text": "Dhanya Sridhar, Shobeir Fakhraei, and Lise Getoor. \"A Probabilistic Approach for Collective Similarity-Based Drug-Drug Interaction Prediction.\" Bioinformatics. 2016."
-		},
-		{
-			"href": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2016/fakhraei:mlg16/",
-			"text": "Shobeir Fakhraei, Sridhar Dhanya, Jay Pujara, and Lise Getoor. \"Adaptive Neighborhood Graph Construction for Inference in Multi-Relational Networks.\" International Conference on Knowledge Discovery and Data Mining (KDD). 2016."
 		}
 	]
 }

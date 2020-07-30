@@ -14,7 +14,7 @@
 	"references":
 		[
 			{
-				"href": "https://linqs.github.io/linqs-website/assets/resources/lu-icml03.pdf",
+				"href": "/assets/resources/lu-icml03.pdf",
 				"text": "Qing, Lu and Lise Getoor. \"Link-based Text Classification.\" ICML. 2003."
 			}
 		]
