@@ -356,13 +356,10 @@ window.linqs.pubs.renderPaper = function(pub) {
 		`;
 	}
 
-	let authors = window.linqs.pubs.listAuthors(pub, true);
-	let bibtex = window.linqs.utils.bibtex(pub, authors, pub['_id'])
-
 	entry += `
 				<tr>
 					<td>Bibtex</td>
-					<td><pre><code class='bibtex'>${bibtex}</code></pre></td>
+					<td><pre><code class='bibtex'>${window.linqs.pubs.bibtex(pub)}</code></pre></td>
 				</tr>
 	`;
 
@@ -404,6 +401,12 @@ window.linqs.pubs.openBibtexTab = function(key) {
 		</html>
 	`);
 	newTab.document.close();
+};
+
+// Constructs the bibtex for an indexed pub.
+window.linqs.pubs.bibtex = function(pub) {
+	let authors = window.linqs.pubs.listAuthors(pub, true);
+	return window.linqs.utils.bibtex(pub, authors, pub['_id']);
 };
 
 // Look at the hash and figure out what entries we should be showing.

@@ -15,7 +15,20 @@ window.linqs.datasets.makeLink = function(path) {
 };
 
 window.linqs.datasets.listAuthors = function(pub) {
-	return "Kyle";
+	let authors = '';
+
+	for (let i = 0; i < pub['authors'].length; i++) {
+		let text = pub['authors'][i];
+
+		if (i == 0) {
+			authors += text;
+		} else {
+			authors += ' and ' + text;
+		}
+
+	}
+
+	return authors;
 };
 
 window.linqs.datasets.bibtex = function(pub, id) {
@@ -33,7 +46,7 @@ window.linqs.datasets.size = function(size) {
 	}
 
 	return size.toFixed(2).toString().replace(/0+$/, '') + " " +sizes[i];
-}
+};
 
 window.linqs.datasets.makeDownloadInfo = function(downloads) {
 	let downloadInfosHTML = '';
@@ -70,7 +83,7 @@ window.linqs.datasets.makeDownloadInfo = function(downloads) {
 	});
 
 	return downloadInfosHTML;
-}
+};
 
 window.linqs.datasets.makeReferences = function(references) {
 	let referencesHTML = '';
@@ -86,7 +99,7 @@ window.linqs.datasets.makeReferences = function(references) {
 	});
 
 	return referencesHTML;
-}
+};
 
 window.linqs.datasets.makeStubDatasets = function() {
 	let stubs = '<p>This page contains datasets used by the LINQS Lab and all exhibit relational structure. If you use them, please cite them accordingly.</p>';
@@ -168,8 +181,10 @@ window.linqs.datasets.display = function() {
 	let datasetID = location.hash.trim().replace(/^#/, '');
 
 	if (window.linqs.datasets.metadata.hasOwnProperty(datasetID)) {
+		console.log("1");
 		window.linqs.datasets.makeFullDataset(window.linqs.datasets.metadata[datasetID]);
 	} else {
+		console.log("2");
 		window.linqs.datasets.makeStubDatasets();
 	}
 };
