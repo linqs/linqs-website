@@ -1,24 +1,24 @@
 {
-    "type": "article",
-    "title": "Collective Classification in Network Data",
-    "authors": [
-        "Prithviraj Sen",
-        "Galileo Mark Namata",
-        "Mustafa Bilgic",
-        "Lise Getoor",
-        "Brian Gallagher",
-        "Tina Eliassi-Rad"
-    ],
-    "venue": "AI Magazine",
-    "year": "2008",
-    "publisher": "AAAI",
-    "pages": "93--106",
-    "volume": "29",
-    "number": "3",
-    "links": [
-        {
-            "label": "paper",
-            "href": "/assets/resources/sen-aim08.pdf"
-        }
-    ]
+	"type": "article",
+	"title": "Collective Classification in Network Data",
+	"authors": [
+		"Prithviraj Sen",
+		"Galileo Mark Namata",
+		"Mustafa Bilgic",
+		"Lise Getoor",
+		"Brian Gallagher",
+		"Tina Eliassi-Rad"
+	],
+	"venue": "AI Magazine",
+	"year": "2008",
+	"publisher": "AAAI",
+	"pages": "93--106",
+	"volume": "29",
+	"number": "3",
+	"links": [
+		{
+			"label": "paper",
+			"href": "/assets/resources/sen-aim08.pdf"
+		}
+	]
 }

@@ -5,244 +5,247 @@ window.linqs.pubs = window.linqs.pubs || {};
 window.linqs.datasets = window.linqs.datasets || {};
 window.linqs.datapubs = window.linqs.datapubs || {};
 
-// Modified from pubs.js
 window.linqs.datasets.index = function(pub, id) {
-    let authors = {};
+	let authors = {};
 
-    pub['_id'] = id;
+	pub['_id'] = id;
 
-    // Cleanup the venue.
+	// Cleanup the venue.
 
-    if (!pub.venue) {
-        pub.venue = 'Unknown Venue';
-    }
+	if (!pub.venue) {
+		pub.venue = 'Unknown Venue';
+	}
 
-    // Check if this is a known venue.
-    if (pub.venue in window.linqs.pubs.venues) {
-        let knownVenue = window.linqs.pubs.venues[pub.venue];
+	// Check if this is a known venue.
+	if (pub.venue in window.linqs.pubs.venues) {
+		let knownVenue = window.linqs.pubs.venues[pub.venue];
 
-        // Set a special id, and add the shortname to the display name.
-        pub['_venue'] = knownVenue.id;
+		// Set a special id, and add the shortname to the display name.
+		pub['_venue'] = knownVenue.id;
 
-        if (knownVenue.shortname) {
-            pub['_venue_shortname'] = knownVenue.shortname;
-            pub.venue += ` (${knownVenue.shortname})`;
-        } else {
-            pub['_venue_shortname'] = pub.venue;
-        }
-    } else {
-        // Just use the clean venue as the venue id.
-        pub['_venue'] = window.linqs.pubs.cleanId(pub.venue);
-        pub['_venue_shortname'] = pub.venue;
-    }
+		if (knownVenue.shortname) {
+			pub['_venue_shortname'] = knownVenue.shortname;
+			pub.venue += ` (${knownVenue.shortname})`;
+		} else {
+			pub['_venue_shortname'] = pub.venue;
+		}
+	} else {
+		// Just use the clean venue as the venue id.
+		pub['_venue'] = window.linqs.pubs.cleanId(pub.venue);
+		pub['_venue_shortname'] = pub.venue;
+	}
 
-    // Cleanup the type
+	// Cleanup the type
 
-    // Translate types from our general types, to bibtex.
-    if (pub.type == 'conference') {
-        pub.type = 'inproceedings';
-    } else if (pub.type == 'tutorial') {
-        pub.type = 'misc';
+	// Translate types from our general types, to bibtex.
+	if (pub.type == 'conference') {
+		pub.type = 'inproceedings';
+	} else if (pub.type == 'tutorial') {
+		pub.type = 'misc';
 
-        // Put a note in the bibtex for tutorials.
-        if (!pub.note) {
-            pub.note = '';
-        }
-        pub.note = (pub.note.trim() + ' Tutorial').trim();
-    }
+		// Put a note in the bibtex for tutorials.
+		if (!pub.note) {
+			pub.note = '';
+		}
+		pub.note = (pub.note.trim() + ' Tutorial').trim();
+	}
 
-    // Cleanup the year.
+	// Cleanup the year.
 
-    if (!pub.year) {
-        pub.year = 0;
-    }
-    pub.year = parseInt(pub.year, 10);
+	if (!pub.year) {
+		pub.year = 0;
+	}
+	pub.year = parseInt(pub.year, 10);
 
-    // Cleanup and index the authors.
+	// Cleanup and index the authors.
 
-    pub['_authorIDs'] = [];
-    pub.authors.forEach(function(authorName) {
-        authorName = window.linqs.pubs.cleanText(authorName);
+	pub['_authorIDs'] = [];
+	pub.authors.forEach(function(authorName) {
+		authorName = window.linqs.pubs.cleanText(authorName);
 
-        let nameParts = authorName.split(' ');
-        let authorId = window.linqs.pubs.cleanId(authorName);
+		let nameParts = authorName.split(' ');
+		let authorId = window.linqs.pubs.cleanId(authorName);
 
-        pub['_authorIDs'].push(authorId);
+		pub['_authorIDs'].push(authorId);
 
-        if (authorId in authors) {
-            return;
-        }
+		if (authorId in authors) {
+			return;
+		}
 
-        authors[authorId] = {
-            'displayName': authorName,
-            'firstName': nameParts[0],
-            'lastName': nameParts[nameParts.length - 1],
-            'sortName': `${nameParts[nameParts.length - 1]}-${nameParts[0]}-${authorId}`.toLowerCase(),
-        }
-    });
+		authors[authorId] = {
+			'displayName': authorName,
+			'firstName': nameParts[0],
+			'lastName': nameParts[nameParts.length - 1],
+			'sortName': `${nameParts[nameParts.length - 1]}-${nameParts[0]}-${authorId}`.toLowerCase(),
+		}
+	});
 
-    pub['_sortAuthor'] = authors[pub['_authorIDs'][0]]['sortName']
+	pub['_sortAuthor'] = authors[pub['_authorIDs'][0]]['sortName']
 
-    window.linqs.pubs.authors = authors;
+	window.linqs.pubs.authors = authors;
 }
 
+window.linqs.datasets.makeLink = function(path) {
+	if (path.startsWith('/')) {
+		return window.linqs.pubs.baseURL.replace(/\/$/, '') + path;
+	}
+
+	return path;
+};
+
 window.linqs.datasets.bibtex = function(pub, id) {
-    window.linqs.datasets.index(pub, id);
-    return window.linqs.pubs.bibtex(pub);
+	window.linqs.datasets.index(pub, id);
+	return window.linqs.pubs.bibtex(pub);
 };
 
 window.linqs.datasets.size = function(size) {
-    let sizes = ["B", "K", "M", "G", "T"];
+	let sizes = ["B", "KB", "MB", "GB", "TB", "PB"];
 
-    let i = 0;
-    while (i < sizes.length && size >= 1000) {
-        size = size / 1000.0;
-        i++;
-    }
+	let i = 0;
+	while (i < sizes.length && size >= 1024) {
+		size = size / 1024.0;
+		i++;
+	}
 
-    return size.toFixed(1).toString().replace('.0', '') + sizes[i];
+	// new RegExp(".*0")
+	return size.toFixed(2).toString().replace(/0+$/, '') + " " +sizes[i];
 }
 
 window.linqs.datasets.makeDownloadInfo = function(downloads) {
-    let downloadInfosHTML = '';
+	let downloadInfosHTML = '';
 
-    downloads.forEach(function(download, i) {
-        let link = download['download-link'];
-        let text = download["text"];
-        let statsHTML = "";
+	downloads.forEach(function(download, i) {
+		let link = download['download-link'];
+		let text = download["text"];
+		let statsHTML = "";
 
-        let sizeRaw = download['size'];
-        let md5 = download['md5'];
+		let sizeRaw = download['size'];
+		let md5 = download['md5'];
 
-        if (sizeRaw != null && md5 != null) {
-            let size = window.linqs.datasets.size(sizeRaw);
+		if (sizeRaw != null && md5 != null) {
+			let size = window.linqs.datasets.size(sizeRaw);
 
-            statsHTML = `
-                <div class='size'>
-                    (${size})
-                </div>
-                <div class='hash'>
-                    md5: ${md5}
-                </div>
-            `;
-        }
+			statsHTML = `
+				<div class='size'>
+					(${size})
+				</div>
+				<div class='hash'>
+					md5: ${md5}
+				</div>
+			`;
+		}
 
-        let downloadInfoHTML = `
-            <div class='download-info'>
-                <a class='download-link' href='${link}'>${text}</a>
-                ${statsHTML}
-            </div>
-        `;
+		let downloadInfoHTML = `
+			<div class='link-info'>
+				<a class='download-link' href='${link}'>${text}</a>
+				${statsHTML}
+			</div>
+		`;
 
-        downloadInfosHTML += downloadInfoHTML
-    });
+		downloadInfosHTML += downloadInfoHTML;
+	});
 
-    return downloadInfosHTML;
+	return downloadInfosHTML;
 }
 
 window.linqs.datasets.makeReferences = function(references) {
-    let referencesHTML = '';
+	let referencesHTML = '';
 
-    references.forEach(function(reference, i) {
-        let refLink = reference['link'];
-        let refText = reference['text'];
-        let referenceTemplate = `
-            <p><a href='${refLink}'>${refText}</a></p>
-        `;
+	references.forEach(function(reference, i) {
+		let refLink = reference['href'];
+		let refText = reference['text'];
+		let referenceTemplate = `
+			<p><a href='${refLink}'>${refText}</a></p>
+		`;
 
-        referencesHTML += referenceTemplate;
-    });
+		referencesHTML += referenceTemplate;
+	});
 
-    return referencesHTML;
+	return referencesHTML;
 }
 
 window.linqs.datasets.makeStubDatasets = function() {
-    let stubs = '<p>This page contains datasets used by the LINQS Lab and all exhibit relational structure. If you use them, please cite them accordingly.</p>';
+	let stubs = '<p>This page contains datasets used by the LINQS Lab and all exhibit relational structure. If you use them, please cite them accordingly.</p>';
 
-    Object.keys(window.linqs.datasets.datasets).sort().forEach(function(key) {
+	Object.keys(window.linqs.datasets.datasets).sort().forEach(function(key) {
+		let dataset = window.linqs.datasets.datasets[key];
 
-        let dataset = window.linqs.datasets.datasets[key];
+		let title = dataset['title'];
+		let description = dataset['description'];
+		let link = '#' + key;
 
-        let title = dataset['title'];
-        let description = dataset['description'];
-        let link = '#' + key;
+		let infos = dataset['link-info'];
+		let infosHTML = window.linqs.datasets.makeDownloadInfo(infos);
 
-        let downloads = dataset['download-info'];
-        let downloadInfosHTML = window.linqs.datasets.makeDownloadInfo(downloads);
+		stubs += `
+			<hr />
+			<div class='dataset-stub'>
+				<div class='title'>
+					<h1><a href='${link}'>${title}</a></h1>
+				</div>
+				<div class='short-description'>
+					<p>${description}</p>
+				</div>
+				<div class='info-list'>
+					${infosHTML}
+				</div>
+			</div>
+		`;
+	});
 
-        stubs += `
-            <hr />
-            <div class='dataset-stub'>
-                <div class='title'>
-                    <h1><a href='${link}'>${title}</a></h1>
-                </div>
-                <div class='short-description'>
-                    ${description}
-                </div>
-                <div class='download-list'>
-                    ${downloadInfosHTML}
-                </div>
-            </div>
-        `;
-    });
-
-    document.querySelector('.datasets').innerHTML = stubs;
+	document.querySelector('.datasets').innerHTML = stubs;
 };
 
 window.linqs.datasets.makeFullDataset = function(dataset) {
-    let title = dataset['title'];
+	let title = dataset['title'];
 
-    let downloads = dataset['download-info'];
-    let downloadInfosHTML = window.linqs.datasets.makeDownloadInfo(downloads);
+	let infos = dataset['link-info'];
+	let infosHTML = window.linqs.datasets.makeDownloadInfo(infos);
 
-    let description = dataset['description'];
+	let description = dataset['description'];
 
-    let citationKey = dataset['citation-key'];
-    let pub = window.linqs.datapubs.pubs[citationKey];
-    let citation = window.linqs.datasets.bibtex(pub, citationKey);
+	let citationKey = dataset['citation'];
+	let pub = window.linqs.datapubs.pubs[citationKey];
+	let citation = window.linqs.datasets.bibtex(pub, citationKey);
 
-    let references = dataset['references'];
-    let referencesHTML = window.linqs.datasets.makeReferences(references)
+	let references = dataset['references'];
+	let referencesHTML = window.linqs.datasets.makeReferences(references)
 
-    let templateString = `
-        <div class='dataset-full'>
-            <div class='top'>
-                <div class='title'>
-                    <h1>${title}</h1>
-                </div>
-                <div class='download-list'>
-                    ${downloadInfosHTML}
-                </div>
-            </div>
-            <div class='description'>
-                ${description}
-            </div>
-            <div class='citation'>
-                <p>If you use this dataset, please use the following citation:</p>
-                <pre>${citation}</pre>
-            </div>
-            <div class='references'>
-                <div class='related'>
-                    <h2>Related Papers</h2>
-                </div>
-                ${referencesHTML}
-            </div>
-        </div>
-    `;
+	let templateString = `
+		<div class='dataset-full'>
+			<div class='top'>
+				<div class='title'>
+					<h1>${title}</h1>
+				</div>
+				<div class='info-list'>
+					${infosHTML}
+				</div>
+			</div>
+			<div class='description'>
+				<p>${description}</p>
+			</div>
+			<div class='citation'>
+				<p>If you use this dataset, please use the following citation:</p>
+				<pre>${citation}</pre>
+			</div>
+			<div class='references'>
+				<div class='related'>
+					<h2>Related Papers</h2>
+				</div>
+				${referencesHTML}
+			</div>
+		</div>
+	`;
 
-    document.querySelector('.datasets').innerHTML = templateString;
+	document.querySelector('.datasets').innerHTML = templateString;
 };
 
 window.linqs.datasets.display = function() {
-    let datasetID = location.hash.trim().replace(/^#/, '');
+	let datasetID = location.hash.trim().replace(/^#/, '');
 
-    if (datasetID === '') {
-        window.linqs.datasets.makeStubDatasets();
-    } else {
-        if (window.linqs.datasets.datasets.hasOwnProperty(datasetID)) {
-            window.linqs.datasets.makeFullDataset(window.linqs.datasets.datasets[datasetID]);
-        } else {
-            window.linqs.datasets.makeStubDatasets();
-        }
-    }
+	if (window.linqs.datasets.datasets.hasOwnProperty(datasetID)) {
+		window.linqs.datasets.makeFullDataset(window.linqs.datasets.datasets[datasetID]);
+	} else {
+		window.linqs.datasets.makeStubDatasets();
+	}
 };

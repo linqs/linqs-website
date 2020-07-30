@@ -7,28 +7,28 @@ layout: default
 <script type="text/javascript" src="{{ "/assets/js/pubs.js" | relative_url }}"></script>
 
 <body>
-    <div class="datasets">
-    </div>
+	<div class="datasets">
+	</div>
 </body>
 
 <script>
-    window.linqs = window.linqs || {};
-    window.linqs.pubs = window.linqs.pubs || {};
-    window.linqs.datapubs = window.linqs.datapubs || {};
-    window.linqs.datasets = window.linqs.datasets || {};
+	window.linqs = window.linqs || {};
+	window.linqs.pubs = window.linqs.pubs || {};
+	window.linqs.datapubs = window.linqs.datapubs || {};
+	window.linqs.datasets = window.linqs.datasets || {};
 
-    window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
-    window.linqs.datapubs.pubs = {{ site.data.datapubs | jsonify }};
-    window.linqs.datasets.datasets = {{ site.data.datasets | jsonify }};
-    window.linqs.datasets.baseURL = "{{ '/' | absolute_url }}";
+	window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
+	window.linqs.datapubs.pubs = {{ site.data.datapubs | jsonify }};
+	window.linqs.datasets.datasets = {{ site.data.datasets | jsonify }};
+	window.linqs.datasets.baseURL = "{{ '/' | absolute_url }}";
 </script>
 
 <script>
-    $(document).ready(function() {
-        window.linqs.datasets.display();
-    });
+	$(document).ready(function() {
+		window.linqs.datasets.display();
+	});
 
-    $(window).on('hashchange', function() {
-        window.linqs.datasets.display();
-    });
+	$(window).on('hashchange', function() {
+		window.linqs.datasets.display();
+	});
 </script>

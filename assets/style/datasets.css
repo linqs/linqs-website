@@ -1,12 +1,9 @@
----
-# Top-level Sass files need some front matter (just this comment is enough).
----
-
-.download-info a, .download-info div {
+.link-info a,
+.link-info div {
 	display: inline;
 }
 
-.download-info .hash {
+.link-info .hash {
 	float: right;
 	font-family: monospace;
 }

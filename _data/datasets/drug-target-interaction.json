@@ -1,25 +1,23 @@
 {
-    "title": "Drug-Target Interaction",
-    "description": "<p>This dataset contains interactions between drugs and targets collected from DrugBank, KEGG Drug, DCDB, and Matador. It was originally collected by <a href=\"https://www.liebertpub.com/doi/abs/10.1089/cmb.2010.0213\">Perlman et al</a>. It contains 315 drugs, 250 targets, 1,306 drug-target interactions, 5 types of drug-drug similarities, and 3 types of target-target similarities. Drug-drug similarities include Chemical-based, Ligand-based, Expression-based, Side-effect-based, and Annotation-based similarities. Target-target similarities include Sequence-based, Protein-protein interaction network-based, and Gene Ontology-based similarities. The original task on the dataset is to predict new interactions between drugs and targets based on different types of similarities in the network.</p>",
-    "download-info":
-        [
-            {
-                "text": "Download",
-                "download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/drug-target-interaction/drug-target-interaction.tar.gz",
-                "md5": "b9ba7709bb49768f67645b31feccc0ed",
-                "size": 1511744154
-            }
-        ],
-    "citation-key": "fakhraei-tcbb14",
-    "references":
-        [
-            {
-                "link": "https://linqs.github.io/linqs-website/assets/resources/sridhar-bio16.pdf",
-                "text": "Dhanya Sridhar, Shobeir Fakhraei, and Lise Getoor. \"A Probabilistic Approach for Collective Similarity-Based Drug-Drug Interaction Prediction.\" Bioinformatics. 2016."
-            },
-            {
-                "link": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2016/fakhraei:mlg16/",
-                "text": "Shobeir Fakhraei, Sridhar Dhanya, Jay Pujara, and Lise Getoor. \"Adaptive Neighborhood Graph Construction for Inference in Multi-Relational Networks.\" International Conference on Knowledge Discovery and Data Mining (KDD). 2016."
-            }
-        ]
+	"title": "Drug-Target Interaction",
+	"description": "This dataset contains interactions between drugs and targets collected from DrugBank, KEGG Drug, DCDB, and Matador. It was originally collected by <a href=\"https://www.liebertpub.com/doi/abs/10.1089/cmb.2010.0213\">Perlman et al</a>. It contains 315 drugs, 250 targets, 1,306 drug-target interactions, 5 types of drug-drug similarities, and 3 types of target-target similarities. Drug-drug similarities include Chemical-based, Ligand-based, Expression-based, Side-effect-based, and Annotation-based similarities. Target-target similarities include Sequence-based, Protein-protein interaction network-based, and Gene Ontology-based similarities. The original task on the dataset is to predict new interactions between drugs and targets based on different types of similarities in the network.",
+	"link-info": [
+		{
+			"text": "Dataset",
+			"download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/drug-target-interaction/drug-target-interaction.tar.gz",
+			"md5": "b9ba7709bb49768f67645b31feccc0ed",
+			"size": 1511744154
+		}
+	],
+	"citation": "fakhraei-tcbb14",
+	"references": [
+		{
+			"href": "https://linqs.github.io/linqs-website/assets/resources/sridhar-bio16.pdf",
+			"text": "Dhanya Sridhar, Shobeir Fakhraei, and Lise Getoor. \"A Probabilistic Approach for Collective Similarity-Based Drug-Drug Interaction Prediction.\" Bioinformatics. 2016."
+		},
+		{
+			"href": "https://linqspub.soe.ucsc.edu/basilic/web/Publications/2016/fakhraei:mlg16/",
+			"text": "Shobeir Fakhraei, Sridhar Dhanya, Jay Pujara, and Lise Getoor. \"Adaptive Neighborhood Graph Construction for Inference in Multi-Relational Networks.\" International Conference on Knowledge Discovery and Data Mining (KDD). 2016."
+		}
+	]
 }

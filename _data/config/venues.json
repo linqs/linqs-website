@@ -448,7 +448,8 @@
         "id": "inbook"
     },
     "Language Resources and Evaluation": {
-        "id": "lrec"
+        "id": "lrec",
+        "shortname": "LREC"
     },
     "Machine Learning": {
         "id": "mlj"
