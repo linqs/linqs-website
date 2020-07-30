@@ -1,5 +1,5 @@
 language: bash
 
 script:
-    - ./_scripts/validate_datasets.py
-    - ./_scripts/validate-pubs.py
+    - ./_scripts/validateDatasets.py
+    - ./_scripts/validatePubs.py
