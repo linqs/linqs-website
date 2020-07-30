@@ -3,7 +3,9 @@
 window.linqs = window.linqs || {};
 window.linqs.pubs = window.linqs.pubs || {};
 window.linqs.datasets = window.linqs.datasets || {};
-window.linqs.datapubs = window.linqs.datapubs || {};
+window.linqs.datasets.metadata = window.linqs.datasets.metadata || {};
+window.linqs.datasets.pubs = window.linqs.datasets.pubs || {};
+
 
 window.linqs.datasets.index = function(pub, id) {
 	let authors = {};
@@ -167,8 +169,8 @@ window.linqs.datasets.makeReferences = function(references) {
 window.linqs.datasets.makeStubDatasets = function() {
 	let stubs = '<p>This page contains datasets used by the LINQS Lab and all exhibit relational structure. If you use them, please cite them accordingly.</p>';
 
-	Object.keys(window.linqs.datasets.datasets).sort().forEach(function(key) {
-		let dataset = window.linqs.datasets.datasets[key];
+	Object.keys(window.linqs.datasets.metadata).sort().forEach(function(key) {
+		let dataset = window.linqs.datasets.metadata[key];
 
 		let title = dataset['title'];
 		let description = dataset['description'];
@@ -205,7 +207,7 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
 	let description = dataset['description'];
 
 	let citationKey = dataset['citation'];
-	let pub = window.linqs.datapubs.pubs[citationKey];
+	let pub = window.linqs.datasets.pubs[citationKey];
 	let citation = window.linqs.datasets.bibtex(pub, citationKey);
 
 	let references = dataset['references'];
@@ -243,8 +245,8 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
 window.linqs.datasets.display = function() {
 	let datasetID = location.hash.trim().replace(/^#/, '');
 
-	if (window.linqs.datasets.datasets.hasOwnProperty(datasetID)) {
-		window.linqs.datasets.makeFullDataset(window.linqs.datasets.datasets[datasetID]);
+	if (window.linqs.datasets.metadata.hasOwnProperty(datasetID)) {
+		window.linqs.datasets.makeFullDataset(window.linqs.datasets.metadata[datasetID]);
 	} else {
 		window.linqs.datasets.makeStubDatasets();
 	}

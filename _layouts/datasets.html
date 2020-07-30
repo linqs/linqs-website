@@ -14,12 +14,11 @@ layout: default
 <script>
 	window.linqs = window.linqs || {};
 	window.linqs.pubs = window.linqs.pubs || {};
-	window.linqs.datapubs = window.linqs.datapubs || {};
 	window.linqs.datasets = window.linqs.datasets || {};
 
 	window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
-	window.linqs.datapubs.pubs = {{ site.data.datapubs | jsonify }};
-	window.linqs.datasets.datasets = {{ site.data.datasets | jsonify }};
+	window.linqs.datasets.pubs = {{ site.data.datasets.pubs | jsonify }};
+	window.linqs.datasets.metadata = {{ site.data.datasets.metadata | jsonify }};
 	window.linqs.datasets.baseURL = "{{ '/' | absolute_url }}";
 </script>
 
