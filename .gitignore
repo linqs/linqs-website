@@ -6,3 +6,6 @@ _site
 # Standard
 *.swp
 .DS_Store
+
+# Python
+*/__pycache__

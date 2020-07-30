@@ -10,76 +10,76 @@ import re
 import sys
 import traceback
 
+import validatePubs as vp
+
 THIS_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 ROOT_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
-DATASETS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets'))
+DATASETS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'metadata'))
+PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'pubs'))
+
 
 REQUIRED_KEY_TYPES = {
 	'title': [str],
 	'description': [str],
-	'citation-key': [str],
+	'citation': [str],
 }
 
 REQUIRED_NESTED_KEY_TYPES = {
-	'download-info': { 'text': [str], 'download-link': [str] },
-	'references': { 'link': [str], 'text': [str] }
+	'link-info': { 'text': [str], 'download-link': [str] },
+	'references': { 'href': [str], 'text': [str] }
 }
 
 # If one exists, both must exists.
 OPTIONAL_NESTED_KEY_TYPES = {
-	'download-info': { 'md5': [str], 'size': [int] }
+	'link-info': { 'md5': [str], 'size': [int] }
 }
 
 def validateOptionalNestedKeys(filename, data):
 	errors = []
 
-	for (key, value) in OPTIONAL_NESTED_KEY_TYPES.items():
-		if (key not in data):
+	for (optional_key, optional_value) in OPTIONAL_NESTED_KEY_TYPES.items():
+		if (optional_key not in data):
 			continue
 		else:
-			if (len(data[key]) == 0):
-				continue
-			else:
-				for nested_data in data[key]:
-					has_keys = []
-					hasnt_keys = []
-					num_keys = len(OPTIONAL_NESTED_KEY_TYPES[key].items())
+			for nested_data in data[optional_key]:
+				keys_present = set()
 
-					for (nested_key, nested_value) in OPTIONAL_NESTED_KEY_TYPES[key].items():
-						if (nested_key in nested_data):
-							has_keys.append(nested_key)
-							if (type(nested_data[nested_key]) not in OPTIONAL_NESTED_KEY_TYPES[key][nested_key]):
-								errors.append("Incorrect type ('%s') found in %s." % (nested_key, filename))
-								continue
-						else:
-							hasnt_keys.append(nested_key)
+				for (nested_key, nested_value) in optional_value.items():
+					if (nested_key in nested_data):
+						keys_present.add(nested_key)
+						if (type(nested_data[nested_key]) not in optional_value[nested_key]):
+							errors.append("Incorrect type ('%s') found in %s." % (nested_key, filename))
+							continue
 
-					if (len(has_keys) != 0 and len(has_keys) != num_keys):
-						errors.append("Optional keys must either be all included or all excluded. Found %s but not %s in %s." % (", ".join(has_keys), ",".join(hasnt_keys), filename))
+				num_keys = len(optional_value.items())
+				keys_absent = set(optional_value.keys()).difference(keys_present)
+
+				if (len(keys_present) != 0 and len(keys_present) != num_keys):
+					errors.append("Optional keys must either be all included or all excluded. Found %s but not %s in %s." % (", ".join(keys_present), ",".join(keys_absent), filename))
+
 
 	return errors
 
 def validateRequiredNestedKeys(filename, data):
 	errors = []
 
-	for (key, value) in REQUIRED_NESTED_KEY_TYPES.items():
-		if (key not in data):
-			errors.append("Required key ('%s') not found in %s." % (key, filename))
-			continue
-		else:
-			if (len(data[key]) == 0):
-				errors.append("At least one '%s' is required in %s." % (key, filename))
-				continue
-			else:
-				for nested_data in data[key]:
-					for (nested_key, nested_value) in REQUIRED_NESTED_KEY_TYPES[key].items():
+	for (required_key, required_value) in REQUIRED_NESTED_KEY_TYPES.items():
+		if (required_key in data):
+			if (len(data[required_key]) != 0):
+				for nested_data in data[required_key]:
+					for (nested_key, nested_value) in required_value.items():
 						if (nested_key not in nested_data):
 							errors.append("Required key ('%s') not found in %s." % (nested_key, filename))
 							continue
-						else:
-							if (type(nested_data[nested_key]) not in REQUIRED_NESTED_KEY_TYPES[key][nested_key]):
-								errors.append("Incorrect type ('%s') found in %s." % (nested_key, filename))
-								continue
+						elif (type(nested_data[nested_key]) not in required_value[nested_key]):
+							errors.append("Incorrect type ('%s') found in %s." % (nested_key, filename))
+							continue
+			else:
+				errors.append("At least one '%s' is required in %s." % (required_key, filename))
+				continue
+		else:
+			errors.append("Required key ('%s') not found in %s." % (required_key, filename))
+			continue
 
 	return errors
 
@@ -125,6 +125,7 @@ def main():
 
 	try:
 		errors += checkDatasets()
+		errors += vp.checkPubs(PUBS_DIR)
 	except Exception as ex:
 		errors.append("Caught exception while checking for dataset errors: " + str(ex))
 		print(traceback.format_exc())

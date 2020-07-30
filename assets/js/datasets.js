@@ -25,7 +25,6 @@ window.linqs.datasets.listAuthors = function(pub) {
 		} else {
 			authors += ' and ' + text;
 		}
-
 	}
 
 	return authors;

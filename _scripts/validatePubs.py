@@ -192,17 +192,17 @@ def loadVenues():
 
     return venues
 
-def checkPubs():
+def checkPubs(pubs_dir = PUBS_DIR):
     seenResources = set()
     errors = []
 
     venues = loadVenues()
 
-    for dirent in sorted(os.listdir(PUBS_DIR)):
-        path = os.path.join(PUBS_DIR, dirent)
+    for dirent in sorted(os.listdir(pubs_dir)):
+        path = os.path.join(pubs_dir, dirent)
 
         if (not os.path.isfile(path) or not path.endswith('.json')):
-            errors.append("All items in the pubs directory (%s) should be .json files, found '%s'." % (PUBS_DIR, dirent))
+            errors.append("All items in the pubs directory (%s) should be .json files, found '%s'." % (pubs_dir, dirent))
             continue
 
         with open(path, 'r') as file:
@@ -210,7 +210,8 @@ def checkPubs():
 
         errors += validateEntry(dirent, data, venues, seenResources)
 
-    errors += validateResources(seenResources)
+    if pubs_dir == PUBS_DIR:
+        errors += validateResources(seenResources)
 
     return errors
 
