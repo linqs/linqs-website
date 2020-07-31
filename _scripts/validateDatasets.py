@@ -25,7 +25,7 @@ REQUIRED_KEY_TYPES = {
 }
 
 REQUIRED_NESTED_KEY_TYPES = {
-	'link-info': { 'text': [str], 'download-link': [str] },
+	'link-info': { 'href': [str], 'text': [str] },
 	'references': { 'href': [str], 'text': [str] }
 }
 
