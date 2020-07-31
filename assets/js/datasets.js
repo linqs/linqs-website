@@ -109,7 +109,6 @@ window.linqs.datasets.makeStubDatasets = function() {
 		let title = dataset['title'];
 		let description = dataset['description'];
 		let link = '#' + key;
-
 		let infos = dataset['link-info'];
 		let infosHTML = window.linqs.datasets.makeDownloadInfo(infos);
 
@@ -180,10 +179,8 @@ window.linqs.datasets.display = function() {
 	let datasetID = location.hash.trim().replace(/^#/, '');
 
 	if (window.linqs.datasets.metadata.hasOwnProperty(datasetID)) {
-		console.log("1");
 		window.linqs.datasets.makeFullDataset(window.linqs.datasets.metadata[datasetID]);
 	} else {
-		console.log("2");
 		window.linqs.datasets.makeStubDatasets();
 	}
 };

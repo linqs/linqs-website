@@ -4,7 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
    The LINQS lab develops tools to solve large, structured, and heterogeneous problems.
 
 # URL settings.
-# Use 'url' for custom domains on github pages, and 'baseurl' for notmal github pages hosting.
+# Use 'url' for custom domains on github pages, and 'baseurl' for normal github pages hosting.
 url: ""
 baseurl: "/linqs-website"
 

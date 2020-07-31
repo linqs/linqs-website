@@ -55,7 +55,8 @@ window.linqs.utils.bibtex = function(pub, authors, id) {
 	fields.forEach(function(field) {
 		text += `\n	${field[0]} = {${field[1]}},`
 	});
-	text += '\n}'
+
+	text += '\n}';
 
 	return text;
 };

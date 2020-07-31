@@ -1,8 +1,7 @@
 {
 	"title": "PubMed Diabetes",
 	"description": "The Pubmed Diabetes dataset consists of 19717 scientific publications from PubMed database pertaining to diabetes classified into one of three classes. The citation network consists of 44338 links. Each publication in the dataset is described by a TF/IDF weighted word vector from a dictionary which consists of 500 unique words. The README file in the dataset provides more details.",
-	"link-info":
-		[
+	"link-info": [
 			{
 				"text": "Dataset",
 				"download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/pubmed-diabetes/pubmed-diabetes.tar.gz",
@@ -11,8 +10,7 @@
 			}
 		],
 	"citation": "namata-mlg12",
-	"references":
-		[
+	"references": [
 			{
 				"href": "/assets/resources/namata-mlg12.pdf",
 				"text": "Galileo Mark Namata, Ben London, Lise Getoor, and Bert Huang. \"Query-Driven Active Surveying for Collective Classification.\" International Workshop on Mining and Learning with Graphs (MLG). 2012."
