@@ -40,6 +40,7 @@ def validateOptionalNestedKeys(filename, data):
 	for (optional_key, optional_value) in OPTIONAL_NESTED_KEY_TYPES.items():
 		if (optional_key not in data):
 			continue
+
 		else:
 			for nested_data in data[optional_key]:
 				keys_present = set()
@@ -57,7 +58,6 @@ def validateOptionalNestedKeys(filename, data):
 				if (len(keys_present) != 0 and len(keys_present) != num_keys):
 					errors.append("Optional keys must either be all included or all excluded. Found %s but not %s in %s." % (", ".join(keys_present), ",".join(keys_absent), filename))
 
-
 	return errors
 
 def validateRequiredNestedKeys(filename, data):
@@ -71,12 +71,15 @@ def validateRequiredNestedKeys(filename, data):
 						if (nested_key not in nested_data):
 							errors.append("Required key ('%s') not found in %s." % (nested_key, filename))
 							continue
+
 						elif (type(nested_data[nested_key]) not in required_value[nested_key]):
 							errors.append("Incorrect type ('%s') found in %s." % (nested_key, filename))
 							continue
+
 			else:
 				errors.append("At least one '%s' is required in %s." % (required_key, filename))
 				continue
+
 		else:
 			errors.append("Required key ('%s') not found in %s." % (required_key, filename))
 			continue
@@ -90,10 +93,16 @@ def validateRequiredKeys(filename, data):
 		if (key not in data):
 			errors.append("Required key ('%s') not found in %s." % (key, filename))
 			continue
+
 		else:
 			if (type(data[key]) not in REQUIRED_KEY_TYPES[key]):
 				errors.append("Incorrect type ('%s') found in %s." % (key, filename))
 				continue
+
+	citation_path = os.path.join(PUBS_DIR, data['citation'] + '.json')
+
+	if (not os.path.isfile(citation_path)):
+		errors.append("Citation ('%s') not found in %s." % (citation_path, filename))
 
 	return errors
 
