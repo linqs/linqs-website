@@ -3,8 +3,8 @@
 	"description": "The arXiv dataset describes high energy physics publications. It was originally used in KDD Cup 2003. It contains 29555 papers with 58515 references to 9200 authors. The attribute information available for this dataset is also just the author name, with the same variations in form as described above.",
 	"link-info": [
 		{
+			"href": "https://linqs-data.soe.ucsc.edu/public/datasets/arxiv/arxiv.tar.gz",
 			"text": "Dataset",
-			"download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/arxiv/arxiv.tar.gz",
 			"md5": "4c720cfeaebdbc384943a8fbdadf792e",
 			"size": 1194668
 		}

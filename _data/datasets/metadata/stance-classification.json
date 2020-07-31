@@ -3,8 +3,8 @@
 	"description": "This dataset contains threads containing short user posts on debate topics across multiple online forums. The well-studied forums are 4Forums.com (on average 340 users per topic and 19 posts per user) and CreateDebate.org (310 users per topic and 4 posts per user). The key task is classifying the users’ stances towards discussion topics and classifying the polarity of replies between users. 4Forums.com has crowd-sourced annotations with high inter-annotator agreement for stances of users in each topic and dis/agreement between users that reply to one another. CreateDebate.org supports self-labeling for stance and dis/agreement, but for each post authored by a user.",
 	"link-info": [
 			{
-				"text": "Request Access",
-				"download-link": "https://nlds.soe.ucsc.edu/iac2"
+				"href": "https://nlds.soe.ucsc.edu/iac2",
+				"text": "Request Access"
 			}
 		],
 	"citation": "abbot-lrec16",

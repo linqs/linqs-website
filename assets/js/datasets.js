@@ -51,7 +51,7 @@ window.linqs.datasets.makeDownloadInfo = function(downloads) {
 	let downloadInfosHTML = '';
 
 	downloads.forEach(function(download, i) {
-		let link = download['download-link'];
+		let link = download['href'];
 		let text = download["text"];
 		let statsHTML = "";
 

@@ -3,8 +3,8 @@
 	"description": "The Cora dataset consists of 2708 scientific publications classified into one of seven classes. The citation network consists of 5429 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 1433 unique words. The README file in the dataset provides more details.",
 	"link-info": [
 		{
+			"href": "https://linqs-data.soe.ucsc.edu/public/datasets/cora/cora.tar.gz",
 			"text": "Dataset",
-			"download-link": "https://linqs-data.soe.ucsc.edu/public/datasets/cora/cora.tar.gz",
 			"md5": "b8b86a8e844eef1ef0ee1ff244f8f6d9",
 			"size": 168206
 		}
