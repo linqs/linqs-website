@@ -427,17 +427,20 @@ window.linqs.pubs.bibtex = function(pub) {
         ['year', pub.year],
     ];
 
-    if (['inproceedings', 'conference', 'inbook', 'misc'].includes(pub.type)) {
-        fields.push(['booktitle', pub.venue]);
-    } else if (pub.type == 'journal') {
-        fields.push(['journal', pub.venue]);
-    }
-
     window.linqs.pubs.BIBTEX_OPTIONAL_KEYS.forEach(function(key) {
         if (pub[key]) {
             fields.push([key, pub[key]]);
         }
     });
+
+    if (['inproceedings', 'conference', 'inbook', 'misc'].includes(pub.type)) {
+        fields.push(['booktitle', pub.venue]);
+    } else if (pub.type == 'article') {
+        fields.push(['journal', pub.venue]);
+        fields = fields.filter(function(element) {
+            return element[0] != 'publisher';
+        });
+    }
 
     fields.sort(function(a, b) {
         let aIndex = window.linqs.pubs.BIBTEX_SORTED_KEYS.indexOf(a[0]);
