@@ -1,23 +1,23 @@
 {
-	"title": "CiteSeer for Document Classification",
-	"description": "The CiteSeer dataset consists of 3312 scientific publications classified into one of six classes. The citation network consists of 4732 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 3703 unique words. The README file in the dataset provides more details.",
-	"link-info": [
-		{
-			"href": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-doc-classification/citeseer-doc-classification.tar.gz",
-			"text": "Dataset",
-			"md5": "c16c09fac412b868abc6658a73a07684",
-			"size": 359447
-		}
-	],
-	"citation": "rossi-aaai15",
-	"references": [
-		{
-			"href": "/assets/resources/lu-icml03.pdf",
-			"text": "Qing, Lu and Lise Getoor. \"Link-based Text Classification.\" ICML. 2003."
-		},
-		{
-			"href": "/assets/resources/sen-aim08.pdf",
-			"text": "Prithviraj Sen, Galileo Mark Namata, Mustafa Bilgic, Lise Getoor, Brian Gallagher, and Tina Eliassi-Rad. \"Collective Classification in Network Data.\" AI Magazine. 2008."
-		}
-	]
+    "title": "CiteSeer for Document Classification",
+    "description": "The CiteSeer dataset consists of 3312 scientific publications classified into one of six classes. The citation network consists of 4732 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 3703 unique words. The README file in the dataset provides more details.",
+    "link": [
+        {
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-doc-classification/citeseer-doc-classification.tar.gz",
+            "text": "Dataset",
+            "md5": "c16c09fac412b868abc6658a73a07684",
+            "size": 359447
+        }
+    ],
+    "citation": "rossi-aaai15",
+    "references": [
+        {
+            "href": "/assets/resources/lu-icml03.pdf",
+            "text": "Qing, Lu and Lise Getoor. \"Link-based Text Classification.\" ICML. 2003."
+        },
+        {
+            "href": "/assets/resources/sen-aim08.pdf",
+            "text": "Prithviraj Sen, Galileo Mark Namata, Mustafa Bilgic, Lise Getoor, Brian Gallagher, and Tina Eliassi-Rad. \"Collective Classification in Network Data.\" AI Magazine. 2008."
+        }
+    ]
 }

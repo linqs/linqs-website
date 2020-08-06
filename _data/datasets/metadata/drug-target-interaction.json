@@ -1,19 +1,19 @@
 {
-	"title": "Drug-Target Interaction",
-	"description": "This dataset contains interactions between drugs and targets collected from DrugBank, KEGG Drug, DCDB, and Matador. It was originally collected by <a href=\"https://www.liebertpub.com/doi/abs/10.1089/cmb.2010.0213\">Perlman et al</a>. It contains 315 drugs, 250 targets, 1,306 drug-target interactions, 5 types of drug-drug similarities, and 3 types of target-target similarities. Drug-drug similarities include Chemical-based, Ligand-based, Expression-based, Side-effect-based, and Annotation-based similarities. Target-target similarities include Sequence-based, Protein-protein interaction network-based, and Gene Ontology-based similarities. The original task on the dataset is to predict new interactions between drugs and targets based on different types of similarities in the network.",
-	"link-info": [
-		{
-			"href": "https://linqs-data.soe.ucsc.edu/public/datasets/drug-target-interaction/drug-target-interaction.tar.gz",
-			"text": "Dataset",
-			"md5": "b9ba7709bb49768f67645b31feccc0ed",
-			"size": 1511744154
-		}
-	],
-	"citation": "fakhraei-tcbb14",
-	"references": [
-		{
-			"href": "/assets/resources/sridhar-bio16.pdf",
-			"text": "Dhanya Sridhar, Shobeir Fakhraei, and Lise Getoor. \"A Probabilistic Approach for Collective Similarity-Based Drug-Drug Interaction Prediction.\" Bioinformatics. 2016."
-		}
-	]
+    "title": "Drug-Target Interaction",
+    "description": "This dataset contains interactions between drugs and targets collected from DrugBank, KEGG Drug, DCDB, and Matador. It was originally collected by <a href=\"https://www.liebertpub.com/doi/abs/10.1089/cmb.2010.0213\">Perlman et al</a>. It contains 315 drugs, 250 targets, 1,306 drug-target interactions, 5 types of drug-drug similarities, and 3 types of target-target similarities. Drug-drug similarities include Chemical-based, Ligand-based, Expression-based, Side-effect-based, and Annotation-based similarities. Target-target similarities include Sequence-based, Protein-protein interaction network-based, and Gene Ontology-based similarities. The original task on the dataset is to predict new interactions between drugs and targets based on different types of similarities in the network.",
+    "link": [
+        {
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/drug-target-interaction/drug-target-interaction.tar.gz",
+            "text": "Dataset",
+            "md5": "b9ba7709bb49768f67645b31feccc0ed",
+            "size": 1511744154
+        }
+    ],
+    "citation": "fakhraei-tcbb14",
+    "references": [
+        {
+            "href": "/assets/resources/sridhar-bio16.pdf",
+            "text": "Dhanya Sridhar, Shobeir Fakhraei, and Lise Getoor. \"A Probabilistic Approach for Collective Similarity-Based Drug-Drug Interaction Prediction.\" Bioinformatics. 2016."
+        }
+    ]
 }

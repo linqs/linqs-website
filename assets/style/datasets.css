@@ -1,19 +1,19 @@
 .link-info a,
 .link-info div {
-	display: inline;
+    display: inline;
 }
 
 .link-info .hash {
-	float: right;
-	font-family: monospace;
+    float: right;
+    font-family: monospace;
 }
 
 .datasets hr {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	color: #ddd;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #ddd;
 }
 
 .dataset-full .description {
-	margin-top: 20px;
+    margin-top: 20px;
 }

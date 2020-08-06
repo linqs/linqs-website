@@ -1,20 +1,20 @@
 {
-	"type": "article",
-	"title": "Collective Entity Resolution in Relational Data",
-	"authors": [
-		"Indrajit Bhattacharya",
-		"Lise Getoor"
-	],
-	"venue": "ACM Transactions on Knowledge Discovery from Data",
-	"year": "2007",
-	"publisher": "ACM",
-	"pages": "1--36",
-	"volume": "1",
-	"number": "1",
-	"links": [
-		{
-			"label": "paper",
-			"href": "/assets/resources/bhattacharya-tkdd07.pdf"
-		}
-	]
+    "type": "article",
+    "title": "Collective Entity Resolution in Relational Data",
+    "authors": [
+        "Indrajit Bhattacharya",
+        "Lise Getoor"
+    ],
+    "venue": "ACM Transactions on Knowledge Discovery from Data",
+    "year": "2007",
+    "publisher": "ACM",
+    "pages": "1--36",
+    "volume": "1",
+    "number": "1",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/bhattacharya-tkdd07.pdf"
+        }
+    ]
 }
