@@ -4,6 +4,14 @@
 
 This repository is the canonical reference for publications and datasets of the [LINQS machine learning lab](https://linqs.soe.ucsc.edu/) headed by Dr. Lise Getoor.
 
+## Instructions for Adding a Publication
+
+For detailed instructions on adding a publication go to `PUBLICATIONS.md`
+
+## Instructions for Adding a Dataset
+
+For detailed instructions on adding a dataset go to `DATASETS.md`
+
 ## Using Custom Link Icons
 
 For our link icons, we use icons from [RemixIcons](https://remixicon.com/).
