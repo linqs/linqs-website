@@ -297,4 +297,7 @@ def checkPubs(pubs_dir):
 
         errors += validateEntry(dirent, data, venues, seenResources)
 
-    return errors, seenResources
+    if (pubs_dir == PUBS_DIR):
+        errors += validateResources(seenResources)
+
+    return errors

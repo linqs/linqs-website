@@ -81,35 +81,31 @@ window.linqs.datasets.makeReference = function(reference) {
     });
 
     let authors = window.linqs.datasets.listAuthors(reference);
-    let refText = `
-        ${authors}. ${reference['title']}. ${reference['venue']}. ${reference['year']}.
-    `;
-
     let referenceHTML = `
-        <a href='${window.linqs.utils.makeLink(window.linqs.datasets.baseURL,refLink)}'>${refText}</a>
+        <a href='${window.linqs.utils.makeLink(window.linqs.datasets.baseURL,refLink)}'>
+            <span class='authors'>${authors}.</span>
+            <span class='title-link'>${reference['title']}.</span>
+            <span class='filter-link venue-link'>${reference['venue']}.</span>
+            <span class='filter-link year-link'>${reference['year']}.</span>
+        </a>
     `;
 
     return referenceHTML;
 };
 
 window.linqs.datasets.makeReferences = function(references) {
-    let referencesHTML = '';
+    let referencesList = '';
 
     references.forEach(function(reference, i) {
         console.log(reference)
-        referencesHTML += window.linqs.datasets.makeReference(window.linqs.datasets.pubs[reference]);
-        /*
-
-        let refLink = window.linqs.utils.makeLink(window.linqs.datasets.baseURL, reference['href']);
-        let refText = reference['text'];
-        let referenceTemplate = `
-            <a href='${refLink}'>${refText}</a>
-        `;
-
-        referencesHTML += referenceTemplate;
-        */
-
+        referencesList += window.linqs.datasets.makeReference(window.linqs.datasets.pubs[reference]);
     });
+
+    let referencesHTML = `
+        <div class='pubs-list'>
+            ${referencesList}
+        </div>
+    `;
 
     return referencesHTML;
 };
@@ -179,7 +175,7 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
             </div>
             <div class='references'>
                 <div class='related'>
-                    <h2>Related Papers</h2>
+                    <h2>Related Publications</h2>
                 </div>
                 ${referencesHTML}
             </div>
