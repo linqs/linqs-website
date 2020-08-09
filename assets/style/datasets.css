@@ -17,3 +17,8 @@
 .dataset-full .description {
     margin-top: 20px;
 }
+
+.references a {
+    display: block;
+    margin-bottom: 20px;
+}

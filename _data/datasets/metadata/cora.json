@@ -3,21 +3,15 @@
     "description": "The Cora dataset consists of 2708 scientific publications classified into one of seven classes. The citation network consists of 5429 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 1433 unique words. The README file in the dataset provides more details.",
     "link": [
         {
-            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/cora/cora.tar.gz",
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/cora/cora.zip",
             "text": "Dataset",
-            "md5": "b8b86a8e844eef1ef0ee1ff244f8f6d9",
-            "size": 168206
+            "md5": "8d12cbc2dcf8d975cc3c0b85686baa8d",
+            "size": 164131
         }
     ],
     "citation": "sen-aim08",
     "references": [
-        {
-            "href": "/assets/resources/lu-icml03.pdf",
-            "text": "Qing, Lu and Lise Getoor. \"Link-based Text Classification.\" ICML. 2003."
-        },
-        {
-            "href": "/assets/resources/sen-aim08.pdf",
-            "text": "Prithviraj Sen, Galileo Mark Namata, Mustafa Bilgic, Lise Getoor, Brian Gallagher, and Tina Eliassi-Rad. \"Collective Classification in Network Data.\" AI Magazine. 2008."
-        }
+        "lu-icml03",
+        "sen-aim08"
     ]
 }

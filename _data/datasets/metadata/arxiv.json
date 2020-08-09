@@ -3,17 +3,14 @@
     "description": "The arXiv dataset describes high energy physics publications. It was originally used in KDD Cup 2003. It contains 29555 papers with 58515 references to 9200 authors. The attribute information available for this dataset is also just the author name, with the same variations in form as described above.",
     "link": [
         {
-            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/arxiv/arxiv.tar.gz",
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/arxiv/arxiv.zip",
             "text": "Dataset",
-            "md5": "4c720cfeaebdbc384943a8fbdadf792e",
-            "size": 1194668
+            "md5": "9c3710b8f29c6fb30ecea0b736050836",
+            "size": 1194962
         }
     ],
     "citation": "bhattacharya-tkdd07",
     "references": [
-        {
-            "href": "/assets/resources/bhattacharya-tkdd07.pdf",
-            "text": "Indrajit Bhattacharya and Lise Getoor. \"Collective Entity Resolution in Relational Data.\" ACM Transactions on Knowledge Discovery from Data (TKDD). 2007."
-        }
+        "bhattacharya-tkdd07"
     ]
 }

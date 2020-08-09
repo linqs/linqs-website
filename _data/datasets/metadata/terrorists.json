@@ -2,18 +2,15 @@
     "title": "Terrorists",
     "description": "This dataset contains information about terrorists and their relationships. This dataset was designed for classification experiments aimed at classifying the relationships among terrorists. The dataset contains 851 relationships, each described by a 0/1-valued vector of attributes where each entry indicates the absence/presence of a feature. There are a total of 1224 distinct features. Each relationship can be assigned one or more labels out of a maximum of four labels making this dataset suitable for multi-label classification tasks. The README file provides more details.",
     "link": [
-            {
-                "href": "https://linqs-data.soe.ucsc.edu/public/datasets/terrorists/terrorists.tar.gz",
-                "text": "Dataset",
-                "md5": "d7001dc40c52688a06b5bbf11f808599",
-                "size": 226967
-            }
-        ],
+        {
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/terrorists/terrorists.zip ",
+            "text": "Dataset",
+            "md5": "2afb7eaa47fac97473a1749f9eb9fd38",
+            "size": 225279
+        }
+    ],
     "citation": "zhao-sna06",
     "references": [
-            {
-                "href": "/assets/resources/zhao-sna06.pdf",
-                "text": "Bin Zhao, et. al. \"Event Classification and Relationship Labeling in Affiliation Networks.\" ICML. 2006."
-            }
-        ]
+        "zhao-sna06"
+    ]
 }

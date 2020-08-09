@@ -57,3 +57,40 @@ window.linqs.utils.bibtex = function(pub, authors, id) {
 
     return text;
 };
+
+window.linqs.utils.listAuthor = function(text, i, authors, bibtexStyle) {
+    let authorsText = '';
+
+    if (i == 0) {
+        // First author.
+        // This case muct also work for solo anthors.
+        authorsText += text;
+    } else if (i == authors.length - 1) {
+        // Last author.
+        if (bibtexStyle) {
+            authorsText += ' and ' + text;
+        } else if (i == 1) {
+            // Only two authors.
+            authorsText += ' and ' + text;
+        } else {
+            authorsText += ', and ' + text;
+        }
+    } else {
+        // Middle author.
+        if (bibtexStyle) {
+            authorsText += ' and ' + text;
+        } else {
+            authorsText += ', ' + text;
+        }
+    }
+
+    return authorsText;
+};
+
+window.linqs.utils.makeLink = function(baseURL, path) {
+    if (path.startsWith('/')) {
+        return baseURL.replace(/\/$/, '') + path;
+    }
+
+    return path;
+};

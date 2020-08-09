@@ -2,20 +2,14 @@
     "title": "Stance Classification",
     "description": "This dataset contains threads containing short user posts on debate topics across multiple online forums. The well-studied forums are 4Forums.com (on average 340 users per topic and 19 posts per user) and CreateDebate.org (310 users per topic and 4 posts per user). The key task is classifying the users’ stances towards discussion topics and classifying the polarity of replies between users. 4Forums.com has crowd-sourced annotations with high inter-annotator agreement for stances of users in each topic and dis/agreement between users that reply to one another. CreateDebate.org supports self-labeling for stance and dis/agreement, but for each post authored by a user.",
     "link": [
-            {
-                "href": "https://nlds.soe.ucsc.edu/iac2",
-                "text": "Request Access"
-            }
-        ],
+        {
+            "href": "https://nlds.soe.ucsc.edu/iac2",
+            "text": "Request Access"
+        }
+    ],
     "citation": "abbot-lrec16",
     "references": [
-            {
-                "href": "/assets/resources/sridhar-acl15.pdf",
-                "text": "Dhanya Sridhar, James Foulds, Marilyn Walker, Bert Huang, and Lise Getoor. \"Joint Models of Disagreement and Stance in Online Debate.\" Annual Meeting of the Association for Computational Linguistics (ACL). 2015."
-            },
-            {
-                "href": "/assets/resources/sridhar-baylearn14.pdf",
-                "text": "Dhanya Sridhar, James Foulds, Bert Huang, Marilyn Walker, and Lise Getoor. \"Collective Classification of Stance and Disagreement in Online Debate Forums\". Bay Area Machine Learning Symposium (BayLearn). 2014."
-            }
-        ]
+        "sridhar-acl15",
+        "sridhar-baylearn14"
+    ]
 }

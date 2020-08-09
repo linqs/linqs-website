@@ -18,7 +18,9 @@ def main():
     errors = []
 
     try:
-        errors += utils.checkPubs(PUBS_DIR)
+        pubs_errors, seenResources = utils.checkPubs(PUBS_DIR)
+        errors += pubs_errors
+        errors += utils.validateResources(seenResources)
     except Exception as ex:
         errors.append("Caught exception while checking for pub errors: " + str(ex))
         print(traceback.format_exc())

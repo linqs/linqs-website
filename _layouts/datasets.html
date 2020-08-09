@@ -16,9 +16,10 @@ layout: default
 	window.linqs.datasets = window.linqs.datasets || {};
 	window.linqs.utils = window.linqs.utils || {};
 
-	window.linqs.datasets.pubs = {{ site.data.datasets.pubs | jsonify }};
-	window.linqs.datasets.metadata = {{ site.data.datasets.metadata | jsonify }};
 	window.linqs.datasets.baseURL = "{{ '/' | absolute_url }}";
+	window.linqs.datasets.metadata = {{ site.data.datasets.metadata | jsonify }};
+	window.linqs.datasets.pubs = {{ site.data.datasets.pubs | jsonify }};
+	window.linqs.datasets.venues = {{ site.data.config.venues | jsonify }};
 </script>
 
 <script>

@@ -17,6 +17,8 @@ ROOT_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
 DATASETS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'metadata'))
 PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'pubs'))
 
+LINQS_DATA_SERVER = 'https://linqs-data.soe.ucsc.edu/public/'
+
 REQUIRED_KEY_TYPES = {
     'title': [str],
     'description': [str],
@@ -68,8 +70,8 @@ def validateRequiredNestedKeys(filename, data):
             continue
 
         elif (len(data[required_key]) == 0):
-                errors.append("At least one '%s' is required in %s." % (required_key, filename))
-                continue
+            errors.append("At least one '%s' is required in %s." % (required_key, filename))
+            continue
 
         else:
             for nested_data in data[required_key]:
@@ -140,6 +142,7 @@ def main():
     if (len(errors) > 0):
         print("Errors found while parsing datasets:")
         for error in errors:
+            print(error)
             print("   " + error)
         sys.exit(1)
     else:

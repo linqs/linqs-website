@@ -38,11 +38,11 @@ The following fields are required:
 * `title`
 * `description`
 * `citation`
-* `link-info`: `text`, `href`
-* `references`: `text`, `href`
+* `link`
+* `references`
 
 The following fields are optional, but should be included unless there is good reason for why you can't:
-* `link-info`: `md5`, `size`
+* `link`: `md5`, `size`
 
 #### `title`
 
@@ -58,12 +58,13 @@ This description should give a user information about what the dataset is used f
 The citation specifies a file in `_data/datasets/pubs/`. It should be the same as the name of the publication file you want rendered as bibtex.
 (note: It should be just the file name without a path or extension.)
 
-#### `link-info`
+#### `link`
 
-This should be a JSON list. It is required to have at least one element in the list.
-Each element is itelf a JSON object including `text` which will be displayed on the website,
-`href` which should point to the link the dataset can be obtained at (usually `https://linqs-data.soe.ucsc.edu/public/datasets/<name-of-dataset>/<name-of-dataset>.tar.gz`),
-`md5` which is the MD5 hash of the file at `href`, and `size` which is the size of the file at `href`.
+This should be a JSON list each element of which includes:
+* `text` which will be displayed on the website,
+* `href` which should point to the link the dataset can be obtained at (usually `https://linqs-data.soe.ucsc.edu/public/datasets/<name-of-dataset>/<name-of-dataset>.zip`),
+* `md5` which is the MD5 hash of the file at `href`, and
+* `size` which is the size of the file at `href`.
 
 If your dataset is hosted on a server that LINQS does not have access to, it is not required to have the md5 and the size.
 Otherwise refer to the following sections, which give instructions for the MD5 and the size.

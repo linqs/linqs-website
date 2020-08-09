@@ -3,17 +3,14 @@
     "description": "The CiteSeer dataset contains 1504 machine learning documents with 2892 author references to 165 author entities. For this dataset, the only attribute information available is author name. The full last name is always given, and in some cases the author’s full first name and middle name are given and other times only the initials are given.",
     "link": [
         {
-            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-entity-resolution/citeseer-entity-resolution.tar.gz",
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-entity-resolution/citeseer-entity-resolution.zip",
             "text": "Dataset",
-            "md5": "93148fe10eeb408721c86cf0228ef42f",
-            "size": 87348
+            "md5": "083e3ad8abc0a19a4782c7ccfbecce10",
+            "size": 87625
         }
     ],
     "citation": "rossi-aaai15",
     "references": [
-        {
-            "href": "/assets/resources/bhattacharya-tkdd07.pdf",
-            "text": "Indrajit Bhattacharya and Lise Getoor. \"Collective Entity Resolution in Relational Data.\" ACM Transactions on Knowledge Discovery from Data (TKDD). 2007."
-        }
+        "bhattacharya-tkdd07"
     ]
 }

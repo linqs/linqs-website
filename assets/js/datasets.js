@@ -1,18 +1,11 @@
 'use strict';
 
 window.linqs = window.linqs || {};
-window.linqs.utils = window.linqs.utils || {};
 window.linqs.datasets = window.linqs.datasets || {};
+window.linqs.utils = window.linqs.utils || {};
+
 window.linqs.datasets.metadata = window.linqs.datasets.metadata || {};
 window.linqs.datasets.pubs = window.linqs.datasets.pubs || {};
-
-window.linqs.datasets.makeLink = function(path) {
-    if (path.startsWith('/')) {
-        return window.linqs.datasets.baseURL.replace(/\/$/, '') + path;
-    }
-
-    return path;
-};
 
 window.linqs.datasets.listAuthors = function(pub) {
     let authors = '';
@@ -20,11 +13,7 @@ window.linqs.datasets.listAuthors = function(pub) {
     for (let i = 0; i < pub['authors'].length; i++) {
         let text = pub['authors'][i];
 
-        if (i == 0) {
-            authors += text;
-        } else {
-            authors += ' and ' + text;
-        }
+        authors += window.linqs.utils.listAuthor(text, i, pub['authors'], false)
     }
 
     return authors;
@@ -44,7 +33,7 @@ window.linqs.datasets.size = function(size) {
         i++;
     }
 
-    return size.toFixed(2).toString().replace(/0+$/, '') + " " +sizes[i];
+    return size.toFixed(2).toString() + " " +sizes[i];
 };
 
 window.linqs.datasets.makeDownloadInfo = function(downloads) {
@@ -84,17 +73,42 @@ window.linqs.datasets.makeDownloadInfo = function(downloads) {
     return downloadInfosHTML;
 };
 
+window.linqs.datasets.makeReference = function(reference) {
+    let refLink = '404.html';
+    reference['links'].forEach(function(link, i) {
+        if (link['label'] == 'paper')
+            refLink = link['href'];
+    });
+
+    let authors = window.linqs.datasets.listAuthors(reference);
+    let refText = `
+        ${authors}. ${reference['title']}. ${reference['venue']}. ${reference['year']}.
+    `;
+
+    let referenceHTML = `
+        <a href='${window.linqs.utils.makeLink(window.linqs.datasets.baseURL,refLink)}'>${refText}</a>
+    `;
+
+    return referenceHTML;
+};
+
 window.linqs.datasets.makeReferences = function(references) {
     let referencesHTML = '';
 
     references.forEach(function(reference, i) {
-        let refLink = window.linqs.datasets.makeLink(reference['href']);
+        console.log(reference)
+        referencesHTML += window.linqs.datasets.makeReference(window.linqs.datasets.pubs[reference]);
+        /*
+
+        let refLink = window.linqs.utils.makeLink(window.linqs.datasets.baseURL, reference['href']);
         let refText = reference['text'];
         let referenceTemplate = `
-            <p><a href='${refLink}'>${refText}</a></p>
+            <a href='${refLink}'>${refText}</a>
         `;
 
         referencesHTML += referenceTemplate;
+        */
+
     });
 
     return referencesHTML;

@@ -8,25 +8,6 @@ RESOURCES_DIR = os.path.abspath(os.path.join(ROOT_DIR, 'assets', 'resources'))
 PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'pubs'))
 VENUES_PATH = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'config', 'venues.json'))
 
-DATASETS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'metadata'))
-DATASET_PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'pubs'))
-
-REQUIRED_KEY_TYPES = {
-    'title': [str],
-    'description': [str],
-    'citation': [str],
-}
-
-REQUIRED_NESTED_KEY_TYPES = {
-    'link': { 'href': [str], 'text': [str] },
-    'references': { 'href': [str], 'text': [str] }
-}
-
-# If one exists, both must exists.
-OPTIONAL_NESTED_KEY_TYPES = {
-    'link': { 'md5': [str], 'size': [int] }
-}
-
 ALLOWED_TYPES = {'article', 'book', 'conference', 'inbook', 'phdthesis', 'techreport', 'tutorial', 'unpublished'}
 
 ALLOWED_ICONS = {
@@ -316,7 +297,4 @@ def checkPubs(pubs_dir):
 
         errors += validateEntry(dirent, data, venues, seenResources)
 
-    if pubs_dir == PUBS_DIR:
-        errors += validateResources(seenResources)
-
-    return errors
+    return errors, seenResources
