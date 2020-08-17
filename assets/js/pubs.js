@@ -149,7 +149,7 @@ window.linqs.pubs.index = function() {
             }
 
             linkEntry.displayLabel = window.linqs.pubs.capatilize(linkEntry.label);
-            linkEntry.href = window.linqs.utils.makeLink(window.linqs.pubs.baseURL, linkEntry.href);
+            linkEntry.href = window.linqs.utils.makeLink(window.linqs.utils.baseURL, linkEntry.href);
             linkEntry.icon = window.linqs.pubs.resolveIcon(linkEntry.icon, linkEntry.label);
         });
     }
@@ -166,7 +166,7 @@ window.linqs.pubs.resolveIcon = function(icon, label) {
         icon = window.linqs.pubs.ICON_DEFAULT;
     }
 
-    return window.linqs.utils.makeLink(window.linqs.pubs.baseURL, `${window.linqs.pubs.ICON_REL_PATH}#${icon}`);
+    return window.linqs.utils.makeLink(window.linqs.utils.baseURL, `${window.linqs.pubs.ICON_REL_PATH}#${icon}`);
 };
 
 window.linqs.pubs.sort = function(pubs) {
@@ -253,7 +253,7 @@ window.linqs.pubs.renderList = function(keys) {
             additionalLinks += window.linqs.pubs.resourceLink(linkEntry);
         });
 
-        let bibtexIconURL = window.linqs.utils.makeLink(window.linqs.pubs.baseURL, window.linqs.pubs.ICON_REL_PATH + '#' + window.linqs.pubs.ICON_BIBTEX);
+        let bibtexIconURL = window.linqs.utils.makeLink(window.linqs.utils.baseURL, window.linqs.pubs.ICON_REL_PATH + '#' + window.linqs.pubs.ICON_BIBTEX);
         let links = `
             <div class='pub-links'>
                 <a class='pub-link pub-link-bibtex' onClick="window.linqs.pubs.openBibtexTab('${key}');">
@@ -267,7 +267,7 @@ window.linqs.pubs.renderList = function(keys) {
 
         let entry = "<div class='pub-entry'>";
         entry += authors;
-        entry += `<span> <a class='title-link' href='#id:${pub._id}'>${pub.title}</a>.</span>`;
+        entry += `<span> <a class='title-link' href='${window.linqs.utils.makePubLink(pub['_id'], false)}'>${pub.title}</a>.</span>`;
         entry += `<span> <a class='filter-link venue-link' href='#venue:${pub._venue}'>${pub.venue}</a>.</span>`;
         entry += `<span> <a class='filter-link year-link' href='#year:${pub.year}'>${pub.year}</a>.</span>`;
 
@@ -279,8 +279,6 @@ window.linqs.pubs.renderList = function(keys) {
             $('.pubs-list').append(`<div class='year-marker'>${pub.year}</div>`);
             previousYear = pub.year;
         }
-
-        console.log(entry)
 
         $('.pubs-list').append(entry);
     });
@@ -421,7 +419,7 @@ window.linqs.pubs.fetchEntries = function() {
     }
 
     if (displayKey) {
-        let iconLink = window.linqs.utils.makeLink(window.linqs.pubs.baseURL, `${window.linqs.pubs.ICON_REL_PATH}#close-circle-line`);
+        let iconLink = window.linqs.utils.makeLink(window.linqs.utils.baseURL, `${window.linqs.pubs.ICON_REL_PATH}#close-circle-line`);
         $('.pubs-list').append(`
             <div class=pubs-filter>
                 <a href='#'>

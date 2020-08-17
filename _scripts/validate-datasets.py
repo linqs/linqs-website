@@ -15,7 +15,7 @@ import utils
 THIS_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 ROOT_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
 DATASETS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'metadata'))
-PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'pubs'))
+PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'references'))
 
 LINQS_DATA_SERVER = 'https://linqs-data.soe.ucsc.edu/public/'
 
@@ -68,7 +68,7 @@ def validateRequiredKeys(filename, data):
             errors.append("Required key ('%s') not found in %s." % (key, filename))
             continue
 
-        elif (type(data[key]) not in REQUIRED_KEY_TYPES[key]):
+        elif (type(data[key]) not in types):
             errors.append("Incorrect type ('%s') found in %s." % (key, filename))
             continue
 

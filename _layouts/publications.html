@@ -18,7 +18,7 @@ layout: default
 
 	window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
 	window.linqs.pubs.pubs = {{ site.data.pubs | jsonify }};
-	window.linqs.pubs.baseURL = "{{ '/' | absolute_url }}";
+	window.linqs.utils.baseURL = "{{ '/' | absolute_url }}";
 </script>
 
 <script>

@@ -1,5 +1,8 @@
 'use strict';
 
+window.linqs = window.linqs || {};
+window.linqs.utils = window.linqs.utils || {};
+
 window.linqs.utils.BIBTEX_SORTED_KEYS = [
     // Core.
     'title', 'author', 'booktitle', 'journal', 'year', 'publisher',
@@ -86,6 +89,15 @@ window.linqs.utils.listAuthor = function(text, i, authors, bibtexStyle) {
 
     return authorsText;
 };
+
+window.linqs.utils.makePubLink = function(id, includeBaseURL=true) {
+    if (includeBaseURL) {
+        return window.linqs.utils.makeLink(window.linqs.utils.baseURL, '../publications/#id:' + id);
+    }
+    else {
+        return '#id:' + id; 
+    }
+}
 
 window.linqs.utils.makeLink = function(baseURL, path) {
     if (path.startsWith('/')) {

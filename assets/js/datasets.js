@@ -4,8 +4,8 @@ window.linqs = window.linqs || {};
 window.linqs.datasets = window.linqs.datasets || {};
 window.linqs.utils = window.linqs.utils || {};
 
+window.linqs.datasets.references = window.linqs.datasets.references || {};
 window.linqs.datasets.metadata = window.linqs.datasets.metadata || {};
-window.linqs.datasets.pubs = window.linqs.datasets.pubs || {};
 
 window.linqs.datasets.listAuthors = function(pub) {
     let authors = '';
@@ -73,16 +73,11 @@ window.linqs.datasets.makeDownloadInfo = function(downloads) {
     return downloadInfosHTML;
 };
 
-window.linqs.datasets.makeReference = function(reference) {
-    let refLink = '404.html';
-    reference['links'].forEach(function(link, i) {
-        if (link['label'] == 'paper')
-            refLink = link['href'];
-    });
-
+window.linqs.datasets.makeReference = function(referenceKey) {
+    let reference = window.linqs.datasets.references[referenceKey];
     let authors = window.linqs.datasets.listAuthors(reference);
     let referenceHTML = `
-        <a href='${window.linqs.utils.makeLink(window.linqs.datasets.baseURL,refLink)}'>
+        <a href='${window.linqs.utils.makePubLink(referenceKey)}'>
             <span class='authors'>${authors}.</span>
             <span class='title-link'>${reference['title']}.</span>
             <span class='filter-link venue-link'>${reference['venue']}.</span>
@@ -97,8 +92,7 @@ window.linqs.datasets.makeReferences = function(references) {
     let referencesList = '';
 
     references.forEach(function(reference, i) {
-        console.log(reference)
-        referencesList += window.linqs.datasets.makeReference(window.linqs.datasets.pubs[reference]);
+        referencesList += window.linqs.datasets.makeReference(reference);
     });
 
     let referencesHTML = `
@@ -111,7 +105,12 @@ window.linqs.datasets.makeReferences = function(references) {
 };
 
 window.linqs.datasets.makeStubDatasets = function() {
-    let stubs = '<p>This page contains datasets used by the LINQS Lab and all exhibit relational structure. If you use them, please cite them accordingly.</p>';
+    let stubs = `
+        <p>
+            This page contains datasets used by the LINQS Lab and all exhibit relational structure.
+            If you use them, please cite them accordingly.
+        </p>
+    `;
 
     Object.keys(window.linqs.datasets.metadata).sort().forEach(function(key) {
         let dataset = window.linqs.datasets.metadata[key];
@@ -150,7 +149,7 @@ window.linqs.datasets.makeFullDataset = function(dataset) {
     let description = dataset['description'];
 
     let citationKey = dataset['citation'];
-    let pub = window.linqs.datasets.pubs[citationKey];
+    let pub = window.linqs.datasets.references[citationKey];
     let citation = window.linqs.datasets.bibtex(pub, citationKey);
 
     let references = dataset['references'];
