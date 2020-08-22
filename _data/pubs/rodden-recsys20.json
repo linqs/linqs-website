@@ -1,0 +1,26 @@
+{
+    "type": "conference",
+    "title": "VMI-PSL: Visual Model Inspector for Probabilistic Soft Logic",
+    "authors": [
+        "Aaron Rodden",
+        "Tarun Salh",
+        "Eriq Augustine",
+        "Lise Getoor"
+    ],
+    "venue": "ACM Conference on Recommender Systems",
+    "year": "2020",
+    "publisher": "ACM",
+    "address": "Virtual",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/rodden-recsys20.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://github.com/linqs/psl-vmi"
+        }
+    ],
+    "note": "This is a demo track paper.",
+    "abstract": "Hybrid recommender systems achieve state-of-the-art performance by integrating several different information sources along with multiple recommendation approaches. Probabilistic Soft Logic (PSL) has been shown to be an accessible and effective means of creating extensible hybrid recommenders (Kouki et al., 2015). PSL allows users to easily create intuitive models that incorporate background information and capture complex interactions. However these complex interactions can sometimes make PSL models difficult to inspect, debug, and understand. In this paper, we present a generic visual model inspector for PSL, and show how our inspector can be used on a hybrid recommender system to: debug errors in the model, analyze the performance of individual components of the model, and explain recommendations made by the model."
+}
