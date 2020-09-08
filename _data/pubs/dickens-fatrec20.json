@@ -9,5 +9,11 @@
     "venue": "RecSys Workshop on Responsible Recommendation",
     "year": "2020",
     "publisher": "FAccTRec",
-    "address": "Rio de Janeiro, Brazil"
+    "address": "Rio de Janeiro, Brazil",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/dickens-fatrec20.pdf"
+        }
+    ]
 }
