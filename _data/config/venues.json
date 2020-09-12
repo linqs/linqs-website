@@ -65,6 +65,10 @@
         "id": "tkdd",
         "shortname": "TKDD"
     },
+    "ACM Transactions on the Web": {
+        "id": "tweb",
+        "shortname": "TWEB"
+    },
     "AI Magazine": {
         "id": "aim"
     },
@@ -528,8 +532,8 @@
         "id": "nar"
     },
     "RecSys Workshop on Responsible Recommendation": {
-        "id": "fetrec",
-        "shortname": "FATREC"
+        "id": "fatrec",
+        "shortname": "FAccTRec"
     },
     "Relational Data Mining": {
         "id": "inbook"
