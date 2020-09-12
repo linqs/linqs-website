@@ -16,7 +16,6 @@ THIS_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
 ROOT_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
 DATASETS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'metadata'))
 PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'references'))
-
 LINQS_DATA_SERVER = 'https://linqs-data.soe.ucsc.edu/public/'
 
 REQUIRED_KEY_TYPES = {
@@ -49,7 +48,6 @@ def validateLinks(links, filename):
 
         if ('href' not in keys):
             errors.append("Required key ('href') not found in %s." % (filename))
-            continue
 
         elif (link['href'].startswith(LINQS_DATA_SERVER)):
             if ('md5' not in keys):

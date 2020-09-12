@@ -206,25 +206,3 @@ def checkPubs(pubs_dir):
         errors += validateResources(seenResources)
 
     return errors
-
-
-def checkDir(dir_path):
-    errors = []
-
-    for entry in sorted(os.listdir(dir_path)):
-        path = os.path.join(dir_path, entry)
-
-        if (not os.path.isfile(path) or not path.endswith('.json')):
-            errors.append("All items in the datasets directory (%s) should be .json files, found '%s'." % (dir_path, entry))
-            continue
-
-        try:
-            with open(path, 'r') as file:
-                data = json.load(file)
-        except:
-            errors.append("Bad json in (%s)" % entry)
-            continue
-
-        errors += validateRequiredKeys(entry, data)
-        
-    return errors

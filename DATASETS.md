@@ -4,7 +4,7 @@ Adding a dataset is similar in process to adding a publication, and in many case
 
 There are four steps to adding your dataset:
 1) Add the dataset's resources.
-2) Add the JSON file describing the datasets publication (note: this is different than for publications!)
+2) Add the JSON file describing the dataset's publication (note: this is different than for publications!)
 3) Add the JSON file describing the dataset.
 4) Validate your dataset.
 
