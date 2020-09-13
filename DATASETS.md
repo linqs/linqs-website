@@ -1,32 +1,36 @@
 ## Adding a Dataset
 
-Adding a dataset is similar in process to adding a publication, and in many cases before you add your dataset you should add the publication that your dataset is published in first.
+Adding a dataset is similar in process to adding a publication if it is a LINQS publication, and in many cases before you add your dataset you should add the publication that your dataset is published in first.
 
 There are four steps to adding your dataset:
 1) Add the dataset's resources.
-2) Add the JSON file describing the dataset's publication (note: this is different than for publications!)
+2) Add the JSON file describing the dataset's publication.
+This is different than for publications.
 3) Add the JSON file describing the dataset.
 4) Validate your dataset.
 
-Ensure that all files you add are named appropriately. Datasets follow the `<name-of-dataset>.json` convention (i.e. kebab-case), while publications follow the convention spelled out above.
+Ensure that all files you add are named appropriately. Datasets follow the `<name-of-dataset>.json` convention (i.e. kebab-case), while publications follow the convention spelled out in [publications.md](publications.md).
 
 ### Adding the Datasets Resources
 
 Dataset files are hosted at [https://linqs-data.soe.ucsc.edu/public/datasets/](https://linqs-data.soe.ucsc.edu/public/datasets/).
-To add your files simply ssh into a server then navigate to the datasets folder in the LINQS public data directory, create a directory called `<name-of-dataset>`, and add a **compressed** version of your dataset with the same name as the directory you just created.
+To add your files go to the LINQS public data directory, create a directory called `<name-of-dataset>`, and add a zipped version of your dataset with the same name as the directory you just created.
+Ensure that the permissions for these files are correctly set.
+If you have questions about how to do this or where exactly files should be placed contact the IT or Data czar.
 
 ### Adding the Publication JSON
 
 #### Your Dataset is Published in a LINQS Publication
 
-If your dataset is published in a LINQS publication, then you should add and validate the paper's metadata in the style of a publication.
-Once you have added the publication, the dataset needs access to that data, so you should create a soft link to the publication's data in the `\datasets\pubs` folder.
-This can be done using the following bash command `ln -s <path-to-destination>.json <source>.json` in `\datasets\pubs`.
+If your dataset is published in a LINQS publication, then you should add and validate the paper's metadata.
+If you are not familiar with this process consult [publications.md](publications.md).
+Once you have added the publication, the dataset needs access to that data, so you should create a soft link to the publication's data in the `\datasets\metadata` folder.
+This can be done using the following bash command `ln -s <path-to-destination>.json <source>.json` in `\datasets\metadata`.
 The name of this file will be used as a key in the dataset metadata file to provide additional information.
 
 #### Your Dataset is **NOT** Published in a LINQS Publication
 
-If your dataset is **not** published in a LINQS publication, then create a valid publication JSON, but rather than putting it in `_data/pubs/` put it in `_data/datasets/pubs/`.
+If your dataset is **not** published in a LINQS publication, then create a valid publication JSON, but rather than putting it in `_data/pubs/` put it in `_data/datasets/references/`.
 This will need to pass the same validation test as regular publications, so be sure to follow the same formatting.
 
 ### Adding the Dataset JSON
@@ -41,9 +45,6 @@ The following fields are required:
 * `link`
 * `references`
 
-The following fields are optional, but should be included unless there is good reason for why you can't:
-* `link`: `md5`, `size`
-
 #### `title`
 
 This is the title of your dataset.
@@ -55,8 +56,8 @@ This description should give a user information about what the dataset is used f
 
 #### `citation`
 
-The citation specifies a file in `_data/datasets/pubs/`. It should be the same as the name of the publication file you want rendered as bibtex.
-(note: It should be just the file name without a path or extension.)
+The citation specifies a file in `_data/datasets/references/`.
+It should be the same as the name of the publication file you want rendered as bibtex, and it should be just the file name without a path or extension.
 
 #### `link`
 
@@ -87,9 +88,8 @@ The size is the number before the date.
 
 This should be a JSON list.
 It is required to have at least one element in the list.
-Each element is itelf a JSON object including `href` which is the link to the paper (note: if it is a LINQS publication it should be `/assets/*`.) and `text` which is the text displayed.
+Each element is itelf a JSON object including `href` which is the link to the paper and `text` which is the text displayed, 
 Look at other examples of `text` to get the formatting right.
-
 ### Validating Your Dataset
 
 To validate your dataset's entry before you commit it, you can run the [/_scripts/validateDatasets.py](_scripts/validateDatasets.py) script.

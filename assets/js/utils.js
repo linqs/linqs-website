@@ -93,8 +93,7 @@ window.linqs.utils.listAuthor = function(text, i, authors, bibtexStyle) {
 window.linqs.utils.makePubLink = function(id, includeBaseURL=true) {
     if (includeBaseURL) {
         return window.linqs.utils.makeLink(window.linqs.utils.baseURL, '../publications/#id:' + id);
-    }
-    else {
+    } else {
         return '#id:' + id; 
     }
 }

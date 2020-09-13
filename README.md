@@ -6,11 +6,11 @@ This repository is the canonical reference for publications and datasets of the 
 
 ## Instructions for Adding a Publication
 
-For detailed instructions on adding a publication go to `PUBLICATIONS.md`
+For detailed instructions on adding a publication go to [publications.md](publications.md).
 
 ## Instructions for Adding a Dataset
 
-For detailed instructions on adding a dataset go to `DATASETS.md`
+For detailed instructions on adding a dataset go to [datasets.md](datasets.md).
 
 ## Using Custom Link Icons
 

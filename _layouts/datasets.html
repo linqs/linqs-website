@@ -7,27 +7,27 @@ layout: default
 <script type="text/javascript" src="{{ "/assets/js/utils.js" | relative_url }}"></script>
 
 <body>
-  <div class="datasets">
-  </div>
+    <div class="datasets">
+    </div>
 </body>
 
 <script>
-  window.linqs = window.linqs || {};
-  window.linqs.datasets = window.linqs.datasets || {};
-  window.linqs.utils = window.linqs.utils || {};
+    window.linqs = window.linqs || {};
+    window.linqs.datasets = window.linqs.datasets || {};
+    window.linqs.utils = window.linqs.utils || {};
 
-  window.linqs.utils.baseURL = "{{ '/' | absolute_url }}";
-  window.linqs.datasets.references = {{ site.data.datasets.references | jsonify }};
-  window.linqs.datasets.metadata = {{ site.data.datasets.metadata | jsonify }};
-  window.linqs.datasets.venues = {{ site.data.config.venues | jsonify }};
+    window.linqs.utils.baseURL = "{{ '/' | absolute_url }}";
+    window.linqs.datasets.references = {{ site.data.datasets.references | jsonify }};
+    window.linqs.datasets.metadata = {{ site.data.datasets.metadata | jsonify }};
+    window.linqs.datasets.venues = {{ site.data.config.venues | jsonify }};
 </script>
 
 <script>
-  $(document).ready(function() {
-    window.linqs.datasets.display();
-  });
+    $(document).ready(function() {
+        window.linqs.datasets.display();
+    });
 
-  $(window).on('hashchange', function() {
-    window.linqs.datasets.display();
-  });
+    $(window).on('hashchange', function() {
+        window.linqs.datasets.display();
+    });
 </script>

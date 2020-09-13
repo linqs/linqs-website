@@ -29,7 +29,6 @@ def main():
         for error in errors:
             print("   " + error)
         sys.exit(1)
-
     else:
         print("No errors found while parsing pubs.")
 

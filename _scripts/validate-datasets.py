@@ -48,11 +48,9 @@ def validateLinks(links, filename):
 
         if ('href' not in keys):
             errors.append("Required key ('href') not found in %s." % (filename))
-
         elif (link['href'].startswith(LINQS_DATA_SERVER)):
             if ('md5' not in keys):
                 errors.append("Key ('md5') required in LINQS hosted datasets, not found in %s." % (filename))
-
             if ('size' not in keys):
                 errors.append("Key ('size') required in LINQS hosted datasets, not found in %s." % (filename))
 
@@ -65,17 +63,13 @@ def validateRequiredKeys(filename, data):
         if (key not in data):
             errors.append("Required key ('%s') not found in %s." % (key, filename))
             continue
-
         elif (type(data[key]) not in types):
             errors.append("Incorrect type ('%s') found in %s." % (key, filename))
             continue
-
         elif (key == 'citation'):
             errors += validateSoftLinks([data['citation']], filename)
-
         elif (key == 'link'):
             errors += validateLinks(data['link'], filename)
-
         elif (key == 'references'):
             errors += validateSoftLinks(data['references'], filename)
 

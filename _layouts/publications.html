@@ -6,27 +6,26 @@ layout: default
 <script type="text/javascript" src="{{ "/assets/js/pubs.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/utils.js" | relative_url }}"></script>
 
-
 <div class="pubs-list">
 </div>
 
 <script>
-	// Load all the pubs as JS.
-	window.linqs = window.linqs || {};
-	window.linqs.pubs = window.linqs.pubs || {};
-	window.linqs.utils = window.linqs.utils || {};
+    // Load all the pubs as JS.
+    window.linqs = window.linqs || {};
+    window.linqs.pubs = window.linqs.pubs || {};
+    window.linqs.utils = window.linqs.utils || {};
 
-	window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
-	window.linqs.pubs.pubs = {{ site.data.pubs | jsonify }};
-	window.linqs.utils.baseURL = "{{ '/' | absolute_url }}";
+    window.linqs.pubs.venues = {{ site.data.config.venues | jsonify }};
+    window.linqs.pubs.pubs = {{ site.data.pubs | jsonify }};
+    window.linqs.utils.baseURL = "{{ '/' | absolute_url }}";
 </script>
 
 <script>
-	$(document).ready(function() {
-		window.linqs.pubs.display();
-	});
+    $(document).ready(function() {
+        window.linqs.pubs.display();
+    });
 
-	$(window).on('hashchange', function() {
-		window.linqs.pubs.display();
-	});
+    $(window).on('hashchange', function() {
+        window.linqs.pubs.display();
+    });
 </script>
