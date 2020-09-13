@@ -51,6 +51,7 @@ def validateLinks(links, filename):
         elif (link['href'].startswith(LINQS_DATA_SERVER)):
             if ('md5' not in keys):
                 errors.append("Key ('md5') required in LINQS hosted datasets, not found in %s." % (filename))
+
             if ('size' not in keys):
                 errors.append("Key ('size') required in LINQS hosted datasets, not found in %s." % (filename))
 
@@ -112,7 +113,6 @@ def main():
         for error in errors:
             print("   " + error)
         sys.exit(1)
-
     else:
         print("No errors found while parsing datasets.")
 
