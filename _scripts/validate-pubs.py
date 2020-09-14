@@ -10,13 +10,11 @@ import traceback
 
 import utils
 
-PUBS_DIR = os.path.abspath(os.path.join(utils.ROOT_DIR, '_data', 'pubs'))
-
 def main():
     errors = []
 
     try:
-        errors += utils.checkPubs(PUBS_DIR)
+        errors += utils.checkPubs(utils.PUBS_DIR)
 
     except Exception as ex:
         errors.append("Caught exception while checking for pub errors: " + str(ex))
