@@ -100,7 +100,7 @@ def main():
 
     try:
         errors += checkDatasets()
-        #errors += utils.checkPubs(REFERENCES_DIR)
+        errors += utils.checkPubs(REFERENCES_DIR)
 
     except Exception as ex:
         errors.append("Caught exception while checking for dataset errors: " + str(ex))

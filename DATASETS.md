@@ -86,7 +86,7 @@ The size is the number before the date.
 
 #### `references`
 
-This should be a JSON list.
+This should be a JSON list, each element of which is a key into the `_data/datasets/references` directory which contains metadata for a publication.
 It is required to have at least one element in the list.
 Each element is itelf a JSON object including `href` which is the link to a publication's metadata and `text` which is the text displayed, 
 Look at other examples of `text` to get the formatting right.
