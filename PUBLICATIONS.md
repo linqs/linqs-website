@@ -3,7 +3,7 @@
 There are three steps when adding a new publication to this repository:
 1) Add the publication's resources.
 2) Add the JSON file describing the publication.
-3) Validate you new entry.
+3) Validate your new entry.
 
 Ensure that all files you add are named appropriately: `<first author last name>-<venue id><last two digits of year>`.
 If there are multiple entries that have the same name, suffix a letter (a, b, c, ...) indicating the ordering of the entries.

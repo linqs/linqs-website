@@ -14,7 +14,7 @@ window.linqs.utils.BIBTEX_SORTED_KEYS = [
     'chapter', 'organization', 'doi', 'note',
 
     // Variable size.
-    'keywords', 'abstract',
+    'keywords', 'abstract'
 ];
 
 window.linqs.utils.BIBTEX_OPTIONAL_KEYS = [
@@ -25,7 +25,7 @@ window.linqs.utils.bibtex = function(pub, authors, id) {
     let fields = [
         ['author', authors],
         ['title', pub.title],
-        ['year', pub.year],
+        ['year', pub.year]
     ];
 
     if (['inproceedings', 'conference', 'inbook', 'misc'].includes(pub.type)) {

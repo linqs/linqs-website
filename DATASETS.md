@@ -65,7 +65,7 @@ This should be a JSON list each element of which includes:
 * `text` which will be displayed on the website,
 * `href` which should point to the link the dataset can be obtained at (usually `https://linqs-data.soe.ucsc.edu/public/datasets/<name-of-dataset>/<name-of-dataset>.zip`),
 * `md5` which is the MD5 hash of the file at `href`, and
-* `size` which is the size of the file at `href`.
+* `size` which is the size of the file at `href` in bytes.
 
 If your dataset is hosted on a server that LINQS does not have access to, it is not required to have the md5 and the size.
 Otherwise refer to the following sections, which give instructions for the MD5 and the size.
