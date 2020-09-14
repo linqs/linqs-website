@@ -88,7 +88,7 @@ The size is the number before the date.
 
 This should be a JSON list.
 It is required to have at least one element in the list.
-Each element is itelf a JSON object including `href` which is the link to the paper and `text` which is the text displayed, 
+Each element is itelf a JSON object including `href` which is the link to a publication's metadata and `text` which is the text displayed, 
 Look at other examples of `text` to get the formatting right.
 ### Validating Your Dataset
 

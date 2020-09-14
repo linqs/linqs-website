@@ -2,7 +2,6 @@
 
 window.linqs = window.linqs || {};
 window.linqs.pubs = window.linqs.pubs || {};
-window.linqs.utils = window.linqs.utils || {};
 
 window.linqs.pubs.SORT_KEYS = ['!year', 'title', '_sortAuthor', 'venue'];
 window.linqs.pubs.ICON_REL_PATH = '/assets/style/vendor/remixicon.symbol.svg';

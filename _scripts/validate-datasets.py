@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Validate all the publication entries.
+Validate all the dataset entries and associated references.
 """
 
 import json
@@ -12,10 +12,8 @@ import traceback
 
 import utils
 
-THIS_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
-ROOT_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
-DATASETS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'metadata'))
-PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'datasets', 'references'))
+DATASETS_DIR = os.path.abspath(os.path.join(utils.ROOT_DIR, '_data', 'datasets', 'metadata'))
+REFERENCES_DIR = os.path.abspath(os.path.join(utils.ROOT_DIR, '_data', 'datasets', 'references'))
 LINQS_DATA_SERVER = 'https://linqs-data.soe.ucsc.edu/public/'
 
 REQUIRED_KEY_TYPES = {
@@ -26,14 +24,14 @@ REQUIRED_KEY_TYPES = {
     'references': [list]
 }
 
-def validateSoftLinks(softlinks, filename):
+def validateReferencesExist(reflinks, filename):
     errors = []
 
-    for softlink in softlinks:
-        softlink_path = os.path.join(PUBS_DIR, softlink + '.json')
+    for reflink in reflinks:
+        reflink_path = os.path.join(REFERENCES_DIR, reflink + '.json')
 
-        if (not os.path.isfile(softlink_path)):
-            errors.append("Soft link ('%s') not found in %s." % (softlink_path, filename))
+        if (not os.path.isfile(reflink_path) or not reflink_path.endswith('.json')):
+            errors.append("Reference link ('%s') should be json in %s." % (reflink, REFERENCES_DIR))
 
     return errors
 
@@ -68,11 +66,11 @@ def validateRequiredKeys(filename, data):
             errors.append("Incorrect type ('%s') found in %s." % (key, filename))
             continue
         elif (key == 'citation'):
-            errors += validateSoftLinks([data['citation']], filename)
+            errors += validateReferencesExist([data['citation']], filename)
         elif (key == 'link'):
             errors += validateLinks(data['link'], filename)
         elif (key == 'references'):
-            errors += validateSoftLinks(data['references'], filename)
+            errors += validateReferencesExist(data['references'], filename)
 
     return errors
 
@@ -102,7 +100,7 @@ def main():
 
     try:
         errors += checkDatasets()
-        errors += utils.checkPubs(PUBS_DIR)
+        #errors += utils.checkPubs(REFERENCES_DIR)
 
     except Exception as ex:
         errors.append("Caught exception while checking for dataset errors: " + str(ex))

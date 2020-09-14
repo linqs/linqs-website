@@ -2,7 +2,6 @@
 
 window.linqs = window.linqs || {};
 window.linqs.datasets = window.linqs.datasets || {};
-window.linqs.utils = window.linqs.utils || {};
 
 window.linqs.datasets.references = window.linqs.datasets.references || {};
 window.linqs.datasets.metadata = window.linqs.datasets.metadata || {};
@@ -33,7 +32,7 @@ window.linqs.datasets.size = function(size) {
         i++;
     }
 
-    return size.toFixed(2).toString() + " " +sizes[i];
+    return size.toFixed(2).toString() + " " + sizes[i];
 };
 
 window.linqs.datasets.makeDownloadInfo = function(downloads) {
@@ -77,12 +76,14 @@ window.linqs.datasets.makeReference = function(referenceKey) {
     let reference = window.linqs.datasets.references[referenceKey];
     let authors = window.linqs.datasets.listAuthors(reference);
     let referenceHTML = `
-        <a href='${window.linqs.utils.makePubLink(referenceKey)}'>
-            <span class='authors'>${authors}.</span>
-            <span class='title-link'>${reference['title']}.</span>
-            <span class='filter-link venue-link'>${reference['venue']}.</span>
-            <span class='filter-link year-link'>${reference['year']}.</span>
-        </a>
+        <div class='pub-entry'>
+            <a href='${window.linqs.utils.makePubLink(referenceKey)}'>
+                <span class='authors'>${authors}.</span>
+                <span class='title-link'>${reference['title']}.</span>
+                <span class='filter-link venue-link'>${reference['venue']}.</span>
+                <span class='filter-link year-link'>${reference['year']}.</span>
+            </a>
+        </div>
     `;
 
     return referenceHTML;

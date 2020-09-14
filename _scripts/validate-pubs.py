@@ -19,7 +19,7 @@ def main():
 
     try:
         errors += utils.checkPubs(PUBS_DIR)
-        
+
     except Exception as ex:
         errors.append("Caught exception while checking for pub errors: " + str(ex))
         print(traceback.format_exc())

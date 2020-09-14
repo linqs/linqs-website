@@ -86,3 +86,31 @@ h2.footer-heading {
     display: inline-block;
     margin-left: 20px;
 }
+
+.pub-entry {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px #ddd;
+}
+
+.pubs-list a.keyword-link {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.pubs-list a.title-link {
+    font-weight: bold;
+}
+
+.pubs-list a.venue-link {
+    font-style: italic;
+}
+
+.pubs-list .year-marker {
+    font-size: larger;
+    padding: 5px;
+    text-align: center;
+}
