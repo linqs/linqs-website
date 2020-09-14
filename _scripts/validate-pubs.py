@@ -10,9 +10,7 @@ import traceback
 
 import utils
 
-THIS_DIR = os.path.abspath(os.path.dirname(os.path.realpath(__file__)))
-ROOT_DIR = os.path.abspath(os.path.join(THIS_DIR, '..'))
-PUBS_DIR = os.path.abspath(os.path.join(ROOT_DIR, '_data', 'pubs'))
+PUBS_DIR = os.path.abspath(os.path.join(utils.ROOT_DIR, '_data', 'pubs'))
 
 def main():
     errors = []
