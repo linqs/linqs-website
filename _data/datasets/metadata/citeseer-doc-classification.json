@@ -1,0 +1,17 @@
+{
+    "title": "CiteSeer for Document Classification",
+    "description": "The CiteSeer dataset consists of 3312 scientific publications classified into one of six classes. The citation network consists of 4732 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 3703 unique words. The README file in the dataset provides more details.",
+    "link": [
+        {
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/citeseer-doc-classification/citeseer-doc-classification.zip",
+            "text": "Dataset",
+            "md5": "879b4ea5aa063cdfcd2c3f0ee7d67d1f",
+            "size": 356438
+        }
+    ],
+    "citation": "rossi-aaai15",
+    "references": [
+        "lu-icml03",
+        "sen-aim08"
+    ]
+}

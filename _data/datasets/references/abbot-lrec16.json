@@ -1,0 +1,16 @@
+{
+    "type": "conference",
+    "title": "Internet Argument Corpus 2.0: An SQL schema for Dialogic Social Media and the Corpora to go with it",
+    "authors": [
+        "Rob Abbot",
+        "Brian Ecker",
+        "Pranav Anand",
+        "Marilyn Walker"
+    ],
+    "venue": "Language Resources and Evaluation",
+    "year": "2016",
+    "publisher": "ERLA",
+    "pages": "4445--4452",
+    "address": "Portorož, Slovenia",
+    "abstract": "Large scale corpora have benefited many areas of research in natural language processing, but until recently, resources for dialogue have lagged behind. Now, with the emergence of large scale social media websites incorporating a threaded dialogue structure, content feedback, and self-annotation (such as stance labeling), there are valuable new corpora available to researchers. In previous work, we released the INTERNET ARGUMENT CORPUS, one of the first larger scale resources available for opinion sharing dialogue. We now release the INTERNET ARGUMENT CORPUS 2.0 (IAC 2.0) in the hope that others will find it as useful as we have. The IAC 2.0 provides more data than IAC 1.0 and organizes it using an extensible, repurposable SQL schema. The database structure in conjunction with the associated code facilitates querying from and combining multiple dialogically structured data sources. The IAC 2.0 schema provides support for forum posts, quotations, markup (bold, italic, etc), and various annotations, including Stanford CoreNLP annotations. We demonstrate the generalizablity of the schema by providing code to import the ConVote corpus."
+}

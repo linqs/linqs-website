@@ -451,6 +451,10 @@
     "Link Mining: Models, Algorithms, and Applications": {
         "id": "inbook"
     },
+    "Language Resources and Evaluation": {
+        "id": "lrec",
+        "shortname": "LREC"
+    },
     "Machine Learning": {
         "id": "mlj"
     },

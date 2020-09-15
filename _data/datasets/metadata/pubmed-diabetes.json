@@ -1,0 +1,16 @@
+{
+    "title": "PubMed Diabetes",
+    "description": "The Pubmed Diabetes dataset consists of 19717 scientific publications from PubMed database pertaining to diabetes classified into one of three classes. The citation network consists of 44338 links. Each publication in the dataset is described by a TF/IDF weighted word vector from a dictionary which consists of 500 unique words. The README file in the dataset provides more details.",
+    "link": [
+        {
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/pubmed-diabetes/pubmed-diabetes.zip",
+            "text": "Dataset",
+            "md5": "8aefb1b83095edce9e648dcf2e69d280",
+            "size": 14711385
+        }
+    ],
+    "citation": "namata-mlg12",
+    "references": [
+        "namata-mlg12"
+    ]
+}

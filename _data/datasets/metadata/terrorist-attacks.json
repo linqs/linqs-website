@@ -1,0 +1,16 @@
+{
+    "title": "Terrorist Attacks",
+    "description": "This dataset consists of 1293 terrorist attacks each assigned one of 6 labels indicating the type of the attack. Each attack is described by a 0/1-valued vector of attributes whose entries indicate the absence/presence of a feature. There are a total of 106 distinct features. The files in the dataset can be used to create two distinct graphs. The README file in the dataset provides more details.",
+    "link": [
+        {
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/terrorist-attacks/terrorist-attacks.zip",
+            "text": "Dataset",
+            "md5": "fa4aec7d8c28a9d5b80bd57750a0ded2",
+            "size": 55387
+        }
+    ],
+    "citation": "zhao-sna06",
+    "references": [
+        "zhao-sna06"
+    ]
+}

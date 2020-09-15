@@ -1,0 +1,16 @@
+{
+    "title": "Social Spammers",
+    "description": "This anonymized dataset was collected from the Tagged.com social network website. It contains 5.6 million users and 858 million links between them. Each user has 4 features and is manually labeled as \"spammer\" or \"not spammer\". Each link represents an action between two users and includes a timestamp and a type. The network contains 7 anonymized types of links. The original task on the dataset is to identify (i.e., classify) the spammer users based on their relational and non-relational features.",
+    "link": [
+        {
+            "href": "https://linqs-data.soe.ucsc.edu/public/datasets/social-spammer/social-spammer.zip",
+            "text": "Dataset",
+            "md5": "a520900ac9e11e32c33ecd3dfb6e20db",
+            "size": 4092656752
+        }
+    ],
+    "citation": "fakhraei-kdd15",
+    "references": [
+        "fakhraei-kdd15"
+    ]
+}

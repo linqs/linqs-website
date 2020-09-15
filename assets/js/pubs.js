@@ -16,24 +16,6 @@ window.linqs.pubs.ICON_MAP = {
     'video': 'video',
 };
 
-window.linqs.pubs.BIBTEX_SORTED_KEYS = [
-    // Core.
-    'title', 'author', 'booktitle', 'journal', 'year', 'publisher',
-
-    // Type-dependent.
-    'pages', 'volume', 'number', 'edition', 'editor', 'address',
-
-    // Extra.
-    'chapter', 'organization', 'doi', 'note',
-
-    // Variable size.
-    'keywords', 'abstract',
-];
-
-window.linqs.pubs.BIBTEX_OPTIONAL_KEYS = [
-    'publisher', 'pages', 'volume', 'number', 'edition', 'editor', 'address', 'chapter', 'organization', 'doi', 'note'
-];
-
 window.linqs.pubs.indexed = false;
 window.linqs.pubs.authors = {};
 
@@ -166,7 +148,7 @@ window.linqs.pubs.index = function() {
             }
 
             linkEntry.displayLabel = window.linqs.pubs.capatilize(linkEntry.label);
-            linkEntry.href = window.linqs.pubs.makeLink(linkEntry.href);
+            linkEntry.href = window.linqs.utils.makeLink(window.linqs.utils.baseURL, linkEntry.href);
             linkEntry.icon = window.linqs.pubs.resolveIcon(linkEntry.icon, linkEntry.label);
         });
     }
@@ -183,7 +165,7 @@ window.linqs.pubs.resolveIcon = function(icon, label) {
         icon = window.linqs.pubs.ICON_DEFAULT;
     }
 
-    return window.linqs.pubs.makeLink(`${window.linqs.pubs.ICON_REL_PATH}#${icon}`);
+    return window.linqs.utils.makeLink(window.linqs.utils.baseURL, `${window.linqs.pubs.ICON_REL_PATH}#${icon}`);
 };
 
 window.linqs.pubs.sort = function(pubs) {
@@ -212,14 +194,6 @@ window.linqs.pubs.sort = function(pubs) {
     return keys;
 };
 
-window.linqs.pubs.makeLink = function(path) {
-    if (path.startsWith('/')) {
-        return window.linqs.pubs.baseURL.replace(/\/$/, '') + path;
-    }
-
-    return path;
-};
-
 window.linqs.pubs.authorLink = function(authorIndex, pub) {
     let name = pub.authors[authorIndex];
     let link = `#author:${pub['_authorIDs'][authorIndex]}`;
@@ -239,28 +213,7 @@ window.linqs.pubs.listAuthors = function(pub, bibtexStyle) {
             text += window.linqs.pubs.authorLink(i, pub);
         }
 
-        if (i == 0) {
-            // First author.
-            // This case muct also work for solo anthors.
-            authors += text;
-        } else if (i == pub['_authorIDs'].length - 1) {
-            // Last author.
-            if (bibtexStyle) {
-                authors += ' and ' + text;
-            } else if (i == 1) {
-                // Only two authors.
-                authors += ' and ' + text;
-            } else {
-                authors += ', and ' + text;
-            }
-        } else {
-            // Middle author.
-            if (bibtexStyle) {
-                authors += ' and ' + text;
-            } else {
-                authors += ', ' + text;
-            }
-        }
+        authors += window.linqs.utils.listAuthor(text, i, pub['_authorIDs'], bibtexStyle)
     }
 
     return authors;
@@ -299,7 +252,7 @@ window.linqs.pubs.renderList = function(keys) {
             additionalLinks += window.linqs.pubs.resourceLink(linkEntry);
         });
 
-        let bibtexIconURL = window.linqs.pubs.makeLink(window.linqs.pubs.ICON_REL_PATH + '#' + window.linqs.pubs.ICON_BIBTEX);
+        let bibtexIconURL = window.linqs.utils.makeLink(window.linqs.utils.baseURL, window.linqs.pubs.ICON_REL_PATH + '#' + window.linqs.pubs.ICON_BIBTEX);
         let links = `
             <div class='pub-links'>
                 <a class='pub-link pub-link-bibtex' onClick="window.linqs.pubs.openBibtexTab('${key}');">
@@ -313,7 +266,7 @@ window.linqs.pubs.renderList = function(keys) {
 
         let entry = "<div class='pub-entry'>";
         entry += authors;
-        entry += `<span> <a class='title-link' href='#id:${pub._id}'>${pub.title}</a>.</span>`;
+        entry += `<span> <a class='title-link' href='${window.linqs.utils.makePubLink(pub['_id'], false)}'>${pub.title}</a>.</span>`;
         entry += `<span> <a class='filter-link venue-link' href='#venue:${pub._venue}'>${pub.venue}</a>.</span>`;
         entry += `<span> <a class='filter-link year-link' href='#year:${pub.year}'>${pub.year}</a>.</span>`;
 
@@ -420,46 +373,10 @@ window.linqs.pubs.openBibtexTab = function(key) {
     newTab.document.close();
 };
 
+// Constructs the bibtex for an indexed pub.
 window.linqs.pubs.bibtex = function(pub) {
-    let fields = [
-        ['author', window.linqs.pubs.listAuthors(pub, true)],
-        ['title', pub.title],
-        ['year', pub.year],
-    ];
-
-    window.linqs.pubs.BIBTEX_OPTIONAL_KEYS.forEach(function(key) {
-        if (pub[key]) {
-            fields.push([key, pub[key]]);
-        }
-    });
-
-    if (['inproceedings', 'conference', 'inbook', 'misc'].includes(pub.type)) {
-        fields.push(['booktitle', pub.venue]);
-    } else if (pub.type == 'article') {
-        fields.push(['journal', pub.venue]);
-        fields = fields.filter(function(element) {
-            return element[0] != 'publisher';
-        });
-    }
-
-    fields.sort(function(a, b) {
-        let aIndex = window.linqs.pubs.BIBTEX_SORTED_KEYS.indexOf(a[0]);
-        let bIndex = window.linqs.pubs.BIBTEX_SORTED_KEYS.indexOf(b[0]);
-
-        if (aIndex == -1 || bIndex == -1) {
-            return 0;
-        }
-
-        return aIndex - bIndex;
-    });
-
-    let text = `@${pub.type}{${pub._id.replace('-', ':')},`
-    fields.forEach(function(field) {
-        text += `\n    ${field[0]} = {${field[1]}},`
-    });
-    text += '\n}'
-
-    return text;
+    let authors = window.linqs.pubs.listAuthors(pub, true);
+    return window.linqs.utils.bibtex(pub, authors, pub['_id']);
 };
 
 // Look at the hash and figure out what entries we should be showing.
@@ -501,7 +418,7 @@ window.linqs.pubs.fetchEntries = function() {
     }
 
     if (displayKey) {
-        let iconLink = window.linqs.pubs.makeLink(`${window.linqs.pubs.ICON_REL_PATH}#close-circle-line`);
+        let iconLink = window.linqs.utils.makeLink(window.linqs.utils.baseURL, `${window.linqs.pubs.ICON_REL_PATH}#close-circle-line`);
         $('.pubs-list').append(`
             <div class=pubs-filter>
                 <a href='#'>
