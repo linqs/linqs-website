@@ -96,21 +96,10 @@ h2.footer-heading {
     box-shadow: 1px 1px #ddd;
 }
 
-.pubs-list a.keyword-link {
-    margin-right: 10px;
-    text-decoration: underline;
-}
-
-.pubs-list a.title-link {
+.pub-entry .title-link {
     font-weight: bold;
 }
 
-.pubs-list a.venue-link {
+.pub-entry .venue-link {
     font-style: italic;
-}
-
-.pubs-list .year-marker {
-    font-size: larger;
-    padding: 5px;
-    text-align: center;
 }

@@ -16,6 +16,17 @@ a.pub-link {
     width: 75px;
 }
 
+.pubs-list a.keyword-link {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.pubs-list .year-marker {
+    font-size: larger;
+    padding: 5px;
+    text-align: center;
+}
+
 .pubs-filter {
     position: relative;
 }
