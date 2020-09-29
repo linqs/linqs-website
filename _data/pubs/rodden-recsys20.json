@@ -19,6 +19,16 @@
         {
             "label": "code",
             "href": "https://github.com/linqs/psl-vmi"
+        },
+        {
+            "label": "teaser",
+            "icon": "video",
+            "href": "https://www.youtube.com/watch?v=PHFwMnIRre0"
+        },
+        {
+            "label": "demo",
+            "icon": "video",
+            "href": "https://www.youtube.com/watch?v=atUm8b4vCAI"
         }
     ],
     "note": "This is a demo track paper.",
