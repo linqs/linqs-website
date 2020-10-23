@@ -22,6 +22,10 @@
         {
             "label": "paper",
             "href": "/assets/resources/chowdhury-cikm20.pdf"
+        },
+        {
+            "label": "presentation",
+            "href": "/assets/resources/chowdhury-cikm20-presentation.pdf"
         }
     ],
     "abstract": "Fast propagation, ease-of-access, and low cost have made social media an increasingly popular means for news consumption. However this has also led to an increase in fake news propagation. Widespread propagation of fake news can be detrimental to society and this has created a large interest in fake news detection on social media. Many approaches to fake news detection use the news content, social context, or a combination of both. In this work, we look at fake news detection as a problem of estimating the credibility of the publishers that publish news and users that propagate them. We introduce a new approach called the credibility score-based model that can jointly infer fake news and credibility scores for publishers and users. We make use of a state-of-the-art statistical relational learning framework called probabilistic soft logic to effectively perform this joint inference. We show that our approach is effective at both fake news detection and inferring credibility scores. Further our model is flexible and easy to integrate with any external information that can aid in fake news detection. Using the fakenewsnet1 dataset, we show that our approach significantly outperforms previous approaches at fake news detection by up to 10% in recall and 4% in accuracy. Further we also show that the credibility scores learned for both publishers and users are representative of their true behavior."
