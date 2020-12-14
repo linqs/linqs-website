@@ -17,7 +17,7 @@
     "links": [
         {
             "label": "paper",
-            "href": "/assets/resources/kouki-tiis19.pdf"
+            "href": "/assets/resources/kouki-tiis20.pdf"
         }
     ],
     "abstract": "Recommender systems are ubiquitous, and shape the way users access information and make decisions. As these systems become more complex, there is a growing need for transparency and interpretability. In this paper, we study the problem of generating and visualizing personalized explanations for recommender systems which incorporate signals from many different data sources. We use a flexible, extendable probabilistic programming approach, and show how we can generate real-time personalized recommendations. We then turn these personalized recommendations into explanations. We perform an extensive user study to evaluate the benefits of explanations for hybrid recommender systems. We conduct a crowd-sourced user study where our system generates personalized recommendations and explanations for real users of the last.fm music platform. First, we evaluate the performance of the recommendations in terms of perceived accuracy and novelty. Next, we experiment with 1) different explanation styles (e.g., user-based, item-based), 2) manipulating the number of explanation styles presented, and 3) manipulating the presentation format (e.g., textual vs. visual). We also apply a mixed-model statistical analysis to consider user personality traits as a control variable and demonstrate the usefulness of our approach in creating personalized hybrid explanations with different style, number, and format. Finally, we perform a post analysis which shows different preferences for explanation styles between experienced and novice last.fm users.",
