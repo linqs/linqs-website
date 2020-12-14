@@ -22,5 +22,9 @@
             "label": "code",
             "href": "https://github.com/eriq-augustine/grounding-experiments"
         }
+    ],
+    "keywords": [
+        "grounding",
+        "psl"
     ]
 }

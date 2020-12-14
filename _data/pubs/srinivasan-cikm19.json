@@ -12,12 +12,10 @@
     "publisher": "ACM",
     "address": "Beijing, China",
     "keywords": [
-        "Collective Classification",
-        "Defect",
-        "Probabilistic Soft Logic",
-        "Search",
-        "Statistical Relational Language",
-        "Structured Prediction"
+        "inference",
+        "e-commerce",
+        "psl",
+        "scalability"
     ],
     "links": [
         {

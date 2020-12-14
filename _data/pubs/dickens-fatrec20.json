@@ -15,5 +15,10 @@
             "label": "paper",
             "href": "/assets/resources/dickens-fatrec20.pdf"
         }
+    ],
+    "keywords": [
+        "fairness",
+        "recommender systems",
+        "psl"
     ]
 }

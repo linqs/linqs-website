@@ -11,5 +11,11 @@
     "venue": "ACM Transactions on the Web",
     "year": "2020",
     "publisher": "TWEB",
-    "address": "Virtual"
+    "address": "Virtual",
+    "keywords": [
+        "computational social science",
+        "socio-behavioral analysis",
+        "social media",
+        "psl"
+    ]
 }

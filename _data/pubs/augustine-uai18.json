@@ -18,5 +18,11 @@
             "label": "code",
             "href": "https://github.com/linqs/psl-examples/tree/uai18"
         }
+    ],
+    "keywords": [
+        "grounding",
+        "psl",
+        "inference",
+        "weight learning"
     ]
 }
