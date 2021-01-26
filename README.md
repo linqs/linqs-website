@@ -16,7 +16,7 @@ For detailed instructions on adding a dataset go to [datasets.md](datasets.md).
 
 For our link icons, we use icons from [RemixIcons](https://remixicon.com/).
 Instead of grabbing the full set of icons, we only grab specific ones.
-You can see all the icons we use in the [validation script](_scripts/validate-pubs.py).
+You can see all the icons we use in the [validation script](_scripts/utils.py) (`ALLOWED_ICONS` variable).
 New icons can be added to the [/assets/style/vendor/remixicon.symbol.svg](assets/style/vendor/remixicon.symbol.svg) file.
 
 By default, we use preset icons for links that have the types:
@@ -25,6 +25,7 @@ By default, we use preset icons for links that have the types:
 - slides
 - code
 - link
+- video
 
 To use a custom icon, just supply the `icon` field to your link object and use one of the supported icon labels.
 For example:
