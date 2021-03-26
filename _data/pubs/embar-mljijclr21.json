@@ -1,0 +1,28 @@
+{
+    "type": "article",
+    "title": "A Comparison of Statistical Relational Learning and Graph Neural Networks for Aggregate Graph Queries",
+    "authors": [
+        "Varun Embar",
+        "Sriram Srinivasan",
+        "Lise Getoor"
+    ],
+    "venue": "MLJ Special Issue on Learning and Reasoning",
+    "year": "2021",
+    "pages": 1,
+    "number": 1,
+    "volume": 1,
+    "publisher": "Springer",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/embar-mljijclr21.pdf"
+        }
+    ],
+    "abstract": "Statistical relational learning (SRL) and graph neural networks (GNNs) are two powerful approaches for learning and inference over graphs. Typically, they are evaluated in terms of simple metrics such as accuracy over individual node labels. Complex aggregate graph queries (AGQ) involving multiple nodes, edges, and labels are common in the graph mining community and are used to estimate important network properties such as social cohesion and influence. While graph mining algorithms support AGQs, they typically do not take into account uncertainty, or when they do, make simplifying assumptions and do not build full probabilistic models. In this paper, we examine the performance of SRL and GNNs on AGQs over graphs with partially observed node labels. We show that, not surprisingly, inferring the unobserved node labels as a first step and then evaluating the queries on the fully observed graph can lead to sub-optimal estimates, and that a better approach is to compute these queries as an expectation under the joint distribution. We propose a sampling framework to tractably compute the expected values of AGQs. Motivated by the analysis of subgroup cohesion in social networks, we propose a suite of AQGs that estimate the community structure in graphs. In our empirical evaluation, we show that by estimating these queries as an expectation, SRL-based approaches yield  up to a 50-fold reduction in average error when compared to existing GNN-based approaches.",
+    "keywords": [
+        "collective classification",
+        "psl",
+        "inference",
+        "graph mining"
+    ]
+}
