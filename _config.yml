@@ -10,6 +10,9 @@ baseurl: "/linqs-website"
 
 permalink: /blog/:year/:month/:day/:title:output_ext
 
+plugins:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
 theme: minima
