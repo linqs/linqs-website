@@ -30,7 +30,7 @@ window.linqs.utils.bibtex = function(pub, authors, id) {
 
     if (['inproceedings', 'conference', 'inbook', 'misc'].includes(pub.type)) {
         fields.push(['booktitle', pub.venue]);
-    } else if (pub.type == 'journal') {
+    } else if (pub.type == 'article') {
         fields.push(['journal', pub.venue]);
     }
 
