@@ -24,15 +24,14 @@ REQUIRED_KEYS = [
     'title',
     'year',
     'venue',
-    'publisher',
 ]
 
 # Keys (outside of REQUIRED_KEYS) that are required for specific types.
 TYPE_FIELDS = {
-    'article': {'number', 'pages', 'volume'},
-    'book': {'edition'},
+    'article': {'number', 'pages', 'publisher', 'volume'},
+    'book': {'edition', 'publisher'},
     'conference': {'address'},
-    'inbook': {'edition', 'editor', 'pages'},
+    'inbook': {'edition', 'editor', 'pages', 'publisher'},
     'phdthesis': {'address'},
     'techreport': set(),
     'tutorial': {'address'},
