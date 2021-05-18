@@ -294,6 +294,10 @@
         "id": "aistats",
         "shortname": "AISTATS"
     },
+    "International Conference on Computational Social Science": {
+        "id": "ic2s2",
+        "shortname": "IC2S2"
+    },
     "International Conference on Database Theory": {
         "id": "icdt",
         "shortname": "ICDT"

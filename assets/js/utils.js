@@ -30,12 +30,20 @@ window.linqs.utils.bibtex = function(pub, authors, id) {
 
     if (['inproceedings', 'conference', 'inbook', 'misc'].includes(pub.type)) {
         fields.push(['booktitle', pub.venue]);
-    } else if (pub.type == 'journal') {
+    } else if (pub.type == 'article') {
         fields.push(['journal', pub.venue]);
     }
 
     window.linqs.utils.BIBTEX_OPTIONAL_KEYS.forEach(function(key) {
-        if (pub[key]) {
+        if (!pub[key]) {
+            return;
+        }
+
+        // If a conference entry has a publisher, then rename the key to '_publisher'.
+        // This way we will still keep the information, but not show it in the references by defualt.
+        if (key == 'publisher' && ['inproceedings', 'conference', 'misc'].includes(pub.type)) {
+            fields.push(['_publisher', pub[key]]);
+        } else {
             fields.push([key, pub[key]]);
         }
     });
