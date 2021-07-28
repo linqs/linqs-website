@@ -13,5 +13,17 @@
     "publisher": "PMLR",
     "address": "Virtual",
     "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/dickens-icml21.pdf"
+        },
+        {
+            "label": "poster",
+            "href": "/assets/resources/dickens-icml21-poster.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://github.com/linqs/dickens-icml21"
+        }
     ]
 }
