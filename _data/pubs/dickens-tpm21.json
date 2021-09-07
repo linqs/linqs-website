@@ -12,6 +12,14 @@
     "publisher": "TPM",
     "address": "Virtual",
     "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/dickens-tpm21.pdf"
+        },
+        {
+            "label": "poster",
+            "href": "/assets/resources/dickens-tpm21-poster.pdf"
+        }
     ],
     "abstract": "Probabilistic soft logic (PSL) is a framework for instantiating probabilistic graphical models (PGM) representing complex relational data. Weighted first-order logical statements are used as templates for creating potential functions which define the PGM density. Traditionally, PSL constrains weights to be non-negative to ensure maximum a posteriori (MAP) inference is a tractable convex optimization problem. We propose three novel approaches to extending PSL's expressivity to allow negative weights. Notably, we propose the use of Gödel logic for defining potentials from negatively weighted rules. This method improves upon prior work on this topic by preserving both the convexity and scale of the MAP inference problem. Moreover, we show where each of the five methods discussed in this paper overlap and where they most differ. All negative methods are implemented in PSL, and we introduce a tunable synthetic dataset designed to empirically compare the performance of predictions.",
     "keywords": [
