@@ -8,9 +8,12 @@
         "Golnoosh Farnadi",
         "Lise Getoor"
     ],
-    "venue": "Machine Learning (ML)",
+    "venue": "Machine Learning",
     "year": "2021",
     "publisher": "Springer",
+    "pages": "",
+    "number": "",
+    "volume": "",
     "links": [
     ],
     "abstract": "Statistical relational learning (SRL) frameworks are effective at defining probabilistic models over complex relational data. They often use weighted first-order logical rules where the weights of the rules govern probabilistic interactions and are usually learned from data. Existing weight learning approaches typically attempt to learn a set of weights that maximizes some function of data likelihood; however, this does not always translate to optimal performance on a desired domain metric, such as accuracy or F1 score. In this paper, we introduce a taxonomy of search-based weight learning approaches for SRL frameworks that directly optimize weights on a chosen domain performance metric. To effectively apply these search-based approaches, we introduce a novel projection, referred to as scaled space (SS), that is an accurate representation of the true weight space. We show that SS removes redundancies in the weight space and captures the semantic distance between the possible weight configurations. In order to improve the efficiency of search, we also introduce an approximation of SS which simplifies the process of sampling weight configurations. We demonstrate these approaches on two state-of-the-art SRL frameworks: Markov logic networks (MLNs) and probabilistic soft logic (PSL). We perform empirical evaluation on five real-world datasets and evaluate them each on two different metrics. We also compare them against four other weight learning approaches. Our experimental results show that our proposed search-based approaches outperform likelihood-based approaches and yield up to a 10% improvement across a variety of performance metrics. Further, we perform an extensive evaluation to measure the robustness of our approach to different initializations and hyperparameters. The results indicate that our approach is both accurate and robust.",
