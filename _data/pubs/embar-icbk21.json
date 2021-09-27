@@ -1,0 +1,26 @@
+{
+    "type": "conference",
+    "title": "DiffXtract: Joint Discriminative Product Attribute-Value Extraction",
+    "authors": [
+        "Varun Embar",
+	"Andrey Kan",
+        "Bunyamin Sisman",
+        "Christos Faloutsos",
+        "Lise Getoor"
+    ],
+    "venue": "IEEE International Conference on Big Knowledge",
+    "year": "2021",
+    "publisher": "IEEE",
+    "address": "Virtual",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/embar-icbk21.pdf"
+        }
+    ],
+    "abstract": "Identifying discriminative attributes between product variations, e.g., the same wristwatch models but in different finishes, is crucial for improving e-commerce search engines and recommender systems. Despite the importance of these discriminative attributes, values for such attributes are often not available explicitly and instead are mentioned only in unstructured fields such as product title or product description. In this work, we introduce the novel task of discriminative attribute extraction which involves identifying the attributes that distinguish product variations, such as finish, and also, at the same time, extracting the values for these attributes from unstructured text. This task differs from the standard attribute value extraction task that has been well-studied in literature, as in our task we also need to identify the attribute, in addition to finding the value. We propose DiffXtract, a novel end-to-end, deep learning based approach that jointly identifies both the discriminative attribute and extracts its values from the product variations. The proposed approach is trained using a multitask objective and explicitly models the semantic representation of the discriminative attribute and uses it to extract the attribute values. We show that existing product attribute extraction approaches have several drawbacks, both theoretically and empirically. We also introduce a novel dataset based on a corpus of data previously crawled from a large number of e-commerce websites. In our empirical evaluation, we show that DiffXtract outperforms state-of-the-art deep learning based and dictionary-based attribute extraction approaches by up to 8% F1 score when identifying attributes, and up to 10% F1 score when extracting attribute values.",
+    "keywords": [
+        "knowledge graphs",
+        "e-commerce"
+    ]
+}

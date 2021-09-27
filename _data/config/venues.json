@@ -236,6 +236,10 @@
         "id": "bigdata",
         "shortname": "BigData"
     },
+    "IEEE International Conference on Big Knowledge": {
+        "id": "icbk",
+        "shortname": "ICBK"
+    },
     "IEEE International Conference on Data Engineering": {
         "id": "icde",
         "shortname": "ICDE"
