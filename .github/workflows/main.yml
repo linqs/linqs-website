@@ -1,0 +1,25 @@
+# The primary workflow that handles validation of pubs and datasets.
+
+name: Main
+
+on: push
+
+jobs:
+  main:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+
+      - name: Validate Datasets
+        run: ./_scripts/validate-datasets.py
+
+      - name: Validate Pubs
+        run: ./_scripts/validate-pubs.py

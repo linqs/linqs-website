@@ -1,5 +1,0 @@
-language: bash
-
-script:
-    - ./_scripts/validate-datasets.py
-    - ./_scripts/validate-pubs.py
