@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/linqs/linqs-website.svg?branch=master)](https://travis-ci.com/linqs/linqs-website)
+[![Build Status](https://github.com/linqs/linqs-website/actions/workflows/main.yml/badge.svg)](https://github.com/linqs/linqs-website/actions/workflows/main.yml)
 
 # LINQS Website
 
