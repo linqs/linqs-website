@@ -539,6 +539,10 @@
     "Nucleic Acids Research": {
         "id": "nar"
     },
+    "Proceedings of the National Academy of Sciences": {
+        "id": "pnas",
+        "shortname": "PNAS"
+    },
     "RecSys Workshop on Responsible Recommendation": {
         "id": "fatrec",
         "shortname": "FAccTRec"

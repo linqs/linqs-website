@@ -1,0 +1,27 @@
+{
+    "type": "article",
+    "title": "Reducing Opinion Polarization: Effects of Exposure to Similar People with Differing Political Views",
+    "authors": [
+        "Stefano Balietti",
+        "Lise Getoor",
+        "Daniel G. Goldstein",
+        "Duncan J. Watts"
+    ],
+    "venue": "Proceedings of the National Academy of Sciences",
+    "year": "2021",
+    "publisher": "National Academy of Sciences",
+    "pages": "",
+    "number": "52",
+    "volume": "118",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/balietti-pnas21.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://osf.io/7ghnj/files/?view_only=4f59af9f5bfb4e29aff2262dfa8aa66d"
+        }
+    ],
+    "abstract": "Informal political discussions with peers can increase trust in democracy and improve understanding of self and others. However, these benefits do not often materialize because people tend to shy away from political discussions and because friendship networks rarely expose highly divergent political views. In a large-scale experiment, we overcome these limitations by matching participants to peers selected for sharing common interests and demographics and exposing them to a personal message about a divisive political topic: wealth redistribution. As a result, support for redistributive policies increased and polarization decreased. Furthermore, feeling close to a peer greatly increased the assimilation of a political message. Our results suggest that incidental similarities may cold-start cross-cutting political arguments and increase consensus on divisive topics.In a large-scale, preregistered experiment on informal political communication, we algorithmically matched participants, varying two dimensions: 1) the degree of incidental similarity on nonpolitical features; and 2) their stance agreement on a contentious political topic. Matched participants were first shown a computer-generated social media profile of their match highlighting all the shared nonpolitical features; then, they read a short, personal, but argumentative, essay written by their match about the reduction of inequality via redistribution of wealth by the government. We show that support for redistribution increased and polarization decreased for participants with both mild and strong views, regardless of their political leaning. We further show that feeling close to the match is associated with an 86% increase in the probability of assimilation of political views. Our analysis also uncovers an asymmetry: Interacting with someone with opposite views greatly reduced feelings of closeness; however, interacting with someone with consistent views only moderately increased them. By extending previous work about the effects of incidental similarity and shared identity on affect into the domain of political opinion change, our results bear real-world implications for the (re)-design of social media platforms. Because many people prefer to keep politics outside of their social networks, encouraging cross-cutting political communication based on nonpolitical commonalities is a potential solution for fostering consensus on potentially divisive and partisan topics."
+}
