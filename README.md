@@ -46,8 +46,9 @@ There are many resources on the internet to get you started, most notably the [J
 Here are my quick install steps (I only run Linux, so you may have to consult a more through guide for your OS):
 1) First, you need to have `ruby` installed. Along with ruby comes its package manager `gem`.
 2) Install `bundler` (which handles building the project) and `jekyll` using gem: `gem install bundler jekyll`.
-3) Build the site in the repository's root: `bundle exec jekyll serve`. This will build the site and launch a local webserver, so you can open it in a browser.
-4) Open a web browser and go to the site: http://localhost:4000 . The website will automatically update/rebuild with any changes you make.
+3) Install the site's dependencies using bundler: `bundle install`.
+4) Build the site in the repository's root: `bundle exec jekyll serve`. This will build the site and launch a local webserver, so you can open it in a browser.
+5) Open a web browser and go to the site: http://localhost:4000 . The website will automatically update/rebuild with any changes you make.
 
 ## Updating Dependencies
 
