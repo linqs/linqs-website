@@ -18,8 +18,5 @@ jobs:
         with:
           python-version: '3.7'
 
-      - name: Validate Datasets
-        run: ./_scripts/validate-datasets.py
-
-      - name: Validate Pubs
-        run: ./_scripts/validate-pubs.py
+      - name: Run Validation
+        run: ./_scripts/validate.sh
