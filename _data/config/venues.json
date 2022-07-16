@@ -404,6 +404,10 @@
         "id": "mrdm",
         "shortname": "MRDM"
     },
+    "International Workshop on Neural-Symbolic Learning and Reasoning": {
+        "id": "nesy",
+        "shortname": "NeSy"
+    },
     "International Workshop on Statistical Relational AI": {
         "id": "starai",
         "shortname": "StarAI"
