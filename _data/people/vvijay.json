@@ -1,0 +1,11 @@
+{
+    "name": "Vibin Vijay",
+    "degree": "M.S. Degree 2020",
+    "type": "alum",
+    "email": "vvijay@ucsc.edu",
+    "homepage": "https://users.soe.ucsc.edu/~vvijay",
+    "affiliations": [
+        "Amazon"
+    ],
+    "image": "/assets/images/people/vvijay.png"
+}

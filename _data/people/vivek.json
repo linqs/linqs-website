@@ -1,0 +1,11 @@
+{
+    "name": "Vivek Sehgal",
+    "degree": "M.S. Degree 2007",
+    "type": "alum",
+    "email": "vivek@compasslabs",
+    "homepage": "www.cs.umd.edu/~viveks",
+    "affiliations": [
+        "Engineer, Google, USA"
+    ],
+    "image": "/assets/images/people/vivek.png"
+}

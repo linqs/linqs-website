@@ -1,0 +1,9 @@
+{
+    "name": "Yatong Chen",
+    "type": "alum",
+    "email": "ychen592@ucsc.edu",
+    "room": "Enginnering 2, Room 483",
+    "homepage": "https://yatongchen.github.io",
+    "research": "My research interests lie in the intersections of machine learning, statistics, combinatorial optimization, graph theory, and algorithm design. Specifically, I\u2019m interested in the challenges of causal inference and fairness issues in social networks and other large-scale behavioral data.",
+    "image": "/assets/images/people/ychen592.png"
+}

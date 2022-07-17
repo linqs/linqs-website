@@ -1,0 +1,11 @@
+{
+    "name": "Mustafa Bilgic",
+    "degree": "Ph.D. Degree 2010",
+    "type": "alum",
+    "email": "mbiglic@iit.edu",
+    "homepage": "http://www.cs.iit.edu/~mbilgic",
+    "affiliations": [
+        "Assistant Professor, Illinois Institute of Technology, Chicago, IL."
+    ],
+    "image": "/assets/images/people/mbiglic.png"
+}

@@ -1,0 +1,11 @@
+{
+    "name": "Hossam Sharara",
+    "degree": "Ph.D. Degree 2012",
+    "type": "alum",
+    "email": "hossam@cs.umd.edu",
+    "homepage": "http://www.cs.umd.edu/~hossam",
+    "affiliations": [
+        "Software Engineer, Google, Bay Area, CA."
+    ],
+    "image": "/assets/images/people/hossam.png"
+}

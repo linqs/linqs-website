@@ -2,6 +2,6 @@
 layout: publications
 title: Publications
 nav-title: Publications
-order: 2
+order: 3
 permalink: /publications/
 ---

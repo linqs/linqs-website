@@ -1,0 +1,11 @@
+{
+    "name": "Stephen Bach",
+    "degree": "Ph.D Degree 2015",
+    "type": "alum",
+    "email": "bach@cs.stanford.edu",
+    "homepage": "http://stephenbach.net",
+    "affiliations": [
+        "Postdoctoral Scholar, Stanford University, CA."
+    ],
+    "image": "/assets/images/people/bach.png"
+}

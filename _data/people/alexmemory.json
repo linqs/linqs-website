@@ -1,0 +1,11 @@
+{
+    "name": "Alex Memory",
+    "degree": "Ph.D. Degree 2019",
+    "type": "alum",
+    "email": "alex.memory@jhuapl.edu",
+    "homepage": "https://alexmemory.org",
+    "affiliations": [
+        "Johns Hopkins University Applied Physics Laboratory"
+    ],
+    "image": "/assets/images/people/alexmemory.png"
+}

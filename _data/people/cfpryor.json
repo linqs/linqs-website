@@ -1,0 +1,9 @@
+{
+    "name": "Connor Pryor",
+    "type": "phd",
+    "email": "cfpryor@ucsc.edu",
+    "room": "Enginnering 2, Room 483",
+    "homepage": "https://users.soe.ucsc.edu/~cfpryor",
+    "research": "My research interests include machine learning, statistical relational learning, and data mining. In particular, I am interested in entity resolution in structured domains.",
+    "image": "/assets/images/people/cfpryor.png"
+}

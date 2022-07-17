@@ -1,0 +1,11 @@
+{
+    "name": "Ben London",
+    "degree": "Ph.D Degree 2015",
+    "type": "alum",
+    "email": "blondon@cs.umd.edu",
+    "homepage": "http://www.cs.umd.edu/~blondon",
+    "affiliations": [
+        "Machine Learning Scientist at Amazon Core Machine Learning, Seattle, WA."
+    ],
+    "image": "/assets/images/people/blondon.png"
+}

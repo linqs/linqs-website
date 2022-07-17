@@ -1,0 +1,8 @@
+{
+    "name": "Alex Miller",
+    "type": "alum",
+    "email": "almumill@ucsc.edu",
+    "room": "Enginnering 2, Room 483",
+    "research": "My research interests lie in the use of probabilistic graphical models. I'm specifically interested in applying them to problems in biomedical NLP and in using them to perform online collective inference.",
+    "image": "/assets/images/people/almumill.png"
+}

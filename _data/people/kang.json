@@ -1,0 +1,11 @@
+{
+    "name": "Hyunmo Kang",
+    "degree": "Ph.D. Degree 2003",
+    "type": "alum",
+    "email": "kang@cs.umd.edu",
+    "homepage": "http://www.cs.umd.edu/~kang",
+    "affiliations": [
+        "Computer Scientist/HCI Researcher, Vizcovery.com, USA"
+    ],
+    "image": "/assets/images/people/kang.png"
+}

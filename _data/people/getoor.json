@@ -1,0 +1,10 @@
+{
+    "name": "Lise Getoor",
+    "degree": "Ph.D. Degree 2001, Stanford University",
+    "type": "advisor",
+    "email": "getoor@soe.ucsc.edu",
+    "room": "Enginnering 2, Room 341B",
+    "homepage": "https://getoor.soe.ucsc.edu",
+    "research": "My general research interests are in machine learning, reasoning under uncertainty, databases and artificial intelligence. Other topics of interest to me include: data integration, database query optimization and approximate query processing, entity resolution, information extraction, utility elicitation, planning under uncertainty, contraint-based reasoning, abstraction and problem reformulation. The theme of my research is building and using statistical models of structured, semi-structured and unstructured data to do useful things.",
+    "image": "/assets/images/people/getoor.png"
+}

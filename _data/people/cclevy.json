@@ -1,0 +1,9 @@
+{
+    "name": "Caleb Levy",
+    "type": "postdoc",
+    "email": "cclevy@ucsc.edu",
+    "room": "Enginnering 2, Room 489",
+    "homepage": "https://caleblevy.github.io",
+    "research": "My work includes social science applications of statistical relational models, causal inference and graph embeddings. I am particularly interested how these topics can be applied to improve the fairness of machine learning methods.",
+    "image": "/assets/images/people/cclevy.png"
+}

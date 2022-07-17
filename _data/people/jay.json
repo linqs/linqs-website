@@ -1,0 +1,11 @@
+{
+    "name": "Jay Pujara",
+    "degree": "Ph.D. Degree 2015",
+    "type": "alum",
+    "email": "jay@cs.umd.edu",
+    "homepage": "https://www.jaypujara.org",
+    "affiliations": [
+        "Research Scientist, ISI, University of Southern California."
+    ],
+    "image": "/assets/images/people/jay.png"
+}

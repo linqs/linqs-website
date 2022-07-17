@@ -1,0 +1,9 @@
+{
+    "name": "Charles Dickens",
+    "type": "phd",
+    "email": "cadicken@ucsc.edu",
+    "room": "Enginnering 2, Room 483",
+    "homepage": "https://users.soe.ucsc.edu/~cadicken",
+    "research": "My research interests are in inference in graphical models, learning with limited data, and interpretable machine learning.",
+    "image": "/assets/images/people/cadicken.png"
+}

@@ -92,7 +92,7 @@ def checkDatasets():
             continue
 
         errors += validateRequiredKeys(entry, data)
-        
+
     return errors
 
 def main():

@@ -1,0 +1,10 @@
+{
+    "name": "Varun Embar",
+    "degree": "Ph.D. Degree 2021",
+    "type": "alum",
+    "email": "vembar@ucsc.edu",
+    "room": "Enginnering 2, Room 485",
+    "homepage": "https://users.soe.ucsc.edu/~varunembar",
+    "research": "My research interests lie in machine learning and data mining. In particular, I am interested in Knowledge Graphs and Structured Prediction.",
+    "image": "/assets/images/people/vembar.png"
+}

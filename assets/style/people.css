@@ -1,0 +1,37 @@
+.person {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1.5em;
+}
+
+.person .person-image {
+    width: 20%;
+    float: left;
+    padding-right: 1.5em;
+    padding-bottom: 0.25em;
+}
+
+.person-info .person-name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.person-info .person-email {
+    margin-top: 1em;
+}
+
+.person-info .person-research {
+    margin-top: 1em;
+}
+
+/* Separate adjacent entries in the same section. */
+.person + .person {
+    border-top: #eee solid 1px;
+    padding-top: 1.5em;
+}
+
+h2.role-label {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: black solid 1px;
+}

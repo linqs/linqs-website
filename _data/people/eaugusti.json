@@ -1,0 +1,10 @@
+{
+    "name": "Eriq Augustine",
+    "degree": "M.S. Degree 2013, Cal Poly San Luis Obispo",
+    "type": "phd",
+    "email": "eaugusti@ucsc.edu",
+    "room": "Enginnering 2, Room 483",
+    "homepage": "https://users.soe.ucsc.edu/~eaugusti",
+    "research": "My research interests include by are not limited to machine learning, bioinformatics, and databases. My interests in machine learning are very broad and include NLP, computer vision, and bioinformatics. I am particularly interested in exploring the bounds of machine learning and discovering what untested domains work well with machine learning.",
+    "image": "/assets/images/people/eaugusti.png"
+}

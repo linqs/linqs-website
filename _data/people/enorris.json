@@ -1,0 +1,10 @@
+{
+    "name": "Eric Norris",
+    "degree": "M.S. Degree 2013",
+    "type": "alum",
+    "email": "enorris@cs.umd.edu",
+    "affiliations": [
+        "Software Engineer, Etsy, USA."
+    ],
+    "image": "/assets/images/people/enorris.png"
+}
