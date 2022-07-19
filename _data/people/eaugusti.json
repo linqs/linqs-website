@@ -1,10 +1,9 @@
 {
     "name": "Eriq Augustine",
-    "degree": "M.S. Degree 2013, Cal Poly San Luis Obispo",
     "type": "phd",
     "email": "eaugusti@ucsc.edu",
     "room": "Enginnering 2, Room 483",
     "homepage": "https://users.soe.ucsc.edu/~eaugusti",
-    "research": "My research interests are at the intersection of Statistical Relational Learning (SRL) and scalability. This includes making SRL faster through improvements to grounding, optimization, databases, out-of-core algorithms, and just better software development. I am also interested in creating tools that make SRL more accessible to all those in need of machine learning. SRL has been shown to provide more accurate predictions with less data, I consider it my job to provide the tools and knowledge to prove this to all machine learners.",
+    "research": "My research interests are at the intersection of Statistical Relational Learning (SRL) and scalability. This includes making SRL faster through improvements to grounding, optimization, databases, out-of-core algorithms, and just better software development. I am also interested in creating tools that make SRL more accessible to all those in need of machine learning. SRL has been shown to provide more accurate predictions with less data, I consider it my job to provide the tools and knowledge to prove this to all machine learners. I recieved my M.S. in Computer Science from Cal Poly San Luis Obispo in 2013.",
     "image": "/assets/images/people/eaugusti.png"
 }
