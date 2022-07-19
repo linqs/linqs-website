@@ -12,6 +12,7 @@
     "year": "2021",
     "publisher": "PMLR",
     "address": "Virtual",
+    "keywords": ["psl", "theory"],
     "links": [
         {
             "label": "paper",

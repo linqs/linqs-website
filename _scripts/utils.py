@@ -196,8 +196,12 @@ def checkPubs(pubs_dir):
             errors.append("All items in the pubs directory (%s) should be .json files, found '%s'." % (pubs_dir, dirent))
             continue
 
-        with open(path, 'r') as file:
-            data = json.load(file)
+        try:
+            with open(path, 'r') as file:
+                data = json.load(file)
+        except Exception as ex:
+            errors.append("Failed to load JSON file (" + path + "): " + str(ex))
+            continue
 
         errors += validateEntry(dirent, data, venues, seenResources)
 
