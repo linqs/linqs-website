@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" href="{{ "/assets/style/home.css" | relative_url }}">
+<script type="text/javascript" src="{{ "/assets/js/home.js" | relative_url }}"></script>
+
+<div class="carousel-area">
+    {% for file in site.static_files %}
+        {% if file.path contains '/assets/images/carousel' %}
+            <img class="fade-initial" src="{{ file.path | relative_url }}" />
+        {% endif %}
+    {% endfor %}
+</div>
+
+<script>
+    $(document).ready(function() {
+        window.linqs.home.startCarousel();
+    });
+</script>
+
+{{ content }}

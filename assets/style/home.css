@@ -1,0 +1,40 @@
+.carousel-area {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 1em;
+}
+
+.carousel-area img {
+    position: absolute;
+    border-radius: 5px;
+}
+
+.carousel-area img.fade-initial {
+    opacity: 0.0;
+}
+
+.carousel-area img.fade-first {
+    opacity: 1.0;
+}
+
+.carousel-area img.fade-in {
+    animation: fadeIn 2s;
+    opacity: 1.0;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.carousel-area img.fade-out {
+    animation: fadeOut 2s;
+    opacity: 0.0;
+}
+
+@keyframes fadeOut {
+    100% { opacity: 0; }
+    0% { opacity: 1; }
+}
