@@ -6,7 +6,8 @@ description: >- # this means to ignore newlines until "baseurl:"
 # URL settings.
 # Use 'url' for custom domains on github pages, and 'baseurl' for normal github pages hosting.
 url: ""
-baseurl: "/linqs-website"
+# baseurl: "/linqs-website"
+baseurl: ""
 
 permalink: /blog/:year/:month/:day/:title:output_ext
 
