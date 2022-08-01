@@ -17,5 +17,10 @@
             "label": "paper",
             "href": "/assets/resources/kouki-recsys15.pdf"
         }
+    ],
+    "keywords": [
+        "recommender systems",
+        "psl",
+        "application"
     ]
 }
