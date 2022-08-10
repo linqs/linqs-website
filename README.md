@@ -2,7 +2,7 @@
 
 # LINQS Website
 
-This repository is the canonical reference for publications and datasets of the [LINQS machine learning lab](https://linqs.soe.ucsc.edu/) headed by Dr. Lise Getoor.
+This repository is the canonical reference for publications and datasets of the [LINQS machine learning lab](https://linqs.org) headed by Dr. Lise Getoor.
 
 ## Instructions for Adding a Publication
 
