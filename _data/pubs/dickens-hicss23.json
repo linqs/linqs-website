@@ -1,0 +1,16 @@
+{
+    "type": "conference",
+    "title": "Online Collective Demand Forecasting for Bike Sharing Services",
+    "authors": [
+        "Charles Dickens",
+        "Alex Miller",
+        "Lise Getoor"
+    ],
+    "venue": "Hawaii International Conference on System Sciences",
+    "year": "2023",
+    "publisher": "HICSS",
+    "address": "Maui",
+    "keywords": ["psl", "application", "time-series"],
+    "links": [
+    ]
+}
