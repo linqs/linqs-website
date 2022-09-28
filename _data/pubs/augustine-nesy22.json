@@ -17,6 +17,14 @@
         {
             "label": "paper",
             "href": "/assets/resources/augustine-nesy22.pdf"
+        },
+        {
+            "label": "poster",
+            "href": "/assets/resources/augustine-nesy22-poster.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://github.com/linqs/visual-sudoku-puzzle-classification"
         }
     ],
     "abstract" : "Neuro-symbolic computing (NeSy) is an emerging field that has the goal of integrating the low-level representational power of deep neural networks with high-level symbolic reasoning. Due to the youth of the field and the complexity of neuro-symbolic integration, there are few benchmarks that showcase the powers of NeSy, and even fewer built specifically with NeSy in mind. To address the lack of NeSy benchmarks, we introduce Visual Sudoku Puzzle Classification (ViSudo-PC). ViSudo-PC is a new NeSy benchmark dataset combining visual perception with relational constraints. The goal of the benchmark is to both highlight opportunities and elicit challenges. In addition to providing a new NeSy benchmark suite, we also provide an exploratory analysis that showcases ViSudo-PC’s difficulty and possibilities.",
