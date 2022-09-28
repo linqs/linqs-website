@@ -168,6 +168,9 @@
         "id": "pkdd",
         "shortname": "ECML-PKDD"
     },
+    "Hawaii International Conference on System Sciences": {
+        "id": "hicss"
+    },
     "Healthcare Data Analytics": {
         "id": "inbook"
     },
