@@ -1,0 +1,26 @@
+{
+    "type": "techreport",
+    "title": "Entity Resolution at Large Scale: Benchmarking and Algorithmics",
+    "authors": [
+        "Jonathan W. Berry",
+        "Kina Kincher-Winoto",
+        "Cynthia A. Phillips",
+        "Eriq Augustine",
+        "Lise Getoor"
+    ],
+    "venue": "Sandia National Lab",
+    "year": "2018",
+    "publisher": "United States Department of Energy",
+    "address": "Albuquerque, NM, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/berry-techreport18.pdf"
+        }
+    ],
+    "abstract": "We seek scalable benchmarks for entity resolution problems. Solutions to these problems range from trivial approaches such as string sorting to sophisticated methods such as statistical relational learning. The theoretical and practical complexity of these approaches varies widely, so one of the primary purposes of a benchmark will be to quantify the trade-off between solution quality and runtime. We are motivated by the ubiquitous nature of entity resolution as a fundamental problem faced by any organization that ingests large amounts of noisy text data. A benchmark is typically a rigid specification that provides an objective measure usable for ranking implementations of an algorithm. For example the Top500 and HPCG500 benchmarks rank supercomputers based on their performance of dense and sparse linear algebra problems (respectively). These two benchmarks require participants to report FLOPS counts attainable on various machines. Our purpose is slightly different. Whereas the supercomputing benchmarks mentioned above hold algorithms constant and aim to rank machines, we are primarily interested in ranking algorithms. As mentioned above, entity resolution problems can be approached in completely different ways. We believe that users of our benchmarks must decide what sort of procedure to run before comparing implementations and architectures. Eventually, we also wish to provide a mechanism for ranking machines while holding algorithmic approach constant. Our primary contributions are parallel algorithms for computing solution quality measures per entity. We find in some real datasets that many entities are quite easy to resolve while others are difficult, with a heavy skew toward the former case. Therefore, measures such as global confusion matrices, F measures, etc. do not meet our benchmarking needs. We design methods for computing solution quality at the granularity of a single entity in order to know when proposed solutions do well in difficult situations (perhaps justifying extra computational), or struggling in easy situations. We report on progress toward a viable benchmark for comparing entity resolution algorithms. Our work is incomplete, but we have designed and prototyped several algorithms to help evaluate the solution quality of competing approaches to these problems. We envision a benchmark in which the objective measure is a ratio of solution quality to runtime.",
+    "keywords": [
+        "psl",
+        "scalability"
+    ]
+}
