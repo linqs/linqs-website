@@ -6,6 +6,7 @@
 a.pub-link {
     margin-right: 5px;
     cursor: pointer;
+    text-transform: capitalize;
 }
 
 .pub-entry-full table {

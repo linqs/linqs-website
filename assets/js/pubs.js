@@ -147,7 +147,7 @@ window.linqs.pubs.index = function() {
                 linkEntry.label = 'link';
             }
 
-            linkEntry.displayLabel = window.linqs.pubs.capatilize(linkEntry.label);
+            linkEntry.displayLabel = window.linqs.pubs.cleanText(linkEntry.label.replace(/-/g, ' '));
             linkEntry.href = window.linqs.utils.makeLink(window.linqs.utils.baseURL, linkEntry.href);
             linkEntry.icon = window.linqs.pubs.resolveIcon(linkEntry.icon, linkEntry.label);
         });
