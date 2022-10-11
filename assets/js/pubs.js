@@ -9,6 +9,7 @@ window.linqs.pubs.ICON_BIBTEX = 'double-quotes-r';
 window.linqs.pubs.ICON_DEFAULT = 'link';
 window.linqs.pubs.ICON_MAP = {
     'paper': 'file-text-line',
+    'supplementary-material': 'file-line',
     'poster': 'image-line',
     'slides': 'slideshow-line',
     'code': 'code-line',
