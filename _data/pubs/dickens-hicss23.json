@@ -12,5 +12,13 @@
     "address": "Maui",
     "keywords": ["psl", "application", "time-series"],
     "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/dickens-hicss23.pdf"
+        },
+        {
+            "label": "code",
+            "href": "https://github.com/linqs/dickens-hicss23"
+        }
     ]
 }
