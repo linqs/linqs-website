@@ -1,0 +1,25 @@
+{
+    "type": "phdthesis",
+    "title": "Building Practical Statistical Relational Learning Systems",
+    "authors": [
+        "Eriq Augustine"
+    ],
+    "venue": "University of California, Santa Cruz",
+    "year": "2023",
+    "publisher": "UCSC",
+    "address": "Santa Cruz, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/augustine-phd23.pdf"
+        }
+    ],
+    "abstract": "In our increasingly connected world, data comes from many different sources, in many different forms, and is noisy, complex, and structured. To confront modern data, we need to embrace the structure inherent in the data and in the predictions. Statistical relational learning (SRL) is a subfield of machine learning that provides an effective means of approaching this problem of structured prediction. SRL frameworks use weighted logical and arithmetic expressions to easily create probabilistic graphical models (PGMs) to jointly reason over interdependent data. However, despite being well suited for modern, interconnected data, SRL faces several challenges that keep it from becoming practical and widely used in the machine learning community. In this dissertation, I address four pillars of practicality for SRL systems: scalability, expressivity, model adaptability, and usability. My work in this dissertation uses and extends Probabilistic Soft Logic (PSL), a state-of-the-art open-source SRL framework.\nScalability in SRL systems is essential for using large datasets and complex models. Because of the complex nature of interconnected data, models can easily outgrow available memory spaces. To address scalability for SRL, I developed methods that more efficiently and intelligently instantiate PGMs from templates and data. I also developed fixed-memory inference methods that can perform inference on very large models without requiring a proportional amount of memory.\nExpressivity allows SRL systems to represent many different problems and data patterns. Because SRL uses logical and arithmetic expressions to represent structured dependencies, SRL frameworks need to be able to express more than just what is represented by feature vectors. To address expressivity for SRL, I created a system to incorporate neural models with structured SRL inference, and expanded the interpretation of PSL weight hyperparameters to include additional types of distributions.\nModel adaptability is the ability of SRL frameworks to handle models that change. A changing model can be as simple as a model that has its hyperparameters updated, or as complex as a model that changes its structure over time. To address model adaptability for SRL, I developed new weight learning approaches for PSL, and created a system for generalized online inference in PSL.\nUsability make SRL frameworks easy for people to use. Because of the need to model structural dependencies, SRL frameworks are often harder to use when compared to more common machine learning libraries. To address usability for SRL, I have created a new SRL framework that removes the tight coupling between the different components of the SRL pipeline that is seen in other SRL frameworks and allows the the recreation of exiting SRL frameworks along with the creation of new SRL frameworks using the same common runtime. Additionally, I developed a visual model inspector for analyzing and debugging PSL models.",
+    "keywords": [
+        "psl",
+        "inference",
+        "weight learning",
+        "thesis",
+        "scalability"
+    ]
+}
