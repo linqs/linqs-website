@@ -274,6 +274,10 @@
         "id": "tcbb",
         "shortname": "TCBB"
     },
+    "ICLR Workshop on Neurosymbolic Generative Models": {
+        "id": "nesygems",
+        "shortname": "NeSyGems"
+    },
     "IJCAI Workshop on Semantic Web for Collaborative Knowledge Acquisition": {
         "id": "swecka",
         "shortname": "SWeCKa"
@@ -324,6 +328,10 @@
     "International Conference on Knowledge Discovery and Data Mining": {
         "id": "kdd",
         "shortname": "KDD"
+    },
+    "International Conference on Learning Representations": {
+        "id": "iclr",
+        "shortname": "ICLR"
     },
     "International Conference on Machine Learning": {
         "id": "icml",
