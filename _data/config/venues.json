@@ -467,6 +467,10 @@
         "id": "webkdd",
         "shortname": "WebKDD"
     },
+    "Knowledge and Logical Reasoning in the Era of Data-Driven Learning": {
+        "id": "klr",
+        "shortname": "KLR"
+    },
     "Learning from Limited Labeled Data Workshop": {
         "id": "lld",
         "shortname": "LLD"

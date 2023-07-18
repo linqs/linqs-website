@@ -1,0 +1,24 @@
+{
+    "type": "conference",
+    "title": "Deep Neuro-Symbolic Weight Learning in Neural Probabilistic Soft Logic",
+    "authors": [
+        "Connor Pryor",
+        "Charles Dickens",
+        "Lise Getoor"
+    ],
+    "venue": "Knowledge and Logical Reasoning in the Era of Data-Driven Learning",
+    "year": "2023",
+    "publisher": "ICML",
+    "address": "Honolulu, Hawaii",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pryor-klr23.pdf"
+        }
+    ],
+    "abstract" : "In this work, we extend the expressive power of the neuro-symbolic framework Neural Probabilistic Soft Logic (NeuPSL). We introduce NeuPSL Deep Weights, which uses deep neural network predictions to parameterize the weights of symbolic rules. To demonstrate NeuPSL Deep Weights applicability, we introduce a unique synthetic dataset specifically designed to challenge learning methods that do not utilize both data-driven learning (System 1) and deliberate symbolic reasoning (System 2). Across variations of this synthetic dataset, we show how NeuPSL Deep Weights outperforms traditional PSL rule weights and existing joint System 1 and System 2 neural methods, such as graph neural networks.",
+    "keywords": [
+        "psl",
+        "nesy"
+    ]
+}
