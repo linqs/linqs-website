@@ -1,0 +1,18 @@
+{
+    "type": "techreport",
+    "title": "PSL-GWAS: A Microbial GWAS Method Using Statistical Relational Learning",
+    "authors": [
+        "Alex Miller", "Eriq Augustine", "Elijah Pandolfo", "Lise Getoor"
+    ],
+    "venue": "University of California, Santa Cruz",
+    "year": "2023",
+    "publisher": "UCSC",
+    "address": "Santa Cruz, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/miller-techreport23.pdf"
+        }
+    ],
+    "abstract": "Microbial genome-wide association studies (mGWAS) are a new, quickly growing area of research that aims to identify genetic variants that are associated with phenotypes of interest in microbes. We introduce PSL-GWAS, a flexible mGWAS method that makes use of the statistical relational learning framework Probabilistic Soft Logic (PSL.) Our method can be readily adapted to incorporate domain knowledge or the output of other mGWAS methods. We show that PSL-GWAS performs comparably to well-established mGWAS methods on a dataset of 355 E. Coli samples and antibiotic resistance phenotypes."
+}
