@@ -1,0 +1,27 @@
+{
+    "type": "conference",
+    "title": "Modeling Patterns for Neural-Symbolic Reasoning using Energy-Based Models",
+    "authors": [
+        "Charles Dickens",
+        "Connor Pryor",
+        "Lise Getoor"
+    ],
+    "venue": "AAAI Spring Symposium on Empowering Machine Learning and Large Language Models with Domain and Commonsense Knowledge",
+    "year": "2024",
+    "publisher": "AAAI",
+    "address": "Palo Alto, CA",
+    "abstract": "Neural-symbolic (NeSy) AI strives to empower machine learning and large language models with fast, reliable predictions that exhibit commonsense and trustworthy reasoning by seamlessly integrating neural and symbolic methods. With such a broad scope, several taxonomies have been proposed to categorize this integration, emphasizing knowledge representation, reasoning algorithms, and applications. We introduce a knowledge representation-agnostic taxonomy focusing on the neural-symbolic interface capturing methods that reason with probability, logic, and arithmetic constraints. Moreover, we derive expressions for gradients of a prominent class of learning losses and a formalization of reasoning and learning. Through a rigorous empirical analysis spanning three tasks, we show NeSy approaches reach up to a 37% improvement over neural baselines in a semi-supervised setting and a 19% improvement over GPT-4 on question-answering.",
+    "keywords": [
+        "neuro-symbolic",
+        "neuro-symbolic computing",
+        "nesy",
+        "energy-based models",
+        "large-language models"
+    ],
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/dickens-make24.pdf"
+        }
+    ]
+}
