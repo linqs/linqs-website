@@ -1,0 +1,32 @@
+{
+  "type": "unpublished",
+  "title": "A Mathematical Framework, a Taxonomy of Modeling Paradigms, and a Suite of Learning Techniques for Neural-Symbolic Systems",
+  "authors": [
+    "Charles Dickens",
+    "Connor Pryor",
+    "Changyu Gao",
+    "Alon Albalak",
+    "Eriq Augustine",
+    "William Wang",
+    "Stephen Wright",
+    "Lise Getoor"
+  ],
+  "venue": "arXiv",
+  "year": "2024",
+  "links": [
+    {
+      "label": "paper",
+      "href": "/assets/resources/dickens-arxiv24.pdf"
+    }
+  ],
+  "abstract": "The field of Neural-Symbolic (NeSy) systems is growing rapidly. Proposed approaches show great promise in achieving symbiotic unions of neural and symbolic methods. However, each NeSy system differs in fundamental ways. There is a pressing need for a unifying theory to illuminate the commonalities and differences in approaches and enable further progress. In this paper, we introduce Neural-Symbolic Energy-Based Models (NeSy-EBMs), a unifying mathematical framework for discriminative and generative modeling with probabilistic and non-probabilistic NeSy approaches. We utilize NeSy-EBMs to develop a taxonomy of modeling paradigms focusing on a system’s neural-symbolic interface and reasoning capabilities. Additionally, we introduce a suite of learning techniques for NeSy-EBMs. Importantly, NeSy-EBMs allow the derivation of general expressions for gradients of prominent learning losses, and we provide four learning approaches that leverage methods from multiple domains, including bilevel and stochastic policy optimization. Finally, we present Neural Probabilistic Soft Logic (NeuPSL), an open-source NeSy-EBM library designed for scalability and expressivity, facilitating real-world application of NeSy systems. Through extensive empirical analysis across multiple datasets, we demonstrate the practical advantages of NeSy-EBMs in various tasks, including image classification, graph node labeling, autonomous vehicle situation awareness, and question answering.",
+  "keywords": [
+    "neuro-symbolic",
+    "nesy",
+    "weight learning",
+    "energy-based models",
+    "optimization",
+    "psl",
+    "theory"
+  ]
+}
