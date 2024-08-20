@@ -1,0 +1,30 @@
+{
+    "type": "phdthesis",
+    "title": "A Unifying Mathematical Framework for Neural-Symbolic Systems",
+    "authors": [
+        "Charles Dickens"
+    ],
+    "venue": "University of California, Santa Cruz",
+    "year": "2024",
+    "publisher": "UCSC",
+    "address": "Santa Cruz, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/dickens-phd24.pdf"
+        }
+    ],
+    "abstract": "The field of Neural-Symbolic (NeSy) systems is growing rapidly. Proposed approaches show great promise in achieving symbiotic unions of neural and symbolic methods. However, NeSy has not yet reached its full potential and is underutilized in industry and in machine learning research. In this dissertation, I identify four milestones that are necessary to realize general and practical NeSy AI: a mathematical framework, a taxonomy of modeling paradigms, a suite of learning techniques, and a practical implementation. My research contributes to reaching all four milestones. First, I introduce Neural-Symbolic Energy-Based Models (NeSy-EBMs), a mathematical framework for discriminative and generative modeling with probabilistic and non-probabilistic NeSy approaches. Energy-based modeling provides a unified perspective of many NeSy systems and is a connection to the broader machine learning literature. Next, I utilize NeSy-EBMs to introduce a taxonomy of modeling paradigms focusing on a system's neural-symbolic interface and reasoning capabilities. My primary modeling paradigms organize and illuminate the capabilities of existing NeSy systems. Moreover, I identify architectures that support compelling NeSy use cases. Importantly, I show how to use the paradigms to obtain up to a 37% improvement over neural baselines in semi-supervised settings and a 19% improvement over standard prompting with GPT-4 in natural language question-answering. Then, I prove theoretical continuity properties and sufficient conditions for the differentiability of a large class of NeSy-EBM learning losses. Further, I formalize the challenges of NeSy learning and propose solutions. Specifically, I introduce a suite of four NeSy-EBM learning techniques: one for learning the neural and symbolic weights separately and three for end-to-end learning. Notably, I show the separate or modular learning approach is the most widely applicable with respect to the NeSy-EBM architecture. However, modular learning is not effective for some NeSy use cases. On the other hand, the end-to-end learning approaches require some assumptions about the NeSy-EBM architecture but are necessary for certain crucial NeSy applications. Finally, I present Neural Probabilistic Soft Logic (NeuPSL), an open-source NeSy-EBM library designed for scalability and expressivity to facilitate real-world applications of NeSy systems. Additionally, I introduced a novel formulation of the (Neu)PSL inference problem as a linearly constrained quadratic program (LCQP) to prove differentiability properties necessary for end-to-end learning. Further, I propose a new inference algorithm that leverages the LCQP formulation and naturally exploits warm-starts, leading to over 100x learning runtime improvements. Through extensive empirical analysis across twelve datasets, I validate my proposed modeling, inference, and learning methodologies while simultaneously demonstrating the advantages of NeSy-EBMs in various real-world tasks, including image classification, graph node labeling, autonomous vehicle situation awareness, and natural language question answering.",
+    "keywords": [
+        "neuro-symbolic",
+        "neural-symbolic",
+        "nesy",
+        "inference",
+        "weight learning",
+        "energy-based models",
+        "optimization",
+        "psl",
+        "theory",
+        "thesis"
+    ]
+}
