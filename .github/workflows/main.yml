@@ -7,16 +7,16 @@ on: push
 jobs:
   main:
 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Set up Python 3.7
-        uses: actions/setup-python@v2
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.7'
+          python-version: '3.10'
 
       - name: Run Validation
         run: ./_scripts/validate.sh
