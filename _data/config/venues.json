@@ -422,6 +422,10 @@
         "id": "nesy",
         "shortname": "NeSy"
     },
+    "International Conference on Neural-Symbolic Learning and Reasoning": {
+        "id": "nesy",
+        "shortname": "NeSy"
+    },
     "International Workshop on Statistical Relational AI": {
         "id": "starai",
         "shortname": "StarAI"

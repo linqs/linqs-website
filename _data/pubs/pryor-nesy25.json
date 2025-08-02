@@ -1,0 +1,26 @@
+{
+  "type": "conference",
+  "title": "Neural-Symbolic Architectural Axioms of Integration: A Manifesto",
+  "authors": [
+    "Connor Pryor",
+    "Lise Getoor"
+  ],
+  "venue": "International Conference on Neural-Symbolic Learning and Reasoning",
+  "year": "2025",
+  "publisher": "NeSy",
+  "address": "Santa Cruz, United States",
+  "links": [
+    {
+      "label": "paper",
+      "href": "/assets/resources/pryor-nesy25.pdf"
+    }
+  ],
+  "abstract": "The integration of neural and symbolic methods has long been viewed as a promising path toward more general, interpretable, and robust artificial intelligence. The past two decades have seen a rapid proliferation of neural-symbolic (NeSy) systems, spanning a wide range of architectures, reasoning strategies, and application domains. However, this growth has outpaced theoretical clarity: many existing approaches conflate the roles of learning, inference, and representation, leading to a fragmented field lacking principled foundations. In this work, we address this gap by proposing a set of architectural axioms of integration—formal, implementation-agnostic principles that define how neural and symbolic components can be coherently combined. These axioms abstract away from system-specific details and instead characterize the structural interface between neural perception and symbolic reasoning. Rather than introducing a new method, this work offers a foundation to organize, compare, and reason about the rapidly expanding space of NeSy approaches.",
+  "keywords": [
+    "neuro-symbolic",
+    "neuro-symbolic computing",
+    "nesy",
+    "nesy architectural axioms",
+    "nesy axioms"
+  ]
+}
