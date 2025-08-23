@@ -1,0 +1,27 @@
+{
+    "type": "phdthesis",
+    "title": "Foundations of Neural-Symbolic AI: Architecture and Design",
+    "authors": [
+        "Connor Pryor"
+    ],
+    "venue": "University of California, Santa Cruz",
+    "year": "2024",
+    "publisher": "UCSC",
+    "address": "Santa Cruz, CA, USA",
+    "links": [
+        {
+            "label": "paper",
+            "href": "/assets/resources/pryor-phd24.pdf"
+        }
+    ],
+    "abstract": "Deep neural networks have become synonymous with artificial intelligence, playing a crucial role across industry, academia, and everyday life. Despite their impressive capabilities, these models still exhibit fundamental limitations, including perpetuating human bias, a lack of robust prediction guarantees, and unreliable explanations. In response to these limitations, the past decade has seen a revival of symbolic approaches integrated with the data-driven strengths of neural networks, resulting in a broad array of neural-symbolic (NeSy) methods [16, 32, 33, 87]. While promising, the field of neural-symbolic AI is still in its early stages, with many current methods conflating the distinct processes of inference, learning, and architectural design. This lack of separation makes it difficult to compare and evaluate the effectiveness of different approaches across various tasks. NeSy AI needs to establish a principled foundation that (1) provides the axioms of neural-symbolic integration, (2) defines a universal neural-symbolic language, (3) categorizes neural-symbolic design principles, and (4) collects a set of general and principled implementations. In this dissertation, I aim to develop a strong foundation for NeSy AI, starting with clear architectural axioms for integrating symbolic and subsymbolic components framed through hard and soft constraints.\nMy contributions are fivefold: (1) I address the conflation of inference, learning, and the neural-symbolic interface by categorizing approaches through key architectural axioms, providing a clear base for NeSy research. (2) I formalize these architectural choices through a unifying mathematical framework, enabling the definition and comparison of most NeSy approaches. (3) Leveraging this formalization, I identify effective learning strategies and common pitfalls that impact a wide range of NeSy approaches, offering actionable insights for improving their design and performance. (4) Based on these insights,\nI develop a novel, practical NeSy implementation that supports most architectural choices and learning strategies. (5) I validate this implementation across multiple domains, including graph node labeling, image classification, autonomous event detection with safety requirements, complex natural language question answering, and dialog structure induction. These contributions bring neural-symbolic AI closer to a unified foundation by providing the terminology, mathematical tools, and design principles necessary to create scalable, interpretable, and adaptable systems that effectively integrate neural and symbolic reasoning.",
+    "keywords": [
+        "neuro-symbolic",
+        "neural-symbolic",
+        "nesy",
+        "energy-based models",
+        "neupsl",
+        "psl",
+        "thesis"
+    ]
+}
