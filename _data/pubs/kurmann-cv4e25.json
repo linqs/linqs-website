@@ -1,0 +1,38 @@
+{
+  "type": "conference",
+  "title": "Building a Flexible Framework for Automated White Shark Re-Identification",
+  "authors": [
+    "Fabrice Kurmann",
+    "Connor Pryor",
+    "Charles Dickens",
+    "Alexandra E. Digiacomo",
+    "Samantha Andrzejaczek",
+    "Eriq Augustine",
+    "Barbara A. Block",
+    "Lise Getoor"
+  ],
+  "venue": "ICCV Workshop on Computer Vision for Ecology",
+  "year": "2025",
+  "publisher": "CVF",
+  "address": "Honolulu, HI, USA",
+  "links": [
+    {
+      "label": "paper",
+      "href": "/assets/resources/kurmann-cv4e25.pdf"
+    },
+    {
+      "label": "poster",
+      "href": "/assets/resources/kurmann-cv4e25-poster.pdf"
+    }
+  ],
+  "abstract": "Animal re-identification, the problem of mapping a new image to an existing curated set of individuals, is crucial for wildlife conservation and population monitoring. Traditionally, domain experts have performed this task manually, but identifying individuals from images is both challenging and labor-intensive. To address this challenge in monitoring white shark populations, we present an automated re-identification approach that assists in matching individuals while supporting human-in-the-loop validation. By training and evaluating on a dataset of dorsal fin images characterized by limited training data and a long-tailed distribution, we develop a system robust to the real-world challenges of image-based wildlife tracking. We leverage a pre-trained Vision Transformer (ViT) backbone, which we efficiently adapt to produce discriminative shark fin embeddings that are robust to variations in pose, lighting, and image quality. We compare embedding retrieval strategies to optimize retrieval of the most relevant individuals. Our combined approach is situated in a user interface that allows researchers to update and grow their image catalogs, leveraging our re-identification system to deliver high-likelihood match recommendations they can evaluate and, upon approval, accept.",
+  "keywords": [
+    "re-identification",
+    "retrieval",
+    "deep learning",
+    "vision transformer",
+    "LoRA",
+    "triplet loss",
+    "ecology"
+  ]
+}
