@@ -10,6 +10,6 @@ and their applications to problems in computational social science, knowledge di
 On the theoretical side, we introduce new theory and algorithms for efficient reasoning, learning, and inference.
 On the practical side, we apply our methods on a range of applications including user modelling, explainable recommender systems, and social good.
 
-Following the tradition of Lise's PhD advisor Daphne Koller, whose research group is DAGS for Daphne's Approximate Group of Students,
-and Lise's MS advisor Stuart Russell, whose research group is RUGS for Russell's Unusual Group of Students, and his advisor's Michael
-Genesereth's group MVGS, for Mike's Unusual Group of Students, Lise's group is (**L**ise’s **INQ**uisitive **S**tudents).
+Following the tradition of Lise's PhD advisor [Daphne Koller](https://ai.stanford.edu/~koller/), whose research group is DAGS for Daphne's Approximate Group of Students,
+and Lise's MS advisor [Stuart Russell](https://people.eecs.berkeley.edu/~russell/), whose research group is RUGS for Russell's Unusual Group of Students, and his advisor's [Michael
+Genesereth](http://logic.stanford.edu/people/genesereth/genesereth.html)'s group MUGS, for Mike's Unusual Group of Students, Lise's group is (**L**ise’s **INQ**uisitive **S**tudents).

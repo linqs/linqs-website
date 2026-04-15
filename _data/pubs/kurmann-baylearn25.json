@@ -1,0 +1,38 @@
+{
+  "type": "conference",
+  "title": "Optimizing Vision Transformers for White Shark Re-Identification",
+  "authors": [
+    "Fabrice Kurmann",
+    "Connor Pryor",
+    "Charles Dickens",
+    "Alexandra E. Digiacomo",
+    "Samantha Andrzejaczek",
+    "Eriq Augustine",
+    "Barbara A. Block",
+    "Lise Getoor"
+  ],
+  "venue": "Bay Area Machine Learning Symposium",
+  "year": "2025",
+  "publisher": "BayLearn",
+  "address": "Santa Clara, CA, USA",
+  "links": [
+    {
+      "label": "paper",
+      "href": "/assets/resources/kurmann-baylearn25.pdf"
+    },
+    {
+      "label": "poster",
+      "href": "/assets/resources/kurmann-baylearn25-poster.pdf"
+    }
+  ],
+  "abstract": "Animal re-identification, the problem of mapping a new image to an existing curated set of individuals, is crucial for wildlife conservation and population monitoring. Traditionally, this has been done manually by domain experts, yet manual identification from images is a challenging, labor-intensive process. To address this challenge for white shark populations, we introduce automated re-identification to match individuals from a real-world dataset of dorsal fin images characterized by limited training data and a long-tailed distribution, while supporting human-in-the-loop validation. We leverage a pre-trained Vision Transformer (ViT) backbone, which we efficiently adapt to produce discriminative shark fin embeddings that are robust to variations in pose, lighting, and image quality. We compare embedding retrieval strategies to optimize retrieval of the most relevant individuals. Our combined approach is situated in a user interface that allows researchers to accept, reject, and modify recommendations.",
+  "keywords": [
+    "re-identification",
+    "retrieval",
+    "deep learning",
+    "vision transformer",
+    "LoRA",
+    "triplet loss",
+    "ecology"
+  ]
+}
