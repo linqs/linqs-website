@@ -1,0 +1,28 @@
+{
+  "type": "msthesis",
+  "title": "SharkLinq: Integrating Multimodal Modeling and UI Development to Advance Shark Re-Identification",
+  "authors": [
+    "Fabrice Kurmann"
+  ],
+  "venue": "University of California, Santa Cruz",
+  "year": "2026",
+  "publisher": "UCSC",
+  "address": "Santa Cruz, CA, USA",
+  "links": [
+    {
+      "label": "paper",
+      "href": "/assets/resources/kurmann-ms26.pdf"
+    }
+  ],
+  "abstract": "Wildlife dataset curation and re-identification (ReID) centers on mapping new images to an existing set of known individuals and are critical tasks for ecology, conservation, and the study of populations. Traditionally, domain experts have performed this task manually, but identifying individuals from images is both challenging and labor-intensive, complicated by long-tailed class distributions, high intra-class variance, and noisy datasets. To address these challenges, we present SharkLinq, an end-to-end system that integrates multimodal modeling and retrieval techniques with Shark Matcher, a human-in-the-loop tool for model-assisted ReID and general database management. We detail a parameter-efficient framework for fine-tuning computer vision backbones, specifically evaluating Vision Transformers (ViT) and MiewID (EfficientNetV2). To leverage heterogeneous supplementary data, we introduce a weighted late fusion approach that constructs multimodal embeddings, combining visual features with structured metadata. Additionally, we optimize retrieval techniques to maximize representation stability, enforcement of metadata constraints, and retrieval accuracy. Empirical evaluations on a sharkfin dataset developed and maintained by Block Lab at Stanford demonstrate that combining a fine-tuned image model with multimodal embeddings and optimized retrieval approach achieves a 90% Hits@1 accuracy and a mean average precision of 0.924. These modeling advancements are deployed through Shark Matcher, a tool which streamlines data curation by presenting model ReID suggestions in a UI that supports expert verification and multi-user collaboration. Ultimately, this integration of a multimodal model with an accompanying interface significantly accelerates data curation, improves overall dataset quality, and serves as a framework for model-assisted ReID. We release both the SharkLinq model framework and Shark Matcher repositories with code and documentation to support future research and adoption within the ecology community.",
+  "keywords": [
+    "re-identification",
+    "retrieval",
+    "deep learning",
+    "computer vision",
+    "multimodal",
+    "LoRA",
+    "arcface loss",
+    "ecology"
+  ]
+}
